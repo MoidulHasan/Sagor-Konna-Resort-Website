@@ -16,24 +16,21 @@
 - React,
 - React Hook Form,
 - NodeJs,
-- Express JS,
-- MondoDB,
-- Mongoose,
 - Prime React,
 - Prime FLex,
 - Framer Motion
--
+- React CountUp
 
-### [ App Git Repo](https://github.com/KajKam-Initiative-LTD/nrb_global_frontend.git)
+### [ App Git Repo](https://github.com/KajKam-Initiative-LTD/sagor_konna_website.git)
 
-- https://github.com/KajKam-Initiative-LTD/nrb_global_frontend.git
+- https://github.com/KajKam-Initiative-LTD/sagor_konna_website.git
 
 ---
 
 ## To install and run the project
 
 - Clone this repository
-  > git clone https://github.com/KajKam-Initiative-LTD/nrb_global_frontend.git
+  > git clone https://github.com/KajKam-Initiative-LTD/sagor_konna_website.git
 - install the packages:
 
 ```
