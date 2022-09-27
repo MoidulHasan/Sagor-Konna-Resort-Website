@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^7.4.0",
     "next": "12.3.1",
+    "primeflex": "^3.2.1",
+    "primeicons": "^6.0.1",
+    "primereact": "^8.6.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-countup": "^6.3.1",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.36.1"
   },
   "devDependencies": {
     "eslint": "8.24.0",
