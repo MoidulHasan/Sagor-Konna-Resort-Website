@@ -12,16 +12,17 @@
 
 ### Technologies Used
 
+- Next Js
 - React,
 - React Hook Form,
-- React Reveal
-- Flag Icon
 - NodeJs,
 - Express JS,
 - MondoDB,
 - Mongoose,
 - Prime React,
-- Prime FLex
+- Prime FLex,
+- Framer Motion
+-
 
 ### [ App Git Repo](https://github.com/KajKam-Initiative-LTD/nrb_global_frontend.git)
 
