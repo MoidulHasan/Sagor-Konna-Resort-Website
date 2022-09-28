@@ -15,6 +15,71 @@ a {
   box-sizing: border-box;
 }
 
+
+/* for container  */
+
+/* css made for container  */
+.p-container,
+.p-container-fluid,
+.p-container-sm,
+.p-container-md,
+.p-container-lg,
+.p-container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mainApp {
+  min-height: 50vh;
+  margin-top: 80px;
+}
+
+.mainApp:after {
+  content: "";
+  display: block;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--primeBLue);
+}
+
+@media (min-width: 576px) {
+  .p-container,
+  .p-container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-container,
+  .p-container-sm,
+  .p-container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-container,
+  .p-container-sm,
+  .p-container-md,
+  .p-container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-container,
+  .p-container-sm,
+  .p-container-md,
+  .p-container-lg,
+  .p-container-xl {
+    max-width: 1280px;
+    /* 1340  */
+    /* 1140  */
+  }
+}
+
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
