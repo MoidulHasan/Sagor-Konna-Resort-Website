@@ -1,0 +1,24 @@
+const data = [
+    {
+        "id": 1,
+        "title": "See View",
+        "img": "/image/Room/room02.jpg",
+        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+    },
+    {
+        "id": 2,
+        "title": "Nature view",
+        "img": "/image/Room/room02.jpg",
+        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+    },
+    {
+        "id": 3,
+        "title": "See View",
+        "img": "/image/Room/room02.jpg",
+        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+    }
+]
+
+export default function handler(req, res) {
+    res.status(200).json(data)
+}
