@@ -58,3 +58,15 @@ to use React Reveal, please use the doc!
 - delay
 - cascade
 - count (for repeat)
+
+# when to use swiper, you have to paste these below code
+
+```
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+```
