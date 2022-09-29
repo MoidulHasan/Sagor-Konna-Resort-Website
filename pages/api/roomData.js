@@ -3,19 +3,28 @@ const data = [
         "id": 1,
         "title": "See View",
         "img": "/image/Room/room02.jpg",
-        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+        "status": "Popular",
+        "type": "Guest",
+        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "160.0"
+
     },
     {
         "id": 2,
         "title": "Nature view",
         "img": "/image/Room/room02.jpg",
-        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+        "type": "Guest",
+        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "120.0"
     },
     {
         "id": 3,
         "title": "See View",
         "img": "/image/Room/room02.jpg",
-        "description": "fetches this JSON file (pre-computed at build time) and uses it as the props for the page component. This means that client-side page transitions will not call getStaticProps as only the exported JSON is used."
+        "type": "Guest",
+        "status": "Popular",
+        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "150.0"
     }
 ]
 

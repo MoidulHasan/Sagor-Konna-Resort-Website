@@ -1,8 +1,8 @@
-import RoomSection from '../components/room/RoomSection';
+import RoomCard from '../components/room/RoomCard';
 const room = ({ roomData }) => {
     return (
         <div >
-            <RoomSection roomData={roomData} />
+            <RoomCard roomData={roomData} />
         </div>
     )
 }
