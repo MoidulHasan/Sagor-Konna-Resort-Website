@@ -1,7 +1,7 @@
 import RoomCard from '../components/room/RoomCard';
 const room = ({ roomData }) => {
     return (
-        <div >
+        <div className='p-container'>
             <RoomCard roomData={roomData} />
         </div>
     )

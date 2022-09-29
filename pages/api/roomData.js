@@ -2,7 +2,7 @@ const data = [
     {
         "id": 1,
         "title": "See View",
-        "img": "/image/Room/room02.jpg",
+        "img": "/image/Room/room01.jpg",
         "status": "Popular",
         "type": "Guest",
         "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
@@ -12,7 +12,7 @@ const data = [
     {
         "id": 2,
         "title": "Nature view",
-        "img": "/image/Room/room02.jpg",
+        "img": "/image/Room/room06.jpg",
         "type": "Guest",
         "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
         "price": "120.0"
@@ -20,7 +20,7 @@ const data = [
     {
         "id": 3,
         "title": "See View",
-        "img": "/image/Room/room02.jpg",
+        "img": "/image/Room/room07.jpg",
         "type": "Guest",
         "status": "Popular",
         "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
