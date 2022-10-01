@@ -8,7 +8,7 @@ const data = [
         "time": "night",
         "category": "Economic Room",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
-        "price": "160.0",
+        "price": "4200.0",
         "count": "5"
     },
     {
@@ -19,8 +19,8 @@ const data = [
         "type": "Guest",
         "category": "Standard Room",
         "time": "night",
-        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
-        "price": "160.0",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "1600.0",
         "count": "3"
     },
     {
@@ -30,8 +30,8 @@ const data = [
         "type": "Guest",
         "time": "night",
         "category": "Economic Room",
-        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
-        "price": "120.0",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "2200.0",
         "count": "4"
     },
     {
@@ -42,8 +42,8 @@ const data = [
         "time": "night",
         "category": "Standard Room",
         "status": "Popular",
-        "description": "      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
-        "price": "150.0",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
+        "price": "3500.0",
         "count": "2"
     }
 ]
