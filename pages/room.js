@@ -1,7 +1,7 @@
 import RoomCard from '../components/room/RoomCard';
 const room = ({ roomData }) => {
     return (
-        <div className='p-container'>
+        <div style={{ background: '#ECFAFB' }} className='p-container'>
             <RoomCard roomData={roomData} />
         </div>
     )
