@@ -1,12 +1,20 @@
 .room_card{
-    background: #F2FFFF;   
     box-shadow: none; 
+    position: relative;
+    background: #ECFAFB;
+}
+.img_container{
+  width:300px;
+  background: transparent;
+  position: relative;
+  width:100%;
 }
 .img_box{
     width:300px;
     overflow:hidden;
     border-radius: 8px;
     border: 8px solid #ffffff;
+
 }
 .img_box:hover{
     border-radius: 8px;
@@ -35,3 +43,17 @@
   border-radius: 4px;
 cursor: pointer;
 } 
+ 
+.status{
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding:5px;
+  border-radius: 4px;
+  top: 20px;
+  right: 20px;
+  background:rgba(51, 51, 51, .2)
+  ;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
