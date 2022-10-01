@@ -1,13 +1,14 @@
 import { Card } from 'primereact/card';
 import roomCardStyles from '../../styles/room.module.css'
+
 const RoomCard = ({ roomData }) => {
     return (
         <div>
             <div className={`${roomCardStyles.grid_container} grid`} >
                 {roomData.map((card) => (
                     <div className={`${roomCardStyles.grid_column} col lg:col-4 md:col-6 `}>
-                        <div className={`flex flex align-items-center justify-content-center flex-wrap overflow-hidden ${roomCardStyles.grid_column_flex}`}>
-                            <Card className={` ${roomCardStyles.room_card}`} key={card.id} >
+                        <div className={`flex flex align-items-center justify-content-center flex-wrap overflow-hidden ${roomCardStyles.grid_column_flex}`} >
+                            < Card className={` ${roomCardStyles.room_card}`} key={card.id} >
                                 <div className="flex flex align-items-center justify-content-center flex-wrap overflow-hidden">
                                     <div className={roomCardStyles.grid_column_bg}>
                                         <div className={roomCardStyles.img_container}>
@@ -49,7 +50,7 @@ const RoomCard = ({ roomData }) => {
                                         </div>
                                     </div>
                                 </div>
-                            </Card>
+                            </ Card>
                         </div>
                     </div>
                 ))}
