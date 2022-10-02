@@ -1,7 +1,8 @@
 import { Card } from 'primereact/card';
 import { motion } from "framer-motion"
 import roomCardStyles from '../../styles/room.module.css'
-const RoomCard = ({ roomData }) => {
+import Link from 'next/link'
+const RoomCard = ({ roomData, roomId }) => {
     return (
         <div>
             <div className={`${roomCardStyles.grid_container} grid`} >
@@ -46,12 +47,14 @@ const RoomCard = ({ roomData }) => {
                                                     <span>/night</span>
                                                 </div>
                                                 <div className={roomCardStyles.bookingBtn}>
-                                                    <button>
-                                                        <span class="material-icons-sharp">
-                                                            bookmark_border
-                                                        </span>
-                                                        <h4>Book Now</h4>
-                                                    </button>
+                                                    <Link href={`room/${roomId}`}>
+                                                        <button>
+                                                            <span class="material-icons-sharp">
+                                                                bookmark_border
+                                                            </span>
+                                                            <h4>Book Now</h4>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
