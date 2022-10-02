@@ -1,4 +1,4 @@
-import RoomCard from '../components/room/RoomCard';
+import RoomCard from '../../components/room/RoomCard';
 const room = ({ roomData }) => {
     return (
         <div style={{ background: '#ECFAFB' }} className='p-container'>
