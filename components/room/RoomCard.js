@@ -2,11 +2,11 @@ import { Card } from 'primereact/card';
 import { motion } from "framer-motion"
 import roomCardStyles from '../../styles/room.module.css'
 import Link from 'next/link'
-const RoomCard = ({ roomData, roomId }) => {
+const RoomCard = ({ data }) => {
     return (
         <div>
             <div className={`${roomCardStyles.grid_container} grid`} >
-                {roomData.map((card) => (
+                {data.map((card) => (
                     <div className={`${roomCardStyles.grid_column} col lg:col-4 md:col-6 `}>
                         <motion.div className={`flex flex align-items-center justify-content-center flex-wrap overflow-hidden ${roomCardStyles.grid_column_flex}`}
                             initial={{ y: 100 }}
@@ -47,7 +47,7 @@ const RoomCard = ({ roomData, roomId }) => {
                                                     <span>/night</span>
                                                 </div>
                                                 <div className={roomCardStyles.bookingBtn}>
-                                                    <Link href={`room/${roomId}`}>
+                                                    <Link href={`/room/${card.id}`} passHref>
                                                         <button>
                                                             <span class="material-icons-sharp">
                                                                 bookmark_border
