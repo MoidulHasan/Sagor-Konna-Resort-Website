@@ -1,3 +1,5 @@
+import SingleroomDetails from "../../components/room/SingleroomDetails";
+
 export const getStaticPaths = async () => {
     const res = await fetch("http://localhost:3000/api/roomData")
     const data = await res.json();
@@ -25,12 +27,10 @@ export const getStaticProps = async (context) => {
     };
 };
 const myData = ({ singleCard }) => {
-    console.log(singleCard)
+    // console.log(singleCard)
     return (
-        <div>
-            <h3>{singleCard.title}</h3>
-            <p>{singleCard.category}</p>
-            <h3>{singleCard.status}</h3>
+        <div style={{ background: '#ECFAFB' }} className='p-container'>
+            <SingleroomDetails singleCard={singleCard} />
         </div>
     )
 };

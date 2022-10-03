@@ -15,7 +15,6 @@ const RoomCard = ({ data }) => {
                             transition={{ delay: 0, type: "spring", y: { duration: .5 }, easeIn: [0.17, 0.67, 0.83, 0.67], }}
                         >
                             <Card className={` ${roomCardStyles.room_card}`} key={card.id}
-
                             >
                                 <div className="flex flex align-items-center justify-content-center flex-wrap overflow-hidden">
                                     <div className={roomCardStyles.grid_column_bg}>
