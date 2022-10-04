@@ -123,3 +123,7 @@ a {
   background: #ECFAFB;
   width: 180px;
  }
+ .adult_count_dropdown .p-dropdown-trigger-icon, .children_count_dropdown .p-dropdown-trigger-icon{
+  color: #3B61DD;
+  font-size: 12px;
+ }

@@ -115,24 +115,26 @@ const SingleroomDetails = ({ singleCard }) => {
                     </div>
                     <button className={`${singleRoom.reservation_btn} `}>Reservation</button>
                 </div>
-                <div className="calender">
-                    <div className={`${singleRoom.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
-                        <label htmlFor="Check in">Check in</label>
-                        <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon placeholder='Select date' />
+                <div className={singleRoom.booking_info}>
+                    <div className="calender">
+                        <div className={`${singleRoom.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
+                            <label htmlFor="Check in">Check in</label>
+                            <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon placeholder='Select date' />
+                        </div>
+                        <div className={`${singleRoom.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
+                            <label htmlFor="Check out">Check out</label>
+                            <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon placeholder='Select date' />
+                        </div>
                     </div>
-                    <div className={`${singleRoom.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
-                        <label htmlFor="Check out">Check out</label>
-                        <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon placeholder='Select date' />
-                    </div>
-                </div>
-                <div className={`${singleRoom.guest_count} grid`}>
-                    <div className={`${singleRoom.adult_count} adult_count_dropdown lg:col-6`}>
-                        <h5>Person</h5>
-                        <Dropdown value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
-                    </div>
-                    <div className={`${singleRoom.children_count} children_count_dropdown lg:col-6`}>
-                        <h5>Children</h5>
-                        <Dropdown value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
+                    <div className={`${singleRoom.guest_count} grid`}>
+                        <div className={`${singleRoom.adult_count} adult_count_dropdown lg:col-6`}>
+                            <h5>Person</h5>
+                            <Dropdown value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
+                        </div>
+                        <div className={`${singleRoom.children_count} children_count_dropdown lg:col-6`}>
+                            <h5>Children</h5>
+                            <Dropdown value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
+                        </div>
                     </div>
                 </div>
             </div>

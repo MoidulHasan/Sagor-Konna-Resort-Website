@@ -75,6 +75,9 @@ color: #2fd11a;
     display: flex;
     flex-direction: column;
 }
+.check_in input, .check_out input{
+    background: #ECFAFB;
+}
 .check_out{ 
 margin-top: -15px;
 }
@@ -102,9 +105,13 @@ margin-top: -15px;
     border-radius: 5px;
     border: none !important;
  }
-
-.guest_count{     
+.booking_info{
     background: #ffffff;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+.guest_count{     
+    margin-top: -30px;    
     padding-left: 10px;
 }
 .adult_count h5 ,.children_count h5{
@@ -114,5 +121,5 @@ margin-top: -15px;
     opacity: .5;
 }
 .adult_count input{
-    width: 300px;
+    /* width: 300px; */
 }
