@@ -4,6 +4,7 @@ import { addLocale } from 'primereact/api';
 import { Galleria } from 'primereact/galleria';
 import { Dropdown } from 'primereact/dropdown';
 import singleRoom from '../../styles/SingleroomDetails.module.css';
+import utilStyles from '../../styles/utils.module.css'
 const SingleroomDetails = ({ singleCard }) => {
     // GALLERIES 
     const [images, setImages] = useState(singleCard?.roomImages);
@@ -32,7 +33,7 @@ const SingleroomDetails = ({ singleCard }) => {
         return <img className={`${singleRoom.gallary_view_img}`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
     }
     const thumbnailTemplate = (card) => {
-        return <img className={`${singleRoom.gallary_bottom_view_img}`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
+        return <img className={`${singleRoom.gallary_bottom_view_img} gallary_bottom`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
     }
     // CALENDER 
     let today = new Date();
@@ -84,7 +85,7 @@ const SingleroomDetails = ({ singleCard }) => {
     }
     return (
         <div className={`${singleRoom.singleroom_container}  grid  `}>
-            <div className={`${singleRoom.singleroom_galleria_container} col lg:col-8`}>
+            <div className={`${singleRoom.singleroom_galleria_container} galleriThumbnail col lg:col-8`}>
                 <Galleria className={`${singleRoom.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
                     item={itemTemplate} thumbnail={thumbnailTemplate} />
             </div>
@@ -112,14 +113,14 @@ const SingleroomDetails = ({ singleCard }) => {
                         <h1>TK {singleCard.price}</h1>
                         <span>/night</span>
                     </div>
-                    <button className={`${singleRoom.reservation_btn}`}>Reservation</button>
+                    <button className={`${singleRoom.reservation_btn} `}>Reservation</button>
                 </div>
                 <div className="calender">
-                    <div className={`${singleRoom.check_in} field col-12 md:col-4`}>
+                    <div className={`${singleRoom.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
                         <label htmlFor="Check in">Check in</label>
                         <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon />
                     </div>
-                    <div className={`${singleRoom.check_out} field col-12 md:col-4`} >
+                    <div className={`${singleRoom.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
                         <label htmlFor="Check out">Check out</label>
                         <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon />
                     </div>

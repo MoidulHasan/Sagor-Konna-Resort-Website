@@ -90,3 +90,28 @@ a {
   }
 } */
  
+/* SINGLE ROOM CSS CUSTOMIZATION  */
+.calendarFieldCustomBg .p-button{
+  background: #3B61DD;
+  color: #ffffff;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container{
+  background: #ffffff;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-prev{
+  color: #ffffff;
+  background: #3B61DD;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next {
+  color: #ffffff;
+  background: #3B61DD;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-prev:hover{
+  color: #3B61DD;
+  background: #ffffff;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next:hover {
+  color: #3B61DD;
+  background: #ffffff;
+}
+ 
