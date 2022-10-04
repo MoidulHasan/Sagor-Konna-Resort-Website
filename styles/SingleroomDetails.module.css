@@ -2,11 +2,10 @@
     padding-top: 30px;
 }
 .singleroom_galleria_container{
-    background: #ffffff;
+    background: #ffffff !important; 
+    border-radius: 20px;  
 }
-.singleroom_galleria{
-    background: #ffffff !important;    
-}
+ 
  .room_idea{
     background: #ffffff;
     display: flex;
@@ -97,7 +96,7 @@ margin-top: -15px;
     /* border-radius: 5px ; */
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
  }
  .gallary_bottom_view_img{
     height: 100px;
@@ -120,6 +119,4 @@ margin-top: -15px;
     letter-spacing: .5px;
     opacity: .5;
 }
-.adult_count input{
-    /* width: 300px; */
-}
+ 
