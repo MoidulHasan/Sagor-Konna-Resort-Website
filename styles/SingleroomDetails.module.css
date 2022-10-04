@@ -1,0 +1,68 @@
+.singleroom_container{
+    width: 100%;
+}
+.singleroom_galleria_container{
+    background: #ffffff;
+}
+.singleroom_galleria{
+    background: #92af29 !important;
+    width: 100% !important;
+}
+.bed{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    /* padding: 30px ; */
+    padding-left: 10px;
+    border-radius: 30px;
+}
+.bed_icon{
+    margin-left: 5px;
+    background: #ECFAFB;
+    padding: 6px;
+    border-radius: 50%;
+ }
+.bed p{
+   margin-left: 5px;
+}
+.booking{
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #ffffff;
+border-radius: 20px;
+margin: 20px 0px;
+padding: 10px 0px;
+}
+.booking_price{
+    display: flex;
+    align-items: center;
+}
+.booking_price h1{
+font-size: 25px;
+color: #2fd11a;
+}
+.booking_price span{
+   font-size: 20px;
+    margin-left: 5px;
+}
+.reservation_btn{
+    background: #3B61DD;
+    border: none;
+    padding: 15px;
+    width: 150px;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.check_in, .check_out{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+ .gallary_view_img{
+    height: 400px;
+ }
+ .gallary_bottom_view_img :focus{
+    border: 4px solid #EBA744;
+ }
