@@ -95,6 +95,11 @@ a {
   background: #3B61DD;
   color: #ffffff;
 }
+.calendarFieldCustomBg ::placeholder{
+  font-size: 15px;
+  font-weight: 500;
+  opacity: .8;
+}
 .galleriThumbnail .p-galleria .p-galleria-thumbnail-container{
   background: #ffffff;
 }
@@ -114,4 +119,7 @@ a {
   color: #3B61DD;
   background: #ffffff;
 }
- 
+ .adult_count_dropdown .p-dropdown, .children_count_dropdown .p-dropdown{
+  background: #ECFAFB;
+  width: 180px;
+ }

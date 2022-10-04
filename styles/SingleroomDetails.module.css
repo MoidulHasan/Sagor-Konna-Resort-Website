@@ -78,7 +78,8 @@ color: #2fd11a;
 .check_out{ 
 margin-top: -15px;
 }
-
+ 
+    
 /* .check_out .p-button .p-datepicker-trigger{
     background: red !important;
 } */
@@ -102,3 +103,16 @@ margin-top: -15px;
     border: none !important;
  }
 
+.guest_count{     
+    background: #ffffff;
+    padding-left: 10px;
+}
+.adult_count h5 ,.children_count h5{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    opacity: .5;
+}
+.adult_count input{
+    width: 300px;
+}
