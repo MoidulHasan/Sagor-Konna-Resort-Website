@@ -1,0 +1,154 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import MenuList from './MenuList';
+// import '../../styles/Navbar.css';
+import skrLogo from '../../public/images/SagorKonnaLogoBG.png';
+
+const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = (a) => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  const menuList = [
+    {
+      title: 'Rooms',
+      path: '/',
+      cName: 'nav-links',
+      subMenu: [
+        {
+          title: 'Sea View Rooms',
+          path: '/seaViewRooms',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'Garden View Rooms',
+          path: '/Garden View Rooms',
+          cName: 'dropdown-link',
+        },
+      ],
+    },
+    {
+      title: 'Restaurant',
+      path: '/',
+      cName: 'nav-links',
+      subMenu: [
+        {
+          title: 'Dine In',
+          path: '/dineIn',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'Room Service',
+          path: '/roomService',
+          cName: 'dropdown-link',
+        },
+      ],
+    },
+    {
+      title: 'Gallery',
+      path: '/gallery',
+      cName: 'nav-links',
+      subMenu: [
+        {
+          title: 'Photo Gallery',
+          path: '/gallery/photoGallery',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'Video Gallery',
+          path: '/gallery/videoGallery',
+          cName: 'dropdown-link',
+        },
+      ],
+    },
+  ];
+  return (
+    <>
+      <nav className='navbar'>
+        <Link href='/' className='navbar-logo' onClick={closeMobileMenu}>
+          {/* NRB GLobal
+          <i class='fab fa-firstdraft' /> */}
+          <Image
+            src={skrLogo}
+            alt='logo of NRB'
+            height='65px'
+            width='75px'
+            className='logoNRB'
+          />
+        </Link>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link href='/' onClick={closeMobileMenu}>
+              <a className='nav-links'> Home</a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link href='/about' onClick={closeMobileMenu}>
+              <a className='nav-links'> About</a>
+            </Link>
+          </li>
+          {menuList.map((menu) => (
+            <MenuList
+              key={menu.title}
+              menu={menu}
+              closeMobileMenu={closeMobileMenu}
+            />
+          ))}
+          <li className='nav-item'>
+            <Link
+              href='/Offers'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <a className='nav-links'> Offers</a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link href='/Membership' onClick={closeMobileMenu}>
+              <a className='nav-links'> Member</a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link href='/blogs' onClick={closeMobileMenu}>
+              <a className='nav-links'> Blogs</a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              href='/contact'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <a className='nav-links'> Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
