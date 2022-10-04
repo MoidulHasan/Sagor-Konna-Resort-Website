@@ -93,6 +93,14 @@ const SingleroomDetails = ({ singleCard }) => {
     }
     return (
         <div className="p-container">
+            <div className={`bed`}>
+                <span class="material-icons-sharp">
+                    bed
+                </span>
+                <p>{card.count}
+                    <span> Guests</span>
+                </p>
+            </div>
             <div>
                 <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={5} circular style={{ maxWidth: '640px' }}
                     item={itemTemplate} thumbnail={thumbnailTemplate} />
