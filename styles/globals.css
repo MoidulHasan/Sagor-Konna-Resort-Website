@@ -1,3 +1,29 @@
+:root{
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+
+  --primaryBg: #ECFAFB;
+}
+
 html,
 body {
   padding: 0;
@@ -6,10 +32,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -32,7 +58,7 @@ a {
   margin-left: auto;
 }
 .mainApp {
-  min-height: 50vh;
+  min-height: 60vh;
   margin-top: 80px;
 }
 
@@ -89,4 +115,304 @@ a {
     background: black;
   }
 } */
- 
+
+
+
+/*
+* ! NAVBAR
+*/
+
+.navbar {
+  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+  /* background: #cde3f5; */
+  background: #FFFFFF;
+  /* color: #cde3f5; */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  -moz-box-shadow: 0 1px 2px rgba(90, 90, 90, 0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(90, 90, 90, 0.4);
+  box-shadow: 0 1px 3px rgba(90, 90, 90, 0.4);
+
+  /* for the top fixed code  */
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+}
+
+.navbar-logo {
+  /* color: #5F6C7A; */
+  color: #1D354F;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-gap: 5px;
+  list-style: none;
+  text-align: center;
+  width: 75vw;
+  justify-content: end;
+  margin-right: .2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px; 
+  /* height should be changed in mobile to be responsive */
+}
+
+.nav-links, .nav-links a {
+  /* color: #5F6C7A;  */
+  color: #242222;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: .9rem;
+  min-width: max-content;
+}
+
+.nav-links:hover {
+  color: #000000;
+  background-color: #B6DAFF;
+  padding: 1.9rem 1rem;
+  border-radius: 0px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #242222;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* @media screen and (min-width: 961px) {
+  .navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+} */
+
+@media screen and (max-width: 960px) {
+
+  /* this is for the navbar visible button in mobile */
+  .navbar{
+    overflow: visible;
+  }
+
+  .NavbarItems {
+    position: relative;
+  }
+  .logoNRB{
+    position: relative;
+    top: -20px;
+    left: -60px;
+  }
+
+  .navbar > ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0;
+  }
+
+  /* min-height was 90vh  */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 93vh;
+    
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+/* for mobile responsive navbar  */
+  /* .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height should be changed in mobile to be responsive
+  } */
+
+/* code ends here for mobile responsive  */
+
+  .nav-links {
+    color: #d2d7dd; 
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #B6DAFF;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #242222;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media screen  and (max-width: 400px){
+  .logoNRB{
+    width: 130px;
+    height: 50px;
+    left: -35px
+  }
+  
+}
+
+
+/*
+* ! DROPDOWN
+*/
+
+/* for dropdown  */
+.dropdown-menu {
+  background: rgb(130, 192, 216);
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+  padding-inline-start: 15px !important;
+  font-size: 1rem !important;
+  border-top: 3px solid orange;
+  z-index: 99;
+}
+
+.dropdown-menu li {
+  background: rgb(99, 183, 216);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #5cabff;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    margin-left: .5rem;
+  }
+
+  /* for the responsiveness in footer  code starts*/
+  .dropdown-menu {
+    background: rgb(130, 192, 216);
+    width: 100%;
+    position: relative;
+    top: 0;
+    list-style: none;
+    text-align: start;
+    padding-inline-start: 15px !important;
+    font-size: 1rem !important;
+    border-top: 3px solid orange;
+    z-index: 99;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  flex-direction: column;
+}
+
+.nav-menu{
+  justify-content: space-evenly;
+}
+/* for the responsiveness in footer  code ends*/
+}
+
