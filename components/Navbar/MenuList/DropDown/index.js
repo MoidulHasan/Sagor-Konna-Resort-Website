@@ -22,8 +22,11 @@ const DropDown = ({ field, closeMobileMenu }) => {
         {field.map((item, index) => {
           return (
             <li key={index}>
-              <Link href={item.path} onClick={onClickFuncs}>
-                <a className={item.cName}> {item.title}</a>
+              <Link href={item.path}>
+                <a className={item.cName} onClick={onClickFuncs}>
+                  {' '}
+                  {item.title}
+                </a>
               </Link>
             </li>
           );

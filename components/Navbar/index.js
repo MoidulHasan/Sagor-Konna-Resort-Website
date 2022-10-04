@@ -32,7 +32,7 @@ const Navbar = () => {
   const menuList = [
     {
       title: 'Rooms',
-      path: '/',
+      path: '/room',
       cName: 'nav-links',
       subMenu: [
         {
@@ -42,7 +42,7 @@ const Navbar = () => {
         },
         {
           title: 'Garden View Rooms',
-          path: '/Garden View Rooms',
+          path: '/gardenViewRooms',
           cName: 'dropdown-link',
         },
       ],
@@ -101,13 +101,19 @@ const Navbar = () => {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link href='/' onClick={closeMobileMenu}>
-              <a className='nav-links'> Home</a>
+            <Link href='/'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Home
+              </a>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/about' onClick={closeMobileMenu}>
-              <a className='nav-links'> About</a>
+            <Link href='/about'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                About
+              </a>
             </Link>
           </li>
           {menuList.map((menu) => (
@@ -118,31 +124,35 @@ const Navbar = () => {
             />
           ))}
           <li className='nav-item'>
-            <Link
-              href='/Offers'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              <a className='nav-links'> Offers</a>
+            <Link href='/Offers' className='nav-links'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Offers
+              </a>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/Membership' onClick={closeMobileMenu}>
-              <a className='nav-links'> Member</a>
+            <Link href='/Membership'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Member
+              </a>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/blogs' onClick={closeMobileMenu}>
-              <a className='nav-links'> Blogs</a>
+            <Link href='/blogs'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Blogs
+              </a>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link
-              href='/contact'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              <a className='nav-links'> Contact</a>
+            <Link href='/contact' className='nav-links'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Contact
+              </a>
             </Link>
           </li>
         </ul>

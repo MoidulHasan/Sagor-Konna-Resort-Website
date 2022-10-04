@@ -37,18 +37,26 @@ const MenuList = ({ menu, closeMobileMenu }) => {
       onMouseLeave={onMouseLeave}
       onClick={menuClickMobile}
     >
-      {/* {menu?.path === '/gallery' ? (
+      {menu?.path === '/gallery' ? (
         <Link href={menu.path} className='nav-links'>
-          {menu.title} <i className='fas fa-caret-down' />
+          <span className='nav-links'>
+            {menu.title} <i className='fas fa-caret-down' />
+          </span>
+        </Link>
+      ) : menu?.path === '/room' ? (
+        <Link href={menu.path} className='nav-links'>
+          <span className='nav-links'>
+            {menu.title} <i className='fas fa-caret-down' />
+          </span>
         </Link>
       ) : (
         <span className='nav-links'>
           {menu.title} <i className='fas fa-caret-down' />
         </span>
-      )} */}
-      <span className='nav-links'>
+      )}
+      {/* <span className='nav-links'>
         {menu.title} <i className='fas fa-caret-down' />
-      </span>
+      </span> */}
       {dropdown && (
         <DropDown field={menu.subMenu} closeMobileMenu={closeMobileMenu} />
       )}
