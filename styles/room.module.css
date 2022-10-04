@@ -78,12 +78,16 @@ cursor: pointer;
   background: #ECFAFB;
   border-radius: 20px;
   padding: 0px 5px;
-  width: 200px;
-  height: 50px;
+  width: 225px;
+  padding-left: 12px;
+  height: 40px;
 }
 .bed, .measure{
   display: flex;
   align-items: center;  
+}
+.measure{
+  margin-left: 10px;
 }
 .bed span , .measure span{
   background: #ffffff;  
@@ -130,7 +134,7 @@ justify-content: space-between;
   color: #ffffff;
   padding: 0px 20px;
   cursor: pointer;
-  height: 40px;
+  height: 45px;
   border-radius: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }

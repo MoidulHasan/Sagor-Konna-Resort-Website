@@ -10,6 +10,7 @@ const data = [
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
         "price": "4200.0",
         "count": "5",
+        "feet": "70",
         "roomImages": [
             "/image/Room/demo_room_04.jpg",
             "/image/Room/room_one_01.jpg"
@@ -33,6 +34,7 @@ const data = [
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
         "price": "1600.0",
         "count": "3",
+        "feet": "55",
         "roomImages": [
             "/image/Room/demo_room_03.jpg",
             "/image/Room/room_one_01.jpg"
@@ -55,6 +57,7 @@ const data = [
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
         "price": "2200.0",
         "count": "4",
+        "feet": "56",
         "roomImages": [
             "/image/Room/demo_room_02.jpg",
             "/image/Room/room_one_01.jpg"
@@ -78,6 +81,7 @@ const data = [
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui esse pariatur fugit animi dolorum...",
         "price": "3500.0",
         "count": "2",
+        "feet": "66",
         "roomImages": [
             "/image/Room/demo_room_01.jpg",
             "/image/Room/room_one_01.jpg"

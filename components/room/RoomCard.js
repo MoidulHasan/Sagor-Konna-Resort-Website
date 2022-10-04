@@ -42,7 +42,7 @@ const RoomCard = ({ data }) => {
                                                         crop_square
                                                     </span>
                                                     <p>{card.feet}
-                                                        <span> Ft²</span>
+                                                        <span>{data.feet} Ft²</span>
                                                     </p>
                                                 </div>
                                             </div>

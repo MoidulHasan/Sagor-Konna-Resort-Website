@@ -89,13 +89,23 @@ const SingleroomDetails = ({ singleCard }) => {
                     item={itemTemplate} thumbnail={thumbnailTemplate} />
             </div>
             <div className={`${singleRoom.booking_details} col lg:col-4`}>
-                <div className={`${singleRoom.bed}`}>
-                    <span className={`${singleRoom.bed_icon} material-icons-sharp`}>
-                        bed
-                    </span>
-                    <p>{singleCard.count}
-                        <span> Guests</span>
-                    </p>
+                <div className={singleRoom.room_idea}>
+                    <div className={`${singleRoom.bed}`}>
+                        <span className={`${singleRoom.bed_icon} material-icons-sharp`}>
+                            bed
+                        </span>
+                        <p>{singleCard.count}
+                            <span> Guests</span>
+                        </p>
+                    </div>
+                    <div className={`${singleRoom.measure}`}>
+                        <span className={`${singleRoom.measure_icon} material-icons-sharp`}>
+                            crop_square
+                        </span>
+                        <p>{singleCard.feet}
+                            <span> Ft²</span>
+                        </p>
+                    </div>
                 </div>
                 <div className={`${singleRoom.booking}`}>
                     <div className={`${singleRoom.booking_price}`}>
