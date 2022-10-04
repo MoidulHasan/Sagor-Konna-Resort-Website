@@ -28,13 +28,23 @@ const RoomCard = ({ data }) => {
                                             }
                                         </div>
                                         <div className={roomCardStyles.room_text}>
-                                            <div className={roomCardStyles.bed}>
-                                                <span class="material-icons-sharp">
-                                                    bed
-                                                </span>
-                                                <p>{card.count}
-                                                    <span> Guests</span>
-                                                </p>
+                                            <div className={roomCardStyles.room_idea}>
+                                                <div className={roomCardStyles.bed}>
+                                                    <span class="material-icons-sharp">
+                                                        bed
+                                                    </span>
+                                                    <p>{card.count}
+                                                        <span> Guests</span>
+                                                    </p>
+                                                </div>
+                                                <div className={`${roomCardStyles.measure} `}>
+                                                    <span class="material-icons-sharp">
+                                                        crop_square
+                                                    </span>
+                                                    <p>{card.feet}
+                                                        <span> Ft²</span>
+                                                    </p>
+                                                </div>
                                             </div>
                                             <div className={roomCardStyles.room_category}>
                                                 <h3>{card.category}</h3>

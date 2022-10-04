@@ -83,7 +83,7 @@ const SingleroomDetails = ({ singleCard }) => {
         setChildren(e.value);
     }
     return (
-        <div className={`${singleRoom.singleroom_container}  grid pt-6`}>
+        <div className={`${singleRoom.singleroom_container}  grid  `}>
             <div className={`${singleRoom.singleroom_galleria_container} col lg:col-8`}>
                 <Galleria className={`${singleRoom.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
                     item={itemTemplate} thumbnail={thumbnailTemplate} />
