@@ -69,8 +69,8 @@ const Reviews = () => {
                 </div>
             </div>
             <div className={reviewStyles.review_message}>
+                <h2>Leave a message</h2>
                 <form >
-
                     <div>
                         <div className={`${reviewStyles.review_input}`}>
                             <InputText type="text" className={`${reviewStyles.review_input_name}block lg:col-6`} placeholder="Name" />
@@ -78,6 +78,9 @@ const Reviews = () => {
                         </div>
                         {/* <InputTextarea value={value1} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} /> */}
                         <InputTextarea className={`${reviewStyles.review_textarea}`} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} placeholder="Text" />
+                        <div className={`${reviewStyles.review_submit_btn}`}>
+                            <button type='submit'>Send</button>
+                        </div>
                     </div>
                 </form>
             </div>
