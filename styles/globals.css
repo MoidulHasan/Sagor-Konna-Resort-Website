@@ -444,3 +444,43 @@ ul li {
   font-size: 15px;
 
 }
+/* SINGLE ROOM CSS CUSTOMIZATION  */
+.calendarFieldCustomBg .p-button{
+  background: #3B61DD;
+  color: #ffffff;
+}
+.calendarFieldCustomBg ::placeholder{
+  font-size: 15px;
+  font-weight: 500;
+  opacity: .8;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container{
+  background: #ffffff;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-prev{
+  color: #ffffff;
+  background: #3B61DD;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next {
+  color: #ffffff;
+  background: #3B61DD;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-prev:hover{
+  color: #3B61DD;
+  background: #ffffff;
+}
+.galleriThumbnail .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next:hover {
+  color: #3B61DD;
+  background: #ffffff;
+}
+ .adult_count_dropdown .p-dropdown, .children_count_dropdown .p-dropdown{
+  background: #ECFAFB;
+  width: 180px;
+ }
+ .adult_count_dropdown .p-dropdown-trigger-icon, .children_count_dropdown .p-dropdown-trigger-icon{
+  color: #3B61DD;
+  font-size: 12px;
+ }
+
+ /* REVIWES PAGE CONTACT STYLES */
+ 
