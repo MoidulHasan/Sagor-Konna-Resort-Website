@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import utilStyles from '../styles/utils.module.css';
+import footerStyles from '../styles/footer.module.css';
 import skrLogo from '../public/images/SagorKonnaLogoBG.png';
 import Link from 'next/link';
 
@@ -13,27 +13,27 @@ import footerImg6 from '../public/images/footerGallery/6.jpg';
 
 const Footer = () => {
   return (
-    <footer className={utilStyles.footer}>
-      <div className={utilStyles.skrFooter}>
-        <div className={`${utilStyles.skrFooterPadding} p-container`}>
+    <footer className={footerStyles.footer}>
+      <div className={footerStyles.skrFooter}>
+        <div className={`${footerStyles.skrFooterPadding} p-container`}>
           <div className='grid'>
             <div className='md:col-6 lg:col-4 col-12'>
-              <div className={utilStyles.skrFooterLogo}>
-                <div className={`${utilStyles.footerLogo}`}>
+              <div className={footerStyles.skrFooterLogo}>
+                <div className={`${footerStyles.footerLogo}`}>
                   <Image src={skrLogo} alt='Sagor Konna Resort' />
                 </div>
               </div>
-              <div className={utilStyles.skrFooterAbout}>
+              <div className={footerStyles.skrFooterAbout}>
                 Sagor Konna Resort offers a blend of eastern and western
                 hospitality in an atmosphere of timeless elegance, beyond
                 comfortable, stylish rooms and unmatched natural view.
               </div>
-              <div className={utilStyles.skrFooterSocialLinks}>
+              <div className={footerStyles.skrFooterSocialLinks}>
                 <a
                   href='https://www.facebook.com/sagorkonnaresortltd'
                   target='_blank'
                   rel='noreferrer'
-                  className={`${utilStyles.fbLink} linkKajkam`}
+                  className={`${footerStyles.fbLink} linkKajkam`}
                 >
                   <i className='pi pi-facebook text-xl'></i>
                 </a>
@@ -41,7 +41,7 @@ const Footer = () => {
                   href='https://www.facebook.com/sagorkonnaresortltd'
                   target='_blank'
                   rel='noreferrer'
-                  className={`${utilStyles.twitter}`}
+                  className={`${footerStyles.twitter}`}
                 >
                   <i className='pi pi-twitter text-xl'></i>
                 </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                   href='https://www.facebook.com/sagorkonnaresortltd'
                   target='_blank'
                   rel='noreferrer'
-                  className={`${utilStyles.youtube}`}
+                  className={`${footerStyles.youtube}`}
                 >
                   <i className='pi pi-youtube text-xl'></i>
                 </a>
@@ -57,7 +57,7 @@ const Footer = () => {
                   href='https://www.facebook.com/sagorkonnaresortltd'
                   target='_blank'
                   rel='noreferrer'
-                  className={`${utilStyles.instagram}`}
+                  className={`${footerStyles.instagram}`}
                 >
                   <i className='pi pi-instagram text-xl'></i>
                 </a>
@@ -65,46 +65,46 @@ const Footer = () => {
                   href='https://www.facebook.com/sagorkonnaresortltd'
                   target='_blank'
                   rel='noreferrer'
-                  className={`${utilStyles.linkedin}`}
+                  className={`${footerStyles.linkedin}`}
                 >
                   <i className='pi pi-linkedin text-xl'></i>
                 </a>
               </div>
             </div>
             <div className='col-12 md:col-6 lg:col-2'>
-              <h4 className={utilStyles.menuList}>Menu</h4>
-              <ul className={`${utilStyles.footerMenu}`}>
+              <h4 className={footerStyles.menuList}>Menu</h4>
+              <ul className={`${footerStyles.footerMenu}`}>
                 <li>
                   <Link href='/'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Home
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/about'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       About Us
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/room'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Rooms
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/offers'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Our Services
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/contact'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Contact Info
                     </a>
                   </Link>
@@ -112,39 +112,39 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-12 md:col-6 lg:col-3 my-5 md:my-3 lg:my-0'>
-              <h4 className={utilStyles.menuList}>Sagor Konna Resort</h4>
-              <ul className={`${utilStyles.footerMenu}`}>
+              <h4 className={footerStyles.menuList}>Sagor Konna Resort</h4>
+              <ul className={`${footerStyles.footerMenu}`}>
                 <li>
                   <Link href='/about'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Terms and conditions
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/about'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Privacy policy
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/about'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Help center
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/about'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Work with us
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/contact'>
-                    <a className={`${utilStyles.footerLinkPages} linkKajkam`}>
+                    <a className={`${footerStyles.footerLinkPages} linkKajkam`}>
                       Sitemap
                     </a>
                   </Link>
@@ -152,46 +152,50 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-12 md:col-6 lg:col-3'>
-              <h4 className={utilStyles.menuList}>Gallery</h4>
-              <div className={utilStyles.footerGallery}>
+              <h4 className={footerStyles.menuList}>Gallery</h4>
+              <div className={footerStyles.footerGallery}>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
-                      <Image src={footerImg1} alt='footer gallery' />
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
+                      <Image
+                        src={footerImg1}
+                        alt='footer gallery'
+                        // width='100%'
+                      />
                     </div>
                   </a>
                 </Link>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
                       <Image src={footerImg2} alt='footer gallery' />
                     </div>
                   </a>
                 </Link>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
                       <Image src={footerImg3} alt='footer gallery' />
                     </div>
                   </a>
                 </Link>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
                       <Image src={footerImg4} alt='footer gallery' />
                     </div>
                   </a>
                 </Link>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
                       <Image src={footerImg5} alt='footer gallery' />
                     </div>
                   </a>
                 </Link>
                 <Link href='/gallery'>
-                  <a className={`${utilStyles.galleryLink}`}>
-                    <div className={utilStyles.footerImage}>
+                  <a className={`${footerStyles.galleryLink}`}>
+                    <div className={footerStyles.footerImage}>
                       <Image src={footerImg6} alt='footer gallery' />
                     </div>
                   </a>
