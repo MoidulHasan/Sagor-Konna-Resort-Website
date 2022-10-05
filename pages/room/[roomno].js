@@ -20,7 +20,7 @@ export const getStaticProps = async (context) => {
   const res = await fetch(`http://localhost:3000/api/roomData`);
   const data = await res.json();
   const singleCard = data.find((singleData) => singleData.id.toString() === id);
-  console.log(singleCard);
+  // console.log(singleCard);
   return {
     props: {
       singleCard,

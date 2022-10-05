@@ -2,11 +2,11 @@
     padding-top: 30px;
 }
 .singleroom_galleria_container{
-    background: #ffffff;
+    background: #ffffff !important; 
+    position: relative;
+    border-radius: 20px;  
 }
-.singleroom_galleria{
-    background: #ffffff !important;    
-}
+ 
  .room_idea{
     background: #ffffff;
     display: flex;
@@ -29,6 +29,9 @@
  }
 .bed p, .measure p{
    margin-left: 15px;
+   font-size: 15px;
+   font-weight: 500;
+   color: rgba(51, 51, 51, .5);
 }
 .booking{
 display: flex;
@@ -49,8 +52,10 @@ font-size: 25px;
 color: #2fd11a;
 }
 .booking_price span{
-   font-size: 20px;
+   font-size: 19px;
     margin-left: 5px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, .5);
 }
 .reservation_btn{
     background: #3B61DD;
@@ -60,16 +65,27 @@ color: #2fd11a;
     color: #ffffff;
     font-size: 15px;
     border-radius: 20px;
+    letter-spacing: .5px;
     cursor: pointer;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .9);
 }
 .check_in, .check_out{
     width: 100% !important;
     display: flex;
     flex-direction: column;
 }
+.check_in input, .check_out input{
+    background: #ECFAFB;
+}
 .check_out{ 
 margin-top: -15px;
 }
+ 
+    
+/* .check_out .p-button .p-datepicker-trigger{
+    background: red !important;
+} */
 .check_in label, .check_out label{
     font-size: 15px;
     font-weight: bold;
@@ -81,12 +97,82 @@ margin-top: -15px;
     /* border-radius: 5px ; */
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-
-
+    border-radius: 4px;
  }
  .gallary_bottom_view_img{
     height: 100px;
     padding:0px 2px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: none !important;
  }
+.booking_info{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+.guest_count{     
+    margin-top: -30px;    
+    padding-left: 10px;
+}
+.adult_count h5 ,.children_count h5{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    opacity: .5;
+}
+ .skr_text{
+    margin: 20px 0px;
+ }
+.skr_sort_des h2{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    opacity: .7;
+}
+.skr_sort_des p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    opacity: .6;
+}
+.skr_map_iframe h2{
+    padding: 15px 0px;
+    padding-left: 5px;
+    font-weight: 500;
+    opacity: .8;
+    letter-spacing: .5px;
+}
+.skr_map_iframe iframe{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.skr_amenity_Item{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skr_amenity_air_condition ,.skr_amenity_under_protection, .skr_amenity_wifi, .skr_amenity_tv, .skr_amenity_breakfast{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 0px;    
+    margin: 10px;
+    opacity: .7;    
+}
+.skr_amenity_air_condition h2 ,.skr_amenity_under_protection h2, .skr_amenity_wifi h2, .skr_amenity_tv h2, .skr_amenity_breakfast h2{
+    font-size: 15px;
+}
+.air_condition_icon, .video_icon, .wifi_icon , .tv_icon, .breakfast_icon{
+    font-size: 35px;
+}
+.skr_amenity_txt {
+    padding: 15px 0px;
+    padding-left: 15px;
+    font-weight: 500;
+    opacity: .8;
+    letter-spacing: .5px;
+}
