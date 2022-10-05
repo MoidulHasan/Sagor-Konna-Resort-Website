@@ -24,12 +24,18 @@
   --primaryBg: #ECFAFB;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Jost, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /* font-family: 'Jost', sans-serif; */
+    box-sizing: border-box;
 }
 
 /* a {
@@ -116,7 +122,10 @@ body {
   }
 } */
 
-
+a, a:hover{
+  text-decoration: none;
+  color: #383A4E;
+}
 
 /*
 * ! NAVBAR
@@ -416,3 +425,19 @@ body {
 /* for the responsiveness in footer  code ends*/
 }
 
+/* for the link decoration  */
+.linkKajkam{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* for footer  */
+ul li {
+  list-style-type: none;
+}
+
+.footerLinkPages{
+  font-size: 15px;
+
+}
