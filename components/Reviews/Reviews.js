@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import React from 'react'
 import reviewStyles from '../../styles/reviews.module.css'
+import { InputText } from 'primereact/inputtext';
+import { InputTextarea } from 'primereact/inputtextarea';
 const Reviews = () => {
     let dateObj = new Date();
     let month = dateObj.getUTCMonth() + 1; //months from 1-12
@@ -8,6 +9,8 @@ const Reviews = () => {
     let year = dateObj.getUTCFullYear();
     let newdate = year + "/" + month + "/" + day;
     console.log(newdate);
+    // FORM 
+    // const [value1, setValue1] = useState('');
     return (
         <div className={`${reviewStyles.review_container} lg:col-8`}>
             <h2>Reviews</h2>
@@ -66,8 +69,16 @@ const Reviews = () => {
                 </div>
             </div>
             <div className={reviewStyles.review_message}>
-                <form>
+                <form >
 
+                    <div>
+                        <div className={`${reviewStyles.review_input}`}>
+                            <InputText type="text" className={`${reviewStyles.review_input_name}block lg:col-6`} placeholder="Name" />
+                            <InputText type="email" className="block lg:col-6" placeholder="Email" />
+                        </div>
+                        {/* <InputTextarea value={value1} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} /> */}
+                        <InputTextarea className={`${reviewStyles.review_textarea}`} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} placeholder="Text" />
+                    </div>
                 </form>
             </div>
         </div>
