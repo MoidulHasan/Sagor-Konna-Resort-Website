@@ -3,6 +3,7 @@
 .mainApp {
     min-height: 50vh;
     padding-top: 100px;
+    padding-bottom: 30px;
     background: var(--primaryBg);
   }
 
