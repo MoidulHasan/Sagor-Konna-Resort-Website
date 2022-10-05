@@ -6,7 +6,7 @@ const room = ({ data }) => {
     </div>
   );
 };
-
+export default room;
 export async function getStaticProps() {
   // const roomdata = await import('./api/roomData.json');
   // return { props: { roomdata: roomdata.default } };
@@ -17,4 +17,4 @@ export async function getStaticProps() {
     props: { data: data },
   };
 }
-export default room;
+

@@ -6,6 +6,8 @@ import { Galleria } from 'primereact/galleria';
 import { Dropdown } from 'primereact/dropdown';
 import singleRoom from '../../styles/SingleroomDetails.module.css';
 import utilStyles from '../../styles/utils.module.css'
+import AroundHotel from './AroundHotel';
+import Reviews from '../Reviews/Reviews';
 const SingleroomDetails = ({ singleCard }) => {
   // GALLERIES
   const [images, setImages] = useState(singleCard?.roomImages);
@@ -197,9 +199,8 @@ const SingleroomDetails = ({ singleCard }) => {
           </div>
         </div>
       </div>
-      <div className={singleRoom.aroundHotel}>
-
-      </div>
+      <AroundHotel />
+      <Reviews />
     </div >
   )
 }

@@ -1,0 +1,69 @@
+.title h2{
+    padding: 15px 0px;
+    padding-left: 15px;
+    font-weight: 500;
+    opacity: .8;
+    letter-spacing: .5px;
+}
+.aroundhotel_card{
+    width: 270px;
+    margin: 10px 5px;
+    background: #ffffff;
+    /* height: 300px; */
+    padding: 10px;
+    border-radius: 10px;
+
+} 
+.aroundhotel_bg_img_container{
+    /* width:300px; */
+    background: transparent;
+    position: relative;
+  }
+  .aroundhotel_bg_img_box{
+      /* width:350px; */
+      /* width: 100%; */
+      overflow:hidden;
+      border-radius: 4px;
+  } 
+  .aroundhotel_background {
+    /* width:100%; */
+  height:300px;    
+  /* border-radius: 4px; */  
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 4px; */
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+} 
+.aroundhotel_background:hover {  
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */ 
+    transform: scale(1.2);
+    border-radius: 4px;
+  cursor: pointer; 
+  }  
+  .status{
+    position: absolute;
+    font-size: 16px;
+    /* background: rgba(36, 199, 21,1); */
+    letter-spacing: .5px;
+    padding:10px 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    bottom: 20px;
+    width: 92%;
+    /* right: 20px; */
+    margin: 10px;
+    /* background:rgba(59, 97, 221, .5); */
+    background:rgba(255, 255, 255, .8);
+    font-weight: 600; 
+    /* border: 1px solid #ffffff; */
+    border: 10px solid rgba(255, 255, 255, .3);
+  }
