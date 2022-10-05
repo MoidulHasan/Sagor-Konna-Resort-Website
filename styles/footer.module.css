@@ -137,6 +137,31 @@
   /* min-height: 160px; */
 }
 
+
+.skrCopyRight{
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 20px 0;
+    color: #8588A2;
+}
+
+.developedByText{
+    color:#8588A2;
+}
+
+.skrCopyRightContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
 @media  (max-width: 992px) {
   .footer{
     text-align:center;
@@ -145,5 +170,16 @@
     width: 100%;
     /* text-justify: inter-word; */
   }
+
+  .skrCopyRightContainer{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+ }
+
   
 }

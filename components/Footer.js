@@ -11,6 +11,11 @@ import footerImg4 from '../public/images/footerGallery/4.jpg';
 import footerImg5 from '../public/images/footerGallery/5.jpg';
 import footerImg6 from '../public/images/footerGallery/6.jpg';
 
+import kajkamLogo from '../public/images/kajkamlogo.png';
+import kajkamLogoNew from '../public/images/kajkamlogoNew.png';
+import kajkamLogoNew1 from '../public/images/kajkamLogoNew1.png';
+import kajkamSVG from '../public/images/kajkamlogoLighter.svg';
+
 const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
@@ -201,6 +206,33 @@ const Footer = () => {
                   </a>
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className={`${footerStyles.skrCopyRight}`}>
+          <div className={`${footerStyles.skrCopyRightContainer} p-container`}>
+            <div className='copyText mb-4 md:mb-0'>
+              © 2022 Sagor Konna Resort. All Rights Reserved.
+            </div>
+            <div className='copyMenu'>
+              <a
+                href='https://kajkaminitiative.com/'
+                target='_blank'
+                rel='noreferrer'
+                className={`${footerStyles.kajkamWebLink} linkKajkam flex flex-column align-items-center justify-content-center`}
+              >
+                <span className={`${footerStyles.developedByText} ml-0 mb-1`}>
+                  Developed By
+                </span>
+                <span>
+                  <Image
+                    src={kajkamSVG}
+                    alt='Kajkam Initiative (www.kajkaminitiative.com)'
+                    width={180}
+                    height={58}
+                  />
+                </span>
+              </a>
             </div>
           </div>
         </div>
