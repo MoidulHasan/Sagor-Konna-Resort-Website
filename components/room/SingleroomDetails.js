@@ -200,7 +200,14 @@ const SingleroomDetails = ({ singleRoom }) => {
       </div>
       <AroundHotel />
       <Reviews />
-      <RoomCard data={singleRoom?.similarRoom} />
+      <div className={`${singleroomStyle.similar_room_container}`} >
+        <div className={`${singleroomStyle.similar_room}`}>
+          <h3>Similar Rooms</h3>
+          <p>Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
+        </div>
+        <button>All rooms</button>
+        <RoomCard data={singleRoom?.similarRoom} />
+      </div>
     </div >
   )
 }
