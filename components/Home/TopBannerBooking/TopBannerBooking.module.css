@@ -1,5 +1,6 @@
 .skrBanner{
     position: relative;
+    margin-top: -20px;
     overflow: hidden;
     border-bottom: solid 10px #FFFFFF;
     z-index: 0;

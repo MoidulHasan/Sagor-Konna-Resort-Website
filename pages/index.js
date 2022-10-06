@@ -15,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
         {/* material icon of google  */}
       </Head>
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <TopBannerBooking />
         <AboutSK />
       </main>
