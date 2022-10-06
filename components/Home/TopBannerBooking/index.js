@@ -1,12 +1,12 @@
 import React from 'react';
 import topBookingStyles from './TopBannerBooking.module.css';
 
-import topBannerImg from '../../public/images/topBanner.jpg';
-import search from '../../public/images/TopBanner/search.svg';
-import car from '../../public/images/TopBanner/car.svg';
-import dineIn from '../../public/images/TopBanner/dine.svg';
-import ac from '../../public/images/TopBanner/ac.svg';
-import cctv from '../../public/images/TopBanner/cctv.svg';
+import topBannerImg from '../../../public/images/topBanner.jpg';
+import search from '../../../public/images/TopBanner/search.svg';
+import car from '../../../public/images/TopBanner/car.svg';
+import dineIn from '../../../public/images/TopBanner/dine.svg';
+import ac from '../../../public/images/TopBanner/ac.svg';
+import cctv from '../../../public/images/TopBanner/cctv.svg';
 import Image from 'next/image';
 
 const TopBannerBooking = () => {

@@ -275,7 +275,7 @@
     border-radius: 10px;
     background-color: #FFFFFF;
     padding: 10px 10px 0;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 /* .highlightedFeaturedCard::before{
