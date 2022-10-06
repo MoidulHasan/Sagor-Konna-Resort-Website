@@ -205,7 +205,9 @@ const SingleroomDetails = ({ singleRoom }) => {
           <h3>Similar Rooms</h3>
           <p>Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
         </div>
-        <button>All rooms</button>
+        <div className={`${singleroomStyle.similar_room_btn}`}>
+          <button >All rooms</button>
+        </div>
         <RoomCard data={singleRoom?.similarRoom} />
       </div>
     </div >
