@@ -1,0 +1,104 @@
+.contact_container{
+    overflow-x: hidden;
+}
+ .contact_text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .contact_text h1{
+    font-size: 55px;
+ }
+ .contact_text p{
+    font-size: 18px;
+    width: 1000px;
+ }
+ .contact_box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    margin: 30px 50px !important;
+ }
+ .contact_hr{
+    width: 100vw;
+    background:#ffffff;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+ }
+ .contact_flex{
+     background:#ffffff;
+     display: flex;
+     padding: 20px;
+     justify-content: space-between;
+     border-radius: 10px;
+     position: relative;
+     z-index: 2;
+ }
+ .contact_flex div{
+    background: #ECFAFB;
+   text-align: center;
+   border-radius: 10px;
+   width: 390px;
+ } 
+ .contact_flex div span{
+    display: flex;
+    justify-content: center;
+    color: rgba(0,0,0,0.3);
+    font-size: 40px;
+    padding: 10px 0px;
+ }
+ .contact_flex div h3{
+    font-size: 20px;
+ }
+ .contact_map_iframe{
+   background: #ffffff;
+   /* padding: 10px; */
+   border-radius: 20px;
+   padding: 10px;
+ }
+ .contact_lotcation_txt h2{
+ font-size: 25px;
+ padding: 30px 0px;
+}
+ .contact_map_iframe iframe{
+    background: #ffffff;
+    /* padding: 10px; */
+    border-radius: 20px;
+
+ }
+
+ /* MEDIA  */
+ @media only screen and (max-width:1345px){
+   .contact_flex div{
+     width: 370px;
+   } 
+ }
+ @media only screen and (max-width:1288px){
+   .contact_flex div{
+     width: 320px;
+   } 
+ }
+ @media only screen and (max-width:1200px){
+   .contact_flex div{
+     width: 285px;
+   } 
+ }
+ @media only screen and (max-width:1024px){
+    .contact_flex{
+        flex-direction: column;
+    }
+    .contact_flex div{
+        width: 100% !important;        
+    }
+    .contact_flex div:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .contact_flex div:nth-child(2){
+        margin-bottom: 10px;
+    }
+ }
