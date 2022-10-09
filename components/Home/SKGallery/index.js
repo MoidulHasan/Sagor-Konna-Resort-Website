@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import skGalleryStyles from './SKGallery.module.css';
 
 // swiper
@@ -103,13 +103,13 @@ const SKGallery = () => {
           <div className='col-12 lg:col-12'>
             {/* slider  */}
             <Swiper
-              ref={slideRef}
+              ref={sliderRef}
               // install Swiper modules
               breakpoints={sliderSettings}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={20}
               slidesPerView={3}
-              navigation={true}
+              // navigation={true}
               loop={true}
               pagination={{ type: 'fraction' }}
               //   scrollbar={{ draggable: true }}
@@ -193,8 +193,24 @@ const SKGallery = () => {
                   </a>
                 </div>
               </SwiperSlide>
-              <div className='prev-arrow' onClick={handlePrev} />
-              <div className='next-arrow' onClick={handleNext} />
+              <div className='flex justify-content-end'>
+                <div
+                  className={`${skGalleryStyles.navigators}  flex justify-content-center align-items-center mt-4`}
+                >
+                  <div
+                    className={`${skGalleryStyles.prevArrow} mr-3`}
+                    onClick={handlePrev}
+                  >
+                    <span class='material-icons-sharp'>arrow_back</span>
+                  </div>
+                  <div
+                    className={`${skGalleryStyles.nextArrow}`}
+                    onClick={handleNext}
+                  >
+                    <span class='material-icons-sharp'>arrow_forward</span>
+                  </div>
+                </div>
+              </div>
             </Swiper>
           </div>
         </div>

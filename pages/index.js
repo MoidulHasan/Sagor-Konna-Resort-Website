@@ -3,6 +3,7 @@ import AboutSK from '../components/Home/AboutSK';
 import TopBannerBooking from '../components/Home/TopBannerBooking';
 import SKGallery from '../components/Home/SKGallery';
 import styles from '../styles/Home.module.css';
+import HotelSummarySection from '../components/Home/HotelSummarySection';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <TopBannerBooking />
         <AboutSK />
         <SKGallery />
+        <HotelSummarySection />
       </main>
     </div>
   );
