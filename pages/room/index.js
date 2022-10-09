@@ -14,7 +14,6 @@ export async function getStaticProps() {
     accept: 'application/json'
   });
   console.log((res));
-
   const data = await res.json();
   return {
     props: { data: data },

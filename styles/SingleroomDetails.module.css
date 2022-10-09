@@ -1,13 +1,13 @@
-@import url('http://fonts.cdnfonts.com/css/solfia');
+@import url('http://fonts.cdnfonts.com/css/instine-sans');
 .singleroom_container{
     padding-top: 30px;
+    /* font-family: 'Instine Sans', sans-serif; */ 
 }
 .singleroom_galleria_container{
     background: #ffffff !important; 
     position: relative;
     border-radius: 20px;  
 }
- 
  .room_idea{
     background: #ffffff;
     display: flex;
@@ -34,6 +34,7 @@
    font-weight: 500;
    color: rgba(51, 51, 51, .5);
 }
+ 
 .booking{
 display: flex;
 flex-direction: column;
@@ -187,15 +188,24 @@ margin-top: -15px;
 }
 .similar_room p{
     padding: 0px 250px;   
-    font-family: 'Solfia', sans-serif;
-    font-size: 50px;
+    /* font-family: 'Solfia', sans-serif; */
+    font-size: 20px;
+    margin-bottom: 40px;
     font-weight: 400;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
-
+.similar_room_btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 40px 0px;
+}
 .similar_room_btn button{
     background: #3B61DD;
     border: 3px solid #ffffff;
-    padding: 20px 40px;
+    padding: 15px 30px;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
+    border-radius: 20px;
+    color: #ffffff;
 }

@@ -4,11 +4,10 @@ import roomCardStyles from '../../styles/room.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 const RoomCard = ({ data }) => {
-  const [econonmy, setEconomy] = useState(true);
-
+  const [econonmy, setEconomy] = useState(false);
   return (
     <div className={`${roomCardStyles.room_container}`}>
-      <div className={`${roomCardStyles.room_select}`}>
+      {/* <div className={`${roomCardStyles.room_select}`}>
         <button>All Rooms</button>
         <button>Econnomy</button>
         <button>Standart</button>
@@ -19,7 +18,7 @@ const RoomCard = ({ data }) => {
             {c.category}
           </p>
         ))
-      }
+      }  */}
       <div className={`${roomCardStyles.grid_container} grid`}>
         {data && data.map((room) => (
           <div

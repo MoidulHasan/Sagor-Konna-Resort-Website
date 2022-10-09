@@ -1,8 +1,4 @@
-.room_container{
-  /* background:  #000 !important; */
-   }
-   .room_select{
-    background: #000;
+    .room_select{
     padding: 50px ;
     display: flex;
     align-items: center;
@@ -19,6 +15,7 @@
     letter-spacing: 1px;
     cursor: pointer;
    }
+     
    .room_select button:focus{
     background: #3B61DD; 
     color: #ffffff;
