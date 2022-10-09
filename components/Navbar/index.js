@@ -70,7 +70,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <Link href='/' className='navbar-logo' onClick={closeMobileMenu}>
           {/* NRB GLobal
-          <i class='fab fa-firstdraft' /> */}
+          <i className='fab fa-firstdraft' /> */}
           <Image
             src={skrLogo}
             alt='logo of NRB'

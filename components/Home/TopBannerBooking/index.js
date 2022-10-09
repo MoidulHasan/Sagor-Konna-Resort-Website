@@ -24,47 +24,49 @@ const TopBannerBooking = () => {
         <div className={topBookingStyles.skrOverlay}></div>
         <div className={topBookingStyles.bannerContainer}>
           <div className='p-container'>
-            <div class={topBookingStyles.skrMainTitle}>
-              <div class={topBookingStyles.skrWhite}>
-                <ul class={topBookingStyles.skrStars}>
+            <div className={topBookingStyles.skrMainTitle}>
+              <div className={topBookingStyles.skrWhite}>
+                <ul className={topBookingStyles.skrStars}>
                   <li>
-                    <i class='fas fa-star'></i>
+                    <i className='fas fa-star'></i>
                   </li>
                   <li>
-                    <i class='fas fa-star'></i>
+                    <i className='fas fa-star'></i>
                   </li>
                   <li>
-                    <i class='fas fa-star'></i>
+                    <i className='fas fa-star'></i>
                   </li>
                   <li>
-                    <i class='fas fa-star'></i>
+                    <i className='fas fa-star'></i>
                   </li>
                   <li>
-                    <i class='fas fa-star'></i>
+                    <i className='fas fa-star'></i>
                   </li>
                 </ul>
 
-                <h1 class={`${topBookingStyles.skrBannerHeader} text-center`}>
+                <h1
+                  className={`${topBookingStyles.skrBannerHeader} text-center`}
+                >
                   Welcome to Sagor Konna Resort
                 </h1>
                 <div
-                  class={`${topBookingStyles.skrBannerHeaderSupportText} text-center`}
+                  className={`${topBookingStyles.skrBannerHeaderSupportText} text-center`}
                 >
                   LUXURY REDEFINED, UNWIND INDULGE! International standard with
                   local flavours
                 </div>
               </div>
             </div>
-            <div class={topBookingStyles.bookingForm}>
+            <div className={topBookingStyles.bookingForm}>
               <form>
-                <div class='grid align-items-center'>
-                  <div class='col-12 lg:col-3'>
-                    <div class={topBookingStyles.skrInputFrame}>
+                <div className='grid align-items-center'>
+                  <div className='col-12 lg:col-3'>
+                    <div className={topBookingStyles.skrInputFrame}>
                       <label for='check-in'>Check in</label>
                       <input
                         id='check-in'
                         type='text'
-                        class='datepicker-here'
+                        className='datepicker-here'
                         data-position='bottom left'
                         placeholder='Select date'
                         autocomplete='off'
@@ -72,15 +74,15 @@ const TopBannerBooking = () => {
                       />
                     </div>
                   </div>
-                  <div class='col-12 lg:col-3'>
-                    <div class={topBookingStyles.skrInputFrame}>
-                      <label for='check-out' class='knsl-add-icon'>
+                  <div className='col-12 lg:col-3'>
+                    <div className={topBookingStyles.skrInputFrame}>
+                      <label for='check-out' className='knsl-add-icon'>
                         Check out
                       </label>
                       <input
                         id='check-out'
                         type='text'
-                        class='datepicker-here'
+                        className='datepicker-here'
                         data-position='bottom left'
                         placeholder='Select date'
                         autocomplete='off'
@@ -88,8 +90,8 @@ const TopBannerBooking = () => {
                       />
                     </div>
                   </div>
-                  <div class='col-6 lg:col-3'>
-                    {/* <div class={topBookingStyles.skrInputFrame}>
+                  <div className='col-6 lg:col-3'>
+                    {/* <div className={topBookingStyles.skrInputFrame}>
                     <label for='person'>Person</label>
                     <select id='person' style={{ display: 'none' }}>
                       <option value='1'>1</option>
@@ -99,27 +101,27 @@ const TopBannerBooking = () => {
                         4
                       </option>
                     </select>
-                    <div class='nice-select' tabindex='0'>
-                      <span class='current'>1</span>
-                      <ul class='list'>
-                        <li data-value='1' class='option selected'>
+                    <div className='nice-select' tabindex='0'>
+                      <span className='current'>1</span>
+                      <ul className='list'>
+                        <li data-value='1' className='option selected'>
                           1
                         </li>
-                        <li data-value='2' class='option'>
+                        <li data-value='2' className='option'>
                           2
                         </li>
-                        <li data-value='3' class='option'>
+                        <li data-value='3' className='option'>
                           3
                         </li>
-                        <li data-value='4' class='option disabled'>
+                        <li data-value='4' className='option disabled'>
                           4
                         </li>
                       </ul>
                     </div>
                   </div> */}
                   </div>
-                  <div class='col-6 lg:col-2'>
-                    {/* <div class='knsl-select-frame'>
+                  <div className='col-6 lg:col-2'>
+                    {/* <div className='knsl-select-frame'>
                     <label for='children'>Childrens</label>
                     <select id='children' style={{ display: 'none' }}>
                       <option value='1'>1</option>
@@ -129,27 +131,27 @@ const TopBannerBooking = () => {
                         4
                       </option>
                     </select>
-                    <div class='nice-select' tabindex='0'>
-                      <span class='current'>1</span>
-                      <ul class='list'>
-                        <li data-value='1' class='option selected'>
+                    <div className='nice-select' tabindex='0'>
+                      <span className='current'>1</span>
+                      <ul className='list'>
+                        <li data-value='1' className='option selected'>
                           1
                         </li>
-                        <li data-value='2' class='option'>
+                        <li data-value='2' className='option'>
                           2
                         </li>
-                        <li data-value='3' class='option'>
+                        <li data-value='3' className='option'>
                           3
                         </li>
-                        <li data-value='4' class='option disabled'>
+                        <li data-value='4' className='option disabled'>
                           4
                         </li>
                       </ul>
                     </div>
                   </div> */}
                   </div>
-                  <div class='col-12 lg:col-1 text-center'>
-                    {/* <button type='submit' class={topBookingStyles.skrButton}>
+                  <div className='col-12 lg:col-1 text-center'>
+                    {/* <button type='submit' className={topBookingStyles.skrButton}>
                     <Image
                       src={search}
                       alt='search sagor konna resort'
@@ -162,8 +164,10 @@ const TopBannerBooking = () => {
                 </div>
               </form>
             </div>
-            <div class={topBookingStyles.scrollHintFrame}>
-              <div class={topBookingStyles.scrollWhiteText}>Scroll down</div>
+            <div className={topBookingStyles.scrollHintFrame}>
+              <div className={topBookingStyles.scrollWhiteText}>
+                Scroll down
+              </div>
               <a
                 href='#knsl-triger-1'
                 className={`${topBookingStyles.skrSS} ${topBookingStyles.scrollHint}`}

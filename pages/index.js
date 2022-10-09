@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import AboutSK from '../components/Home/AboutSK';
 import TopBannerBooking from '../components/Home/TopBannerBooking';
+import SKGallery from '../components/Home/SKGallery';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <TopBannerBooking />
         <AboutSK />
+        <SKGallery />
       </main>
     </div>
   );

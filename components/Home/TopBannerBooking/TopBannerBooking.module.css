@@ -10,7 +10,7 @@
 .skrCoverFrame{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     overflow: hidden;
     z-index: 0;
     background-color: #ECFAFB;
@@ -61,7 +61,7 @@
 }
 
 .bannerContainer{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 999999;
@@ -325,5 +325,10 @@
 .bookingForm{
     padding: 20px;
     border-radius: 10px;
+}
+.bannerContainer{
+    height: auto;
+    padding-top: 180px;
+    padding-bottom: 150px;
 }
 }
