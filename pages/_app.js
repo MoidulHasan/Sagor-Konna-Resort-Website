@@ -5,6 +5,10 @@ import 'primeicons/primeicons.css'; //icons
 import 'primeflex/primeflex.css';
 import Layout from '../components/layout';
 
+// for fancy ui
+import '@fancyapps/ui/dist/fancybox.css';
+import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

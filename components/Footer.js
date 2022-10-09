@@ -219,9 +219,9 @@ const Footer = () => {
                 href='https://kajkaminitiative.com/'
                 target='_blank'
                 rel='noreferrer'
-                className={`${footerStyles.kajkamWebLink} linkKajkam flex flex-column align-items-center justify-content-center`}
+                className={`${footerStyles.kajkamWebLink} linkKajkam flex flex-column align-items-start justify-content-center`}
               >
-                <span className={`${footerStyles.developedByText} ml-0 mb-1`}>
+                <span className={`${footerStyles.developedByText} ml-4 mb-1`}>
                   Developed By
                 </span>
                 <span>

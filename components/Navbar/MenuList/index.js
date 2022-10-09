@@ -43,12 +43,6 @@ const MenuList = ({ menu, closeMobileMenu }) => {
             {menu.title} <i className='fas fa-caret-down' />
           </span>
         </Link>
-      ) : menu?.path === '/room' ? (
-        <Link href={menu.path} className='nav-links'>
-          <span className='nav-links'>
-            {menu.title} <i className='fas fa-caret-down' />
-          </span>
-        </Link>
       ) : (
         <span className='nav-links'>
           {menu.title} <i className='fas fa-caret-down' />
