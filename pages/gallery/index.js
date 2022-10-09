@@ -1,4 +1,4 @@
-import GalleryImg from "../../components/Gallary/galleryImg"
+import GalleryImg from "../../components/Gallery/galleryImg"
 const Gallery = ({ imgData }) => {
     return (
         <div className="p-container">

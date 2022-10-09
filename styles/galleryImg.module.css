@@ -13,9 +13,17 @@
     cursor: pointer;
     margin-bottom: 12px;
 }
-.gallery .pics img{
-   width: 100%;
+ .pics:hover{
+    filter: opacity(.8);
 }
+.pics img{
+   width: 100%;
+   height: auto !important;
+   display: block !important;
+
+} 
+
+ 
 /* MEDIA  */
 @media (max-width:991px){
     .gallery{
@@ -34,3 +42,5 @@
         -moz-column-width:100%;
     }
 }
+ 
+ 
