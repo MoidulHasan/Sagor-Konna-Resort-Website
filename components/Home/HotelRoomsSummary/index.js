@@ -67,6 +67,9 @@ const HotelRoomsSummary = () => {
               </div>
             </div>
           </div>
+          <div className='col-12 lg:col-12'>
+            <h2>Hello</h2>
+          </div>
         </div>
       </div>
     </div>
