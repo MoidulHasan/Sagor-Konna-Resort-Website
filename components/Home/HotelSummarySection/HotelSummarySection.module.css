@@ -26,7 +26,7 @@
 
 
 /* here is the problem  */
-/* .skrFeaturedCard:after {
+.skrFeaturedCard:after {
     content: '';
     width: 500px;
     height: 10px;
@@ -34,8 +34,8 @@
     position: absolute;
     z-index: 999;
     top: calc(50% - 5px);
-    left: 800px;
-} */
+    right: -500px;
+}
 
 .skrIconBox{
 
@@ -60,4 +60,8 @@
     font-weight: 500;
     position: relative;
     font-family: 'Monoton', cursive;
+}
+
+.skrFeaturedGrid{
+    margin-top: 0 !important;
 }

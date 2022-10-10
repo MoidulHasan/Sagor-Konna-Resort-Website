@@ -43,7 +43,7 @@ body {
     Ubuntu, Jost, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     /* font-family: 'Jost', sans-serif; */
     box-sizing: border-box;
-  
+    overflow-x: hidden;
 }
 
 /* a {

@@ -34,8 +34,8 @@ const HotelSummarySection = () => {
           ref={roomDetailRef}
           className={`${hotelSummaryStyles.skrFeaturedCard} skrAnimationScroll relative`}
         >
-          <div class='grid relative'>
-            <div class='col-6 lg:col-3 relative'>
+          <div class={`${hotelSummaryStyles.skrFeaturedGrid} grid relative`}>
+            <div class='col-6 lg:col-3'>
               <div class={`${hotelSummaryStyles.skrIconBox}`}>
                 <div
                   class={`${hotelSummaryStyles.skrCounterNumber} skrMb10`}
