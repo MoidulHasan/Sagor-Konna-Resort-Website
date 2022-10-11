@@ -49,7 +49,7 @@ const AroundTheHotel = () => {
       .then((data) => setskrService(data));
   }, []);
 
-  console.log(skrServices);
+  // console.log(skrServices);
 
   return (
     <div className={aroundTheHotelStyles.aroundTheHotelSection}>
