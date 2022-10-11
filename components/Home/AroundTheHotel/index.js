@@ -2,8 +2,15 @@ import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 import aroundTheHotelStyles from './AroundTheHotel.module.css';
 
+import sagorKonnaService1 from '../../../public/images/services/service1bar.jpg';
+
+import sagorKonnaService2 from '../../../public/images/services/service2pool.jpg';
+
+import sagorKonnaService3 from '../../../public/images/services/service3restaurant.jpg';
+
 const AroundTheHotel = () => {
   const animationAroundRef = useRef(null);
+  const serviceCardRef = useRef(null);
 
   //   for the view point animation
 
@@ -37,7 +44,7 @@ const AroundTheHotel = () => {
     <div className={aroundTheHotelStyles.aroundTheHotelSection}>
       <div className='p-container'>
         <div className='grid'>
-          <div className='col-12 lg:col-12'>
+          <div className='col-12 lg:col-12 skrMb100'>
             <div
               ref={animationAroundRef}
               className='skrAnimationScroll text-center mb-6'
@@ -58,6 +65,21 @@ const AroundTheHotel = () => {
               </div>
             </div>
           </div>
+          <div className='col-12 lg:col-4'>
+            <div ref={serviceCardRef} className='skrAnimationScroll'>
+              <div className={aroundTheHotelStyles.skrAthCard}>
+                <div className={aroundTheHotelStyles.skrCoverFrame}>
+                  <img
+                    src='/images/services/service1bar.jpg'
+                    alt='sagor konna resort'
+                    className={aroundTheHotelStyles.skrCoverFrameImg}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-12 lg:col-4'></div>
+          <div className='col-12 lg:col-4'></div>
         </div>
       </div>
     </div>
