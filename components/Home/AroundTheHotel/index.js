@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import aroundTheHotelStyles from './AroundTheHotel.module.css';
 
 import sagorKonnaService1 from '../../../public/images/services/service1bar.jpg';
@@ -7,6 +7,7 @@ import sagorKonnaService1 from '../../../public/images/services/service1bar.jpg'
 import sagorKonnaService2 from '../../../public/images/services/service2pool.jpg';
 
 import sagorKonnaService3 from '../../../public/images/services/service3restaurant.jpg';
+import Image from 'next/image';
 
 const AroundTheHotel = () => {
   const animationAroundRef = useRef(null);
@@ -40,6 +41,16 @@ const AroundTheHotel = () => {
     };
   }, [animationAroundRef]);
 
+  const [skrServices, setskrService] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api/serviceData')
+      .then((res) => res.json())
+      .then((data) => setskrService(data));
+  }, []);
+
+  console.log(skrServices);
+
   return (
     <div className={aroundTheHotelStyles.aroundTheHotelSection}>
       <div className='p-container'>
@@ -66,20 +77,80 @@ const AroundTheHotel = () => {
             </div>
           </div>
           <div className='col-12 lg:col-4'>
-            <div ref={serviceCardRef} className='skrAnimationScroll'>
+            <div ref={serviceCardRef} className=''>
               <div className={aroundTheHotelStyles.skrAthCard}>
                 <div className={aroundTheHotelStyles.skrCoverFrame}>
-                  <img
-                    src='/images/services/service1bar.jpg'
+                  <Image
+                    src={sagorKonnaService1}
                     alt='sagor konna resort'
                     className={aroundTheHotelStyles.skrCoverFrameImg}
+                    layout='fill'
                   />
+                </div>
+                <div class={aroundTheHotelStyles.skrCardDescription}>
+                  <h4 class='skrMb10'>Restaurant Lounge</h4>
+                  <p>
+                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                  </p>
+                  <div>
+                    <Link href='/about'>
+                      <a className='skrButton'> Read More</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-12 lg:col-4'></div>
-          <div className='col-12 lg:col-4'></div>
+          <div className='col-12 lg:col-4'>
+            <div ref={serviceCardRef} className=''>
+              <div className={aroundTheHotelStyles.skrAthCard}>
+                <div className={aroundTheHotelStyles.skrCoverFrame}>
+                  <Image
+                    src={sagorKonnaService2}
+                    alt='sagor konna resort'
+                    className={aroundTheHotelStyles.skrCoverFrameImg}
+                    layout='fill'
+                  />
+                </div>
+                <div class={aroundTheHotelStyles.skrCardDescription}>
+                  <h4 class='skrMb10'>Swimming Pools</h4>
+                  <p>
+                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                  </p>
+                  <div>
+                    <Link href='/about'>
+                      <a className='skrButton'> Read More</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-12 lg:col-4'>
+            <div ref={serviceCardRef} className=''>
+              <div className={aroundTheHotelStyles.skrAthCard}>
+                <div className={aroundTheHotelStyles.skrCoverFrame}>
+                  <Image
+                    src={sagorKonnaService3}
+                    alt='sagor konna resort'
+                    className={aroundTheHotelStyles.skrCoverFrameImg}
+                    layout='fill'
+                  />
+                </div>
+                <div class={aroundTheHotelStyles.skrCardDescription}>
+                  <h4 class='skrMb10'>Restaurant</h4>
+                  <p>
+                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                  </p>
+                  <div>
+                    <Link href='/about'>
+                      <a className='skrButton'> Read More</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
