@@ -6,8 +6,8 @@ const useRoomData = () => {
   useEffect(() => {
     fetch('http://localhost:3000/api/roomData')
       .then((res) => res.json())
-      .then((data) => setSkrRooms);
+      .then((data) => setSkrRooms(data));
   }, []);
 
-  return { skrRooms, setSkrRooms };
+  return { skrRooms };
 };

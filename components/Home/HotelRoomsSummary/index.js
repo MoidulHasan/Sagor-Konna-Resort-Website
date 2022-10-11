@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import roomSummaryStyles from './HotelRoomsSummary.module.css';
+import useRoomData from '../../../hooks/useRoomData';
+import RoomCard from '../../room/RoomCard';
 
 const HotelRoomsSummary = () => {
   const animationRoomRef = useRef(null);
@@ -32,6 +34,16 @@ const HotelRoomsSummary = () => {
         observer.unobserve(animationRoomRef.current);
     };
   }, [animationRoomRef]);
+
+  const [skrRooms, setskrRooms] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api/roomData')
+      .then((res) => res.json())
+      .then((data) => setskrRooms(data));
+  }, []);
+
+  const skrRoomsSlice = skrRooms.slice(0, 3);
 
   return (
     <div className={`${roomSummaryStyles.roomSummarySection}`}>
@@ -68,7 +80,7 @@ const HotelRoomsSummary = () => {
             </div>
           </div>
           <div className='col-12 lg:col-12'>
-            <h2>Hello</h2>
+            <RoomCard data={skrRoomsSlice} />
           </div>
         </div>
       </div>

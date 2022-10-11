@@ -1,0 +1,21 @@
+.aroundTheHotelSection{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+
+.aroundHeadingText{
+    margin-bottom: 20px;
+    color: #383A4E;
+    }
+    
+    .aroundParagraph{
+        max-width: 800px;
+        margin-bottom: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 1px;
+        color: var(--secondaryColor);
+    }
+    

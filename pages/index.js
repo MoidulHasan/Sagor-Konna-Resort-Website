@@ -5,6 +5,7 @@ import SKGallery from '../components/Home/SKGallery';
 import styles from '../styles/Home.module.css';
 import HotelSummarySection from '../components/Home/HotelSummarySection';
 import HotelRoomsSummary from '../components/Home/HotelRoomsSummary';
+import AroundTheHotel from '../components/Home/AroundTheHotel';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <SKGallery />
         <HotelSummarySection />
         <HotelRoomsSummary />
+        <AroundTheHotel />
       </main>
     </div>
   );
