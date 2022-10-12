@@ -7,6 +7,7 @@ import HotelSummarySection from '../components/Home/HotelSummarySection';
 import HotelRoomsSummary from '../components/Home/HotelRoomsSummary';
 import AroundTheHotel from '../components/Home/AroundTheHotel';
 import CustomerTestimonials from '../components/Home/CustomerTestimonials';
+import HomeBlogs from '../components/Home/HomeBlogs';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <HotelRoomsSummary />
         <AroundTheHotel />
         <CustomerTestimonials />
+        <HomeBlogs />
       </main>
     </div>
   );
