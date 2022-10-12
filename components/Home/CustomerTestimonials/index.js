@@ -7,7 +7,10 @@ import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import testimonialPeopleImg from '../../../public/images/testimonilaPeople1.jpg';
+import testimonialPeopleImg from '../../../public/images/testimonials/testimonilaPeople1.jpg';
+import testimonialPeopleImg2 from '../../../public/images/testimonials/review11.png';
+import testimonialPeopleImg3 from '../../../public/images/testimonials/review22.png';
+import testimonialPeopleImg4 from '../../../public/images/testimonials/review33.png';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -91,10 +94,6 @@ const CustomerTestimonials = () => {
               loop={true}
               spaceBetween={30}
               centeredSlides={true}
-              // autoplay={{
-              //   delay: 2500,
-              //   disableOnInteraction: false,
-              // }}
               effect={'coverflow'}
               grabCursor={true}
               coverflowEffect={{
@@ -106,7 +105,7 @@ const CustomerTestimonials = () => {
               }}
               speed={800}
               slidesPerView={'auto'}
-              navigation={true}
+              // navigation={true}
               modules={[Autoplay, Navigation, EffectCoverflow]}
               breakpoints={{
                 640: {
@@ -133,8 +132,8 @@ const CustomerTestimonials = () => {
                     />
                   </div>
                   <div className='skrNameNText text-center'>
-                    <h3 className='mb-2'>Paul Oldman</h3>
-                    <div>From Poland</div>
+                    <h3 className='mb-2'>Jabir Al Bafi</h3>
+                    <div>From Khulna</div>
                     <blockquote className='skrBlockQuote'>
                       <ul class='skrStars'>
                         <li>
@@ -153,11 +152,49 @@ const CustomerTestimonials = () => {
                           <i class='fas fa-star'></i>
                         </li>
                       </ul>
-                      Dequi folores dolor sit amet, consectetur adipisicing
-                      elit. Nesciunt illo, delectus totam! Delectus illo magnam
-                      voluptatem a tempora id vitae dolor, quis natus iusto
-                      molestiae ab nam error vero possimus ullam facilis porro
-                      veritatis?
+                      Good behavior. Maximum room are air condition
+                      available.its have a restaurant also. Most expecting think
+                      is this is just opposite of the sea beach. Amazing
+                      Place... You guys can stay there and enjoy the beauty of
+                      sea...
+                    </blockquote>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: '700px', marginRight: '20px' }}>
+                <div className='skrTestimonialCard'>
+                  <div className='skrAvatarFrame'>
+                    <Image
+                      src={testimonialPeopleImg3}
+                      alt='Testimonial People'
+                    />
+                  </div>
+                  <div className='skrNameNText text-center'>
+                    <h3 className='mb-2'>Niloy Siddiqui</h3>
+                    <div>From Dhaka</div>
+                    <blockquote className='skrBlockQuote'>
+                      <ul class='skrStars'>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                      </ul>
+                      Great service even though the Resort is still being
+                      renovated, rooms are spacious, comfortable and clean.
+                      Quality of service is sure to advance alongside the
+                      construction and completion of the Resort and surrounding
+                      areas.
                     </blockquote>
                   </div>
                 </div>
@@ -171,8 +208,8 @@ const CustomerTestimonials = () => {
                     />
                   </div>
                   <div className='skrNameNText text-center'>
-                    <h3 className='mb-2'>Turban Man</h3>
-                    <div>From Poland</div>
+                    <h3 className='mb-2'>Mohammad Amirul Islam Bhuiyan</h3>
+                    <div>From Dhaka</div>
                     <blockquote className='skrBlockQuote'>
                       <ul class='skrStars'>
                         <li>
@@ -191,11 +228,11 @@ const CustomerTestimonials = () => {
                           <i class='fas fa-star'></i>
                         </li>
                       </ul>
-                      Dequi folores dolor sit amet, consectetur adipisicing
-                      elit. Nesciunt illo, delectus totam! Delectus illo magnam
-                      voluptatem a tempora id vitae dolor, quis natus iusto
-                      molestiae ab nam error vero possimus ullam facilis porro
-                      veritatis?
+                      Hotel Sagor Konna Resort Kuakata is designed for people
+                      who are in desperate need for relaxation and spending some
+                      time away from the daily drudgery .Hotel Sagor Konna
+                      Resort Kuakata sets out the guest services in such ways
+                      that make you completely relieved in all aspects.
                     </blockquote>
                   </div>
                 </div>
@@ -204,13 +241,13 @@ const CustomerTestimonials = () => {
                 <div className='skrTestimonialCard'>
                   <div className='skrAvatarFrame'>
                     <Image
-                      src={testimonialPeopleImg}
+                      src={testimonialPeopleImg2}
                       alt='Testimonial People'
                     />
                   </div>
                   <div className='skrNameNText text-center'>
-                    <h3 className='mb-2'>Emma Trueman</h3>
-                    <div>From Poland</div>
+                    <h3 className='mb-2'>Tariq Aziz</h3>
+                    <div className='skrLocation'>From Dhaka</div>
                     <blockquote className='skrBlockQuote'>
                       <ul class='skrStars'>
                         <li>
@@ -229,11 +266,49 @@ const CustomerTestimonials = () => {
                           <i class='fas fa-star'></i>
                         </li>
                       </ul>
-                      Dequi folores dolor sit amet, consectetur adipisicing
-                      elit. Nesciunt illo, delectus totam! Delectus illo magnam
-                      voluptatem a tempora id vitae dolor, quis natus iusto
-                      molestiae ab nam error vero possimus ullam facilis porro
-                      veritatis?
+                      Hotel Sagor KonnaResort listed the most significant ones,
+                      otherwise, there are all facilities, which couples, family
+                      members, business personnel require. Having with own
+                      generator service, room service well security, trained
+                      manpower. All room are fully furnished.
+                    </blockquote>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: '700px', marginRight: '20px' }}>
+                <div className='skrTestimonialCard'>
+                  <div className='skrAvatarFrame'>
+                    <Image
+                      src={testimonialPeopleImg4}
+                      alt='Testimonial People'
+                    />
+                  </div>
+                  <div className='skrNameNText text-center'>
+                    <h3 className='mb-2'>Lubna Srabon</h3>
+                    <div className='skrLocation'>From Dhaka</div>
+                    <blockquote className='skrBlockQuote'>
+                      <ul class='skrStars'>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                        <li>
+                          <i class='fas fa-star'></i>
+                        </li>
+                      </ul>
+                      Great service even though the Resort is still being
+                      renovated, rooms are spacious, comfortable and clean.
+                      Quality of service is sure to advance alongside the
+                      construction and completion of the Resort and surrounding
+                      areas.
                     </blockquote>
                   </div>
                 </div>
