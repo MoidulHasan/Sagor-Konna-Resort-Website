@@ -790,6 +790,10 @@ testimonial
 
 .skrTestimonialCard{
   text-align: center;
+  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ECFAFB;
 }
 
 .skrTestimonialCard .skrAvatarFrame{

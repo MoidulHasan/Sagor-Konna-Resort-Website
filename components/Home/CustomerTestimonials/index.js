@@ -14,7 +14,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper';
+import {
+  Autoplay,
+  Pagination,
+  Navigation,
+  FreeMode,
+  EffectCoverflow,
+} from 'swiper';
 
 const CustomerTestimonials = () => {
   const animationFeedBackRef = useRef(null);
@@ -77,7 +83,7 @@ const CustomerTestimonials = () => {
               </div>
             </div>
           </div>
-          <div class='col-12 lg:col-6'>
+          <div class='col-12 lg:col-12'>
             {/* swiper slider  */}
             <Swiper
               // watchSlidesProgress={true}
@@ -89,10 +95,19 @@ const CustomerTestimonials = () => {
               //   delay: 2500,
               //   disableOnInteraction: false,
               // }}
+              effect={'coverflow'}
+              grabCursor={true}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+                slideShadows: true,
+              }}
               speed={800}
-              slidesPerView={1}
+              slidesPerView={'auto'}
               navigation={true}
-              modules={[Autoplay, Pagination, Navigation, FreeMode]}
+              modules={[Autoplay, Navigation, EffectCoverflow]}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -103,7 +118,7 @@ const CustomerTestimonials = () => {
                   spaceBetween: 10,
                 },
                 1024: {
-                  slidesPerView: 1,
+                  slidesPerView: 3,
                   spaceBetween: 10,
                 },
               }}
