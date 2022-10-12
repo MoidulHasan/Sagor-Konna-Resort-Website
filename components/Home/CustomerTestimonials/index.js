@@ -103,6 +103,10 @@ const CustomerTestimonials = () => {
                 modifier: 2.5,
                 slideShadows: true,
               }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               speed={800}
               slidesPerView={'auto'}
               // navigation={true}

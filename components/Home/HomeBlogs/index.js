@@ -88,11 +88,14 @@ const HomeBlogs = () => {
                     <span>12.08.21 23:13</span>
                   </div>
                 </div>
-                <a href='publication.html'>
-                  <h4 class='skrMb20'>
-                    See the sight of Kuakata with Sagor Konna Resort
-                  </h4>
-                </a>
+                <Link href='/blog'>
+                  <a className='linkKajkam'>
+                    <h4 class='skrMb20'>
+                      See the sight of Kuakata with Sagor Konna Resort
+                    </h4>
+                  </a>
+                </Link>
+
                 <div class='skrTextLight'>
                   View here, at Sagor Konna Resort is amazing. People will able
                   to feel the Bay of Bengal in a different angle.
@@ -115,23 +118,26 @@ const HomeBlogs = () => {
                         className='blogAuthor'
                       />
                     </div>
-                    <span>Niloy Debnath</span>
+                    <span>Mubasserin Sadia</span>
                   </div>
                   <div class='skrFeature'>
                     <div class='skrIconFrame'>
                       <Image src={time} alt='time' />
                     </div>
-                    <span>12.08.21 23:13</span>
+                    <span>07.10.22 11:13</span>
                   </div>
                 </div>
-                <a href='publication.html'>
-                  <h4 class='skrMb20'>
-                    See the sight of Kuakata with Sagor Konna Resort
-                  </h4>
-                </a>
+                <Link href='/blog'>
+                  <a className='linkKajkam'>
+                    <h4 class='skrMb20'>
+                      Sagor Konna meets Sagor Konna in Kuakata
+                    </h4>
+                  </a>
+                </Link>
                 <div class='skrTextLight'>
-                  View here, at Sagor Konna Resort is amazing. People will able
-                  to feel the Bay of Bengal in a different angle.
+                  Sagor Konna Resort is one of the best hotel to stay in
+                  Kuakata. Kuakata is very beautiful place in Bangladesh to
+                  visit.
                 </div>
               </div>
             </div>
@@ -151,23 +157,26 @@ const HomeBlogs = () => {
                         className='blogAuthor'
                       />
                     </div>
-                    <span>Niloy Debnath</span>
+                    <span>Hasan Ahmed</span>
                   </div>
                   <div class='skrFeature'>
                     <div class='skrIconFrame'>
                       <Image src={time} alt='time' />
                     </div>
-                    <span>12.08.21 23:13</span>
+                    <span>10.08.22 20:13</span>
                   </div>
                 </div>
-                <a href='publication.html'>
-                  <h4 class='skrMb20'>
-                    See the sight of Kuakata with Sagor Konna Resort
-                  </h4>
-                </a>
+                <Link href='/blog'>
+                  <a className='linkKajkam'>
+                    <h4 class='skrMb20'>
+                      Sagor Konna Resort will Surprise You in Different Ways
+                    </h4>
+                  </a>
+                </Link>
                 <div class='skrTextLight'>
-                  View here, at Sagor Konna Resort is amazing. People will able
-                  to feel the Bay of Bengal in a different angle.
+                  Kuakata is a amazing place. Here in Kuakata, there is a
+                  fabulous resort named Sagor Konna Resort where you will able
+                  to spend your time effectively.
                 </div>
               </div>
             </div>
