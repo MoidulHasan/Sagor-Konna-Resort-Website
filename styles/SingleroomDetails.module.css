@@ -112,9 +112,9 @@ margin-top: -15px;
     border-radius: 20px;
     padding: 10px 5px;
 }
-.guest_count{     
-    margin-top: -30px;    
-    padding-left: 10px;
+.guest_count{    
+    margin-left: 1px;
+    margin-top: -20px;
 }
 .adult_count h5 ,.children_count h5{
     font-size: 15px;
@@ -155,7 +155,7 @@ margin-top: -15px;
     flex-wrap: wrap;
 }
 .skr_amenity_air_condition ,.skr_amenity_under_protection, .skr_amenity_wifi, .skr_amenity_tv, .skr_amenity_breakfast{
-    width: 255px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,4 +208,44 @@ margin-top: -15px;
     font-size: 25px;
     border-radius: 20px;
     color: #ffffff;
+}
+@media only screen and (max-width:1300px){
+    .guest_count{
+        display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    }
+     .guest_count_drop{
+        width: 150px !important;
+     }    
+     .children_count  {
+        margin-right: -20px;
+     }  
+}
+@media only screen and (max-width:1200px){
+    .guest_count_drop{
+        width: 110px !important;
+     }
+     .children_count  {
+        margin-right: -14px;
+     }  
+}
+@media only screen and (max-width:1024px){
+    .singleroom_galleria_container, .skr_sort_des, .skr_map_iframe,.skr_amenity{
+        width: 100% !important;
+    }
+    .booking_details{
+        display: none !important;
+     }  
+     .skr_amenity_Item{
+        width: 100% !important;
+     }
+}
+@media only screen and (max-width:490px){
+    .skr_amenity_air_condition ,.skr_amenity_under_protection, .skr_amenity_wifi, .skr_amenity_tv, .skr_amenity_breakfast {
+       width: 140px;
+    }
+    .skr_amenity_air_condition h2 ,.skr_amenity_under_protection h2, .skr_amenity_wifi h2, .skr_amenity_tv h2, .skr_amenity_breakfast h2{
+        font-size: 12px;
+    }
 }

@@ -135,11 +135,11 @@ const SingleroomDetails = ({ singleRoom }) => {
             <div className={`${singleroomStyle.guest_count} grid`}>
               <div className={`${singleroomStyle.adult_count} adult_count_dropdown lg:col-6`}>
                 <h5>Person</h5>
-                <Dropdown value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
+                <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
               </div>
               <div className={`${singleroomStyle.children_count} children_count_dropdown lg:col-6`}>
                 <h5>Children</h5>
-                <Dropdown value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
+                <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ const SingleroomDetails = ({ singleRoom }) => {
           </div>
         </div>
       </div>
-      <AroundHotel />
+      <AroundHotel className="col lg:col-8" />
       <Reviews />
       <div className={`${singleroomStyle.similar_room_container}`} >
         <div className={`${singleroomStyle.similar_room}`}>
@@ -213,5 +213,4 @@ const SingleroomDetails = ({ singleRoom }) => {
     </div >
   )
 }
-
 export default SingleroomDetails;
