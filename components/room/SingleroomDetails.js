@@ -147,7 +147,7 @@ const SingleroomDetails = ({ singleRoom }) => {
       </div >
       <div className={`${singleroomStyle.skr_text} grid`}>
         <div className={`${singleroomStyle.skr_sort_des} lg:col-8`}>
-          <h2>Sagor konna resort is waiting for you</h2>
+          <h2>Sagor konna resort is waiting for you!</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias fuga laborum aut quibusdam odit facilis soluta eaque eveniet consequuntur reiciendis necessitatibus sint atque aliquam officia  </p>
         </div>
       </div>
