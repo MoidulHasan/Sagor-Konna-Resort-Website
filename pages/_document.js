@@ -9,7 +9,8 @@ export default function Document() {
           href='https://fonts.googleapis.com/icon?family=Material+Icons+Sharp'
           rel='stylesheet'
         />
-
+        {/* CDN FONTS  */}
+        <link href="http://fonts.cdnfonts.com/css/solfia" rel="stylesheet" />
         <link
           rel='stylesheet'
           href='https://use.fontawesome.com/releases/v5.13.1/css/all.css'

@@ -1,16 +1,15 @@
 import { useState } from 'react';
-import { Card } from 'primereact/card';
 import { Calendar } from 'primereact/calendar';
 import { addLocale } from 'primereact/api';
 import { Galleria } from 'primereact/galleria';
 import { Dropdown } from 'primereact/dropdown';
-import singleRoom from '../../styles/SingleroomDetails.module.css';
-import utilStyles from '../../styles/utils.module.css'
+import singleroomStyle from '../../styles/SingleroomDetails.module.css';
 import AroundHotel from './AroundHotel';
 import Reviews from '../Reviews/Reviews';
-const SingleroomDetails = ({ singleCard }) => {
+import RoomCard from './RoomCard';
+const SingleroomDetails = ({ singleRoom }) => {
   // GALLERIES
-  const [images, setImages] = useState(singleCard?.roomImages);
+  const [images, setImages] = useState(singleRoom?.roomImages);
   const responsiveOptions = [
     {
       breakpoint: '1024px',
@@ -27,19 +26,19 @@ const SingleroomDetails = ({ singleCard }) => {
   ];
 
   // useEffect(() => {
-  //     galleriaService.getImages().then(singleCard => setImages(singleCard));
+  //     galleriaService.getImages().then(singleRoom? => setImages(singleRoom?));
   // }, []);
   // eslint-disable-line react-hooks/exhaustive-deps
   // useEffect(() => {
-  //     galleriaService.getImages().then(singleCard => setImages(singleCard));
+  //     galleriaService.getImages().then(singleRoom? => setImages(singleRoom?));
   // }, []); 
   // eslint-disable-line react-hooks/exhaustive-deps
 
   const itemTemplate = (card) => {
-    return <img className={`${singleRoom.gallary_view_img}`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
+    return <img className={`${singleroomStyle.gallary_view_img}`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
   }
   const thumbnailTemplate = (card) => {
-    return <img className={`${singleRoom.gallary_bottom_view_img} gallary_bottom`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
+    return <img className={`${singleroomStyle.gallary_bottom_view_img} gallary_bottom`} src={card} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={card} style={{ width: '100%', display: 'block' }} />
   }
   // CALENDER 
   let today = new Date();
@@ -90,55 +89,55 @@ const SingleroomDetails = ({ singleCard }) => {
     setChildren(e.value);
   }
   return (
-    <div className={singleRoom.singleroom_container}>
-      <div className={`${singleRoom.singleroom_booking_container}  grid  `}>
-        <div className={`${singleRoom.singleroom_galleria_container} galleriThumbnail col lg:col-8`}>
-          <Galleria className={`${singleRoom.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
+    <div className={singleroomStyle.singleroom_container}>
+      <div className={`${singleroomStyle.singleroom_booking_container}  grid  `}>
+        <div className={`${singleroomStyle.singleroom_galleria_container} galleriThumbnail col lg:col-8`}>
+          <Galleria className={`${singleroomStyle.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
             item={itemTemplate} thumbnail={thumbnailTemplate} />
         </div>
-        <div className={`${singleRoom.booking_details} col lg:col-4`}>
-          <div className={singleRoom.room_idea}>
-            <div className={`${singleRoom.bed}`}>
-              <span className={`${singleRoom.bed_icon} material-icons-sharp`}>
+        <div className={`${singleroomStyle.booking_details} col lg:col-4`}>
+          <div className={singleroomStyle.room_idea}>
+            <div className={`${singleroomStyle.bed}`}>
+              <span className={`${singleroomStyle.bed_icon} material-icons-sharp`}>
                 bed
               </span>
-              <p>{singleCard.count}
+              <p>{singleRoom?.count}
                 <span> Guests</span>
               </p>
             </div>
-            <div className={`${singleRoom.measure}`}>
-              <span className={`${singleRoom.measure_icon} material-icons-sharp`}>
+            <div className={`${singleroomStyle.measure}`}>
+              <span className={`${singleroomStyle.measure_icon} material-icons-sharp`}>
                 crop_square
               </span>
-              <p>{singleCard.feet}
+              <p>{singleRoom?.feet}
                 <span> Ft²</span>
               </p>
             </div>
           </div>
-          <div className={`${singleRoom.booking}`}>
-            <div className={`${singleRoom.booking_price}`}>
-              <h1>TK {singleCard.price}</h1>
+          <div className={`${singleroomStyle.booking}`}>
+            <div className={`${singleroomStyle.booking_price}`}>
+              <h1>TK {singleRoom?.price}</h1>
               <span>/night</span>
             </div>
-            <button className={`${singleRoom.reservation_btn} `}>Reservation</button>
+            <button className={`${singleroomStyle.reservation_btn} `}>Reservation</button>
           </div>
-          <div className={singleRoom.booking_info}>
+          <div className={singleroomStyle.booking_info}>
             <div className="calender">
-              <div className={`${singleRoom.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
+              <div className={`${singleroomStyle.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
                 <label htmlFor="Check in">Check in</label>
                 <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon placeholder='Select date' />
               </div>
-              <div className={`${singleRoom.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
+              <div className={`${singleroomStyle.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
                 <label htmlFor="Check out">Check out</label>
                 <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon placeholder='Select date' />
               </div>
             </div>
-            <div className={`${singleRoom.guest_count} grid`}>
-              <div className={`${singleRoom.adult_count} adult_count_dropdown lg:col-6`}>
+            <div className={`${singleroomStyle.guest_count} grid`}>
+              <div className={`${singleroomStyle.adult_count} adult_count_dropdown lg:col-6`}>
                 <h5>Person</h5>
                 <Dropdown value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
               </div>
-              <div className={`${singleRoom.children_count} children_count_dropdown lg:col-6`}>
+              <div className={`${singleroomStyle.children_count} children_count_dropdown lg:col-6`}>
                 <h5>Children</h5>
                 <Dropdown value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
               </div>
@@ -146,53 +145,53 @@ const SingleroomDetails = ({ singleCard }) => {
           </div>
         </div>
       </div >
-      <div className={`${singleRoom.skr_text} grid`}>
-        <div className={`${singleRoom.skr_sort_des} lg:col-8`}>
-          <h2>Sagor konna resort is waiting for you</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias fuga laborum aut quibusdam odit facilis soluta eaque eveniet consequuntur reiciendis necessitatibus sint atque aliquam officia voluptatibus suscipit minima quod culpa delectus excepturi! Repudiandae sed culpa dolore ab esse, quaerat voluptatem distinctio debitis temporibus reprehenderit officia voluptas hic sint alias dignissimos maiores. Facilis modi qui voluptates iusto vitae excepturi iste.</p>
+      <div className={`${singleroomStyle.skr_text} grid`}>
+        <div className={`${singleroomStyle.skr_sort_des} lg:col-8`}>
+          <h2>Sagor konna resort is waiting for you!</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias fuga laborum aut quibusdam odit facilis soluta eaque eveniet consequuntur reiciendis necessitatibus sint atque aliquam officia  </p>
         </div>
       </div>
-      <div className={`${singleRoom.skr_map} grid`}>
-        <div className={`${singleRoom.skr_map_iframe} lg:col-8`}>
+      <div className={`${singleroomStyle.skr_map} grid`}>
+        <div className={`${singleroomStyle.skr_map_iframe} lg:col-8`}>
           <h2>Location</h2>
           <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Sagorkonna%20Resort%20Ltd,Kuakata%20Parjatan%20Area,%20Kolapara,%20Patuakhali,%20Bangladesh.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
         </div>
       </div>
-      <h2 className={singleRoom.skr_amenity_txt}>Amenity</h2>
-      <div className={`${singleRoom.skr_amenity} grid`}>
-        <div className={`${singleRoom.skr_amenity_Item} lg:col-8`}>
-          {singleCard.airCondition && (
-            <div className={`${singleRoom.skr_amenity_air_condition} `}>
-              <span className={`${singleRoom.air_condition_icon} material-icons-sharp`}>
-                {singleCard.airCondition}
+      <h2 className={singleroomStyle.skr_amenity_txt}>Amenity</h2>
+      <div className={`${singleroomStyle.skr_amenity} grid`}>
+        <div className={`${singleroomStyle.skr_amenity_Item} lg:col-8`}>
+          {singleRoom?.airCondition && (
+            <div className={`${singleroomStyle.skr_amenity_air_condition} `}>
+              <span className={`${singleroomStyle.air_condition_icon} material-icons-sharp`}>
+                {singleRoom?.airCondition}
               </span>
               <h2>Air-conditioned</h2>
             </div>
           )
           }
-          {singleCard.breakfast && (
-            <div className={`${singleRoom.skr_amenity_breakfast} `}>
-              <span className={`${singleRoom.breakfast_icon} material-icons-sharp `}>
-                {singleCard.breakfast}
+          {singleRoom?.breakfast && (
+            <div className={`${singleroomStyle.skr_amenity_breakfast} `}>
+              <span className={`${singleroomStyle.breakfast_icon} material-icons-sharp `}>
+                {singleRoom?.breakfast}
               </span>
               <h2>Free Breakfast</h2>
             </div>
           )
           }
-          <div className={`${singleRoom.skr_amenity_under_protection} `}>
-            <span className={`${singleRoom.video_icon} material-icons-sharp`}>
+          <div className={`${singleroomStyle.skr_amenity_under_protection} `}>
+            <span className={`${singleroomStyle.video_icon} material-icons-sharp`}>
               videocam
             </span>
             <h2>Under protection</h2>
           </div>
-          <div className={`${singleRoom.skr_amenity_wifi} `}>
-            <span className={`${singleRoom.wifi_icon} material-icons-sharp`}>
+          <div className={`${singleroomStyle.skr_amenity_wifi} `}>
+            <span className={`${singleroomStyle.wifi_icon} material-icons-sharp`}>
               wifi
             </span>
             <h2>Free Wifi</h2>
           </div>
-          <div className={`${singleRoom.skr_amenity_tv} `}>
-            <span className={`${singleRoom.tv_icon} material-icons-sharp`}>
+          <div className={`${singleroomStyle.skr_amenity_tv} `}>
+            <span className={`${singleroomStyle.tv_icon} material-icons-sharp`}>
               tv
             </span>
             <h2>TV</h2>
@@ -201,9 +200,18 @@ const SingleroomDetails = ({ singleCard }) => {
       </div>
       <AroundHotel />
       <Reviews />
+      <div className={`${singleroomStyle.similar_room_container}`} >
+        <div className={`${singleroomStyle.similar_room}`}>
+          <h3>Similar Rooms</h3>
+          <p>Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
+        </div>
+        <div className={`${singleroomStyle.similar_room_btn}`}>
+          <button >All rooms</button>
+        </div>
+        <RoomCard data={singleRoom?.similarRoom} />
+      </div>
     </div >
   )
 }
-
 
 export default SingleroomDetails;
