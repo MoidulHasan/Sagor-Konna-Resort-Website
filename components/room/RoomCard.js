@@ -2,13 +2,27 @@ import { Card } from 'primereact/card';
 import { motion } from 'framer-motion';
 import roomCardStyles from '../../styles/room.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 const RoomCard = ({ data }) => {
+  const [econonmy, setEconomy] = useState(false);
   return (
-    <div>
+    <div className={`${roomCardStyles.room_container}`}>
+      {/* <div className={`${roomCardStyles.room_select}`}>
+        <button>All Rooms</button>
+        <button>Econnomy</button>
+        <button>Standart</button>
+      </div>
+      {econonmy &&
+        data.map((c) => (
+          <p type={c.category}>
+            {c.category}
+          </p>
+        ))
+      }  */}
       <div className={`${roomCardStyles.grid_container} grid`}>
-        {data.map((card) => (
+        {data && data.map((room) => (
           <div
-            key={card.id}
+            key={room?.id}
             className={`${roomCardStyles.grid_column} col lg:col-4 md:col-6 `}
           >
             <motion.div
@@ -22,19 +36,19 @@ const RoomCard = ({ data }) => {
                 easeIn: [0.17, 0.67, 0.83, 0.67],
               }}
             >
-              <Card className={` ${roomCardStyles.room_card}`} key={card.id}>
+              <Card className={` ${roomCardStyles.room_card}`} key={room?.id}>
                 <div className='flex flex align-items-center justify-content-center flex-wrap overflow-hidden'>
                   <div className={roomCardStyles.grid_column_bg}>
                     <div className={roomCardStyles.img_container}>
                       <div className={`${roomCardStyles.img_box}`}>
                         <div
-                          style={{ backgroundImage: `url(${card.img})` }}
+                          style={{ backgroundImage: `url(${room?.img})` }}
                           className={`relative ${roomCardStyles.card_img}`}
                         ></div>
                       </div>
-                      {card.status && (
+                      {room?.status && (
                         <span className={`${roomCardStyles.status}`}>
-                          {card.status}
+                          {room?.status}
                         </span>
                       )}
                     </div>
@@ -43,7 +57,7 @@ const RoomCard = ({ data }) => {
                         <div className={roomCardStyles.bed}>
                           <span className='material-icons-sharp'>bed</span>
                           <p>
-                            {card.count}
+                            {room?.count}
                             <span> Guests</span>
                           </p>
                         </div>
@@ -52,22 +66,22 @@ const RoomCard = ({ data }) => {
                             crop_square
                           </span>
                           <p>
-                            {card.feet}
-                            <span>{data.feet} Ft²</span>
+                            {room?.feet}
+                            <span>{data?.feet} Ft²</span>
                           </p>
                         </div>
                       </div>
                       <div className={roomCardStyles.room_category}>
-                        <h3>{card.category}</h3>
-                        <p>{card.description}</p>
+                        <h3>{room?.category}</h3>
+                        <p>{room?.description}</p>
                       </div>
                       <div className={roomCardStyles.booking_details}>
                         <div className={roomCardStyles.booing_price}>
-                          <h1>TK {card.price}</h1>
+                          <h1>TK {room?.price}</h1>
                           <span>/night</span>
                         </div>
                         <div className={roomCardStyles.bookingBtn}>
-                          <Link href={`/room/${card.id}`} passHref>
+                          <Link href={`/room/${room?.id}`} passHref>
                             <button>
                               <span className='material-icons-sharp'>
                                 bookmark_border
