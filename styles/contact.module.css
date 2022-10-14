@@ -21,7 +21,6 @@
     justify-content: center;
     flex-direction: column;
     margin: 30px;
-    margin: 30px 50px !important;
  }
  .contact_hr{
     width: 100vw;
@@ -33,7 +32,7 @@
  .contact_flex{
      background:#ffffff;
      display: flex;
-     padding: 20px;
+     padding: 10px;
      justify-content: space-between;
      border-radius: 10px;
      position: relative;
@@ -43,7 +42,8 @@
     background: #ECFAFB;
    text-align: center;
    border-radius: 10px;
-   width: 390px;
+   width: 410px;
+   padding: 20px;
  } 
  .contact_flex div span{
     display: flex;
@@ -75,17 +75,22 @@
  /* MEDIA  */
  @media only screen and (max-width:1345px){
    .contact_flex div{
-     width: 370px;
+     width: 390px;
    } 
  }
  @media only screen and (max-width:1288px){
    .contact_flex div{
-     width: 320px;
+     width: 372px;
+   } 
+ }
+ @media only screen and (max-width:1218px){
+   .contact_flex div{
+     width: 360px;
    } 
  }
  @media only screen and (max-width:1200px){
    .contact_flex div{
-     width: 285px;
+     width: 305px;
    } 
  }
  @media only screen and (max-width:1024px){
