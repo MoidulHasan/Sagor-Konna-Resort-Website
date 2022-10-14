@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import DirectorSpeech from '../../components/About/DirectorSpeech';
 import aboutStyles from './about.module.css';
 
 const About = () => {
@@ -35,6 +36,8 @@ const About = () => {
                 the Sea lying on the bed of our Hotel.
               </p>
             </div>
+            {/* director speech  */}
+            <DirectorSpeech />
           </div>
         </div>
       </main>
