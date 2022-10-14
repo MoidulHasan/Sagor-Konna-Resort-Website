@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import DirectorSpeech from '../../components/About/DirectorSpeech';
+import ServiceOffered from '../../components/About/ServiceOffered';
 import aboutStyles from './about.module.css';
 
 const About = () => {
@@ -38,6 +39,8 @@ const About = () => {
             </div>
             {/* director speech  */}
             <DirectorSpeech />
+            {/* service components  */}
+            <ServiceOffered />
           </div>
         </div>
       </main>
