@@ -73,10 +73,10 @@ const CustomerTestimonials = () => {
               <div class='skrTitleFrame'>
                 <h2 class='skrMb20 skrHeading'>Feedback from our Guests</h2>
                 <p className='skrParagraph mt-6'>
-                  Consectetur adipisicing elit. Nihil, illum voluptate eveniet
-                  ex fugit ea delectus, sed voluptatem. Laborum accusantium
-                  libero commodi id officiis itaque esse adipisci,
-                  necessitatibus asperiores, illo odio.
+                  Sagor Konna always appriciate our guests all the time. We
+                  always aims to give our best services to out customers.
+                  Everyone is welcomed in our hotel and we assure everyone for a
+                  wonderful stay. Here are some feedbacks of our guests.
                 </p>
                 <div>
                   <Link href='/about'>

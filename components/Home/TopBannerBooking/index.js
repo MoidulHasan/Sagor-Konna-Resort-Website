@@ -182,7 +182,7 @@ const TopBannerBooking = () => {
             className={topBookingStyles.highlightedFeaturedCard}
             style={{ marginTop: '-80px' }}
           >
-            <div className='grid'>
+            <div className='grid containerGridWithoutMarginTop'>
               <div className='col-6 lg:col-3'>
                 <div className={topBookingStyles.iconBox}>
                   <Image

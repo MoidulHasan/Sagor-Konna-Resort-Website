@@ -26,7 +26,8 @@ const SKGallery = () => {
       animationRef.current.classList.add('skrAnimationScrollActiveEl');
       return;
     }
-    animationRef.current.classList.remove('skrAnimationScrollActiveEl');
+    animationRef.current &&
+      animationRef.current.classList.remove('skrAnimationScrollActiveEl');
   };
 
   useEffect(() => {

@@ -90,7 +90,8 @@ const AroundTheHotel = () => {
                 <div class={aroundTheHotelStyles.skrCardDescription}>
                   <h4 class='skrMb10'>Restaurant Lounge</h4>
                   <p>
-                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                    Sagor Konna Resort has an in-house restaurant with all the
+                    sea food available!
                   </p>
                   <div>
                     <Link href='/about'>
@@ -115,7 +116,8 @@ const AroundTheHotel = () => {
                 <div class={aroundTheHotelStyles.skrCardDescription}>
                   <h4 class='skrMb10'>Swimming Pools</h4>
                   <p>
-                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                    A wonderful swimming pool inside the hotel compound with sea
+                    view!
                   </p>
                   <div>
                     <Link href='/about'>
@@ -140,7 +142,8 @@ const AroundTheHotel = () => {
                 <div class={aroundTheHotelStyles.skrCardDescription}>
                   <h4 class='skrMb10'>Restaurant</h4>
                   <p>
-                    Officiis deleniti, veritatis laudantium! Qudantium dolorem!
+                    Official Restaurant of Sagor Konna Resort with all the sea
+                    foods available.
                   </p>
                   <div>
                     <Link href='/about'>

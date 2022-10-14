@@ -39,9 +39,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Jost, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    /* font-family: 'Jost', sans-serif; */
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Jost, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Jost', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -81,6 +81,10 @@ body {
   display: block;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--primeBLue);
+}
+
+.containerGridWithoutMarginTop{
+  margin-top: 0 !important;
 }
 
 @media (min-width: 576px) {
@@ -724,6 +728,15 @@ Heading, Paragraph
 
 .skrHeading{
   margin-bottom: 30px;
+}
+
+.skrSubHeading{
+  letter-spacing: 1px;
+  color: var(--secondaryColor);
+}
+
+.subHeadingSpan{
+  color: #383A4E 
 }
 
 .skrParagraph{
