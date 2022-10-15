@@ -13,7 +13,7 @@ export async function getStaticProps() {
   const res = await fetch('http://localhost:3000/api/roomData', {
     accept: 'application/json'
   });
-  console.log((res));
+  // console.log((res));
   const data = await res.json();
   return {
     props: { data: data },

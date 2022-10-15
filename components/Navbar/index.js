@@ -31,23 +31,6 @@ const Navbar = () => {
 
   const menuList = [
     {
-      title: 'Rooms',
-      path: '/room',
-      cName: 'nav-links',
-      subMenu: [
-        {
-          title: 'Sea View Rooms',
-          path: '/seaViewRooms',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'Garden View Rooms',
-          path: '/gardenViewRooms',
-          cName: 'dropdown-link',
-        },
-      ],
-    },
-    {
       title: 'Restaurant',
       path: '/',
       cName: 'nav-links',
@@ -87,7 +70,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <Link href='/' className='navbar-logo' onClick={closeMobileMenu}>
           {/* NRB GLobal
-          <i class='fab fa-firstdraft' /> */}
+          <i className='fab fa-firstdraft' /> */}
           <Image
             src={skrLogo}
             alt='logo of NRB'
@@ -113,6 +96,14 @@ const Navbar = () => {
               <a className='nav-links' onClick={closeMobileMenu}>
                 {' '}
                 About
+              </a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link href='/room'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Rooms
               </a>
             </Link>
           </li>

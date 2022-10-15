@@ -55,14 +55,16 @@ const RoomCard = ({ data }) => {
                     <div className={roomCardStyles.room_text}>
                       <div className={roomCardStyles.room_idea}>
                         <div className={roomCardStyles.bed}>
-                          <span class='material-icons-sharp'>bed</span>
+                          <span className='material-icons-sharp'>bed</span>
                           <p>
                             {room?.count}
                             <span> Guests</span>
                           </p>
                         </div>
                         <div className={`${roomCardStyles.measure} `}>
-                          <span class='material-icons-sharp'>crop_square</span>
+                          <span className='material-icons-sharp'>
+                            crop_square
+                          </span>
                           <p>
                             {room?.feet}
                             <span>{data?.feet} Ft²</span>
@@ -81,7 +83,7 @@ const RoomCard = ({ data }) => {
                         <div className={roomCardStyles.bookingBtn}>
                           <Link href={`/room/${room?.id}`} passHref>
                             <button>
-                              <span class='material-icons-sharp'>
+                              <span className='material-icons-sharp'>
                                 bookmark_border
                               </span>
                               <h4>Book Now</h4>
