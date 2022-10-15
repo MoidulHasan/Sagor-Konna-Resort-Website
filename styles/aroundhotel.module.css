@@ -1,9 +1,9 @@
 .title h2{
-  padding: 15px 0px;
+  padding: 35px 0px;
   padding-left: 15px;
-  font-weight: 500;
-  opacity: .8;
+  font-weight: bold;
   letter-spacing: .5px;
+  font-size: 25px;
 }
  .aroundhotel_card_container{
   width: 66.5%;

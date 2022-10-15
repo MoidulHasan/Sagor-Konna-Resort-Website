@@ -136,7 +136,7 @@ margin-top: -15px;
     opacity: .6;
 }
 .skr_map_iframe h2{
-    padding: 15px 0px;
+    padding: 15px 0px 35px 0;
     padding-left: 5px;
     font-size: 25px;
     font-weight: bold;
@@ -159,18 +159,21 @@ margin-top: -15px;
     align-items: center;
     background: #ffffff;
     border-radius: 20px;
-    padding: 20px 0px;    
+    padding: 30px 0px;    
     margin: 10px;
-    opacity: .7;    
 }
 .skr_amenity_air_condition h2 ,.skr_amenity_under_protection h2, .skr_amenity_wifi h2, .skr_amenity_tv h2, .skr_amenity_breakfast h2{
+    margin-top: 15px;
     font-size: 15px;
+    letter-spacing: .5px;
 }
 .air_condition_icon, .video_icon, .wifi_icon , .tv_icon, .breakfast_icon{
     font-size: 35px;
+    color: rgb(124, 119, 119);
+    opacity: .7;    
 }
 .skr_amenity_txt {
-    padding: 15px 0px;
+    padding: 35px 0px;
     padding-left: 15px;
     font-weight: bold;
     letter-spacing: .5px;

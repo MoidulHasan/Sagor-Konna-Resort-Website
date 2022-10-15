@@ -1,9 +1,8 @@
 .review_container h2{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: .5px;
-    opacity: .7;
-    padding: 20px 0px;
+    padding: 35px 0px;
 }
 
 .review{
@@ -25,14 +24,11 @@ margin-bottom: 20px;
 }
 .review_image{
     border-radius: 50%;
-}
-.review_name_date{
-    margin-top: 6px;
-}
+} 
 .review_name_date h3{
     font-size: 15px;
     font-weight: 500;
-    margin-bottom: -15px;    
+    margin-bottom: 2px;
 }
 .review_name_date h5{
     font-size: 12px;
