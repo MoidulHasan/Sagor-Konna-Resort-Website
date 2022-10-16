@@ -36,7 +36,10 @@ const CustomerTestimonials = () => {
       animationFeedBackRef.current.classList.add('skrAnimationScrollActiveEl');
       return;
     }
-    animationFeedBackRef.current.classList.remove('skrAnimationScrollActiveEl');
+    animationFeedBackRef.current &&
+      animationFeedBackRef.current.classList.remove(
+        'skrAnimationScrollActiveEl'
+      );
   };
 
   useEffect(() => {
