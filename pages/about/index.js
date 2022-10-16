@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import DirectorSpeech from '../../components/About/DirectorSpeech';
 import ServiceOffered from '../../components/About/ServiceOffered';
+import TeamMembers from '../../components/About/TeamMembers';
 import VIdeoComponent from '../../components/About/VIdeoComponent';
 import aboutStyles from './about.module.css';
 
@@ -44,6 +45,8 @@ const About = () => {
             <ServiceOffered />
             {/* video component  */}
             <VIdeoComponent />
+            {/* Management  */}
+            <TeamMembers />
           </div>
         </div>
       </main>
