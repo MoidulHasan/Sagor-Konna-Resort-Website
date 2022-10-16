@@ -85,12 +85,11 @@ const Reviews = () => {
             <div className={`${reviewStyles.review_input}`}>
               <InputText
                 type='text'
-                className={`${reviewStyles.review_input_name}block lg:col-6`}
+                className={`${reviewStyles.review_input_name}`}
                 placeholder='Name'
               />
               <InputText
                 type='email'
-                className='block lg:col-6'
                 placeholder='Email'
               />
             </div>

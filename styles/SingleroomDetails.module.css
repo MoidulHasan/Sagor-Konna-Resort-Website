@@ -181,6 +181,7 @@ margin-top: -15px;
 }
 .similar_room{
     text-align: center;
+    margin-top: 40px;
 }
 .similar_room h3{
     font-size: 30px;
@@ -188,7 +189,6 @@ margin-top: -15px;
     font-weight: .5px;
 }
 .similar_room p{
-    padding: 0px 250px;   
     font-size: 20px;
     margin-bottom: 40px;
     font-weight: 400;
