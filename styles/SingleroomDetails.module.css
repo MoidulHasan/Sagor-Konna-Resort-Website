@@ -1,9 +1,14 @@
 .singleroom_container{
     padding-top: 30px;
+    /* positio; */
+    position: relative;
+
+}
+.singleroom_booking_container{
+    position: relative;
 }
 .singleroom_galleria_container{
     background: #ffffff !important; 
-    position: relative;
     border-radius: 20px;  
 }
  .room_idea{
@@ -32,7 +37,13 @@
    font-weight: 500;
    color: rgba(51, 51, 51, .5);
 }
- 
+.booking_details{
+    background: rgb(192, 185, 185);   
+ }
+.booking_sticky{
+    bottom: 1000px !important;
+}
+
 .booking{
 display: flex;
 flex-direction: column;
@@ -123,6 +134,9 @@ margin-top: -15px;
  .skr_text{
     margin: 20px 0px;
  }
+ .skr_sort_des{
+    padding: 20px 0px;
+ }
 .skr_sort_des h2{
     font-size: 22px;
     font-weight: bold;
@@ -179,6 +193,9 @@ margin-top: -15px;
     letter-spacing: .5px;
     font-size: 25px;
 }
+/* .similar_room_container{
+z-index: 999;
+} */
 .similar_room{
     text-align: center;
     margin-top: 40px;
@@ -236,7 +253,7 @@ margin-top: -15px;
     }
     .booking_details{
         display: none !important;
-     }  
+     }      
      .skr_amenity_Item{
         width: 100% !important;
      }

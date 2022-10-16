@@ -90,116 +90,114 @@ const SingleroomDetails = ({ singleRoom }) => {
   }
   return (
     <div className={singleroomStyle.singleroom_container}>
-      <div className={`${singleroomStyle.singleroom_booking_container}  grid  `}>
-        <div className={`${singleroomStyle.singleroom_galleria_container} galleriThumbnail col lg:col-8`}>
-          <Galleria className={`${singleroomStyle.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
-            item={itemTemplate} thumbnail={thumbnailTemplate} />
+      <div className={`${singleroomStyle.singleroom_booking_container}  grid`}>
+        <div className={`${singleroomStyle.singleroom_booking_sub_container} col lg:col-8`}>
+          <div className={`${singleroomStyle.singleroom_galleria_container} galleriThumbnail `}>
+            <Galleria className={`${singleroomStyle.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
+              item={itemTemplate} thumbnail={thumbnailTemplate} />
+          </div>
+          <div className={`${singleroomStyle.skr_sort_des} `}>
+            <h2>Sagor konna resort is waiting for you!</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias fuga laborum aut quibusdam odit facilis soluta eaque eveniet consequuntur reiciendis necessitatibus sint atque aliquam officia  </p>
+          </div>
+          <div className={`${singleroomStyle.skr_map_iframe} `}>
+            <h2>Location</h2>
+            <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Sagorkonna%20Resort%20Ltd,Kuakata%20Parjatan%20Area,%20Kolapara,%20Patuakhali,%20Bangladesh.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
+          </div>
+          <h2 className={singleroomStyle.skr_amenity_txt}>Amenity</h2>
+          <div className={`${singleroomStyle.skr_amenity_Item}  `}>
+            {singleRoom?.airCondition && (
+              <div className={`${singleroomStyle.skr_amenity_air_condition} `}>
+                <span className={`${singleroomStyle.air_condition_icon} material-icons-sharp`}>
+                  {singleRoom?.airCondition}
+                </span>
+                <h2>Air-conditioned</h2>
+              </div>
+            )
+            }
+            {singleRoom?.breakfast && (
+              <div className={`${singleroomStyle.skr_amenity_breakfast} `}>
+                <span className={`${singleroomStyle.breakfast_icon} material-icons-sharp `}>
+                  {singleRoom?.breakfast}
+                </span>
+                <h2>Free Breakfast</h2>
+              </div>
+            )
+            }
+            <div className={`${singleroomStyle.skr_amenity_under_protection} `}>
+              <span className={`${singleroomStyle.video_icon} material-icons-sharp`}>
+                videocam
+              </span>
+              <h2>Under protection</h2>
+            </div>
+            <div className={`${singleroomStyle.skr_amenity_wifi} `}>
+              <span className={`${singleroomStyle.wifi_icon} material-icons-sharp`}>
+                wifi
+              </span>
+              <h2>Free Wifi</h2>
+            </div>
+            <div className={`${singleroomStyle.skr_amenity_tv} `}>
+              <span className={`${singleroomStyle.tv_icon} material-icons-sharp`}>
+                tv
+              </span>
+              <h2>TV</h2>
+            </div>
+          </div>
+          <AroundHotel />
+          <Reviews />
         </div>
         <div className={`${singleroomStyle.booking_details} col lg:col-4`}>
-          <div className={singleroomStyle.room_idea}>
-            <div className={`${singleroomStyle.bed}`}>
-              <span className={`${singleroomStyle.bed_icon} material-icons-sharp`}>
-                bed
-              </span>
-              <p>{singleRoom?.count}
-                <span> Guests</span>
-              </p>
-            </div>
-            <div className={`${singleroomStyle.measure}`}>
-              <span className={`${singleroomStyle.measure_icon} material-icons-sharp`}>
-                crop_square
-              </span>
-              <p>{singleRoom?.feet}
-                <span> Ft²</span>
-              </p>
-            </div>
-          </div>
-          <div className={`${singleroomStyle.booking}`}>
-            <div className={`${singleroomStyle.booking_price}`}>
-              <h1>TK {singleRoom?.price}</h1>
-              <span>/night</span>
-            </div>
-            <button className={`${singleroomStyle.reservation_btn} `}>Reservation</button>
-          </div>
-          <div className={singleroomStyle.booking_info}>
-            <div className="calender">
-              <div className={`${singleroomStyle.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
-                <label htmlFor="Check in">Check in</label>
-                <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon placeholder='Select date' />
+          <div style={{ position: 'fixed', width: '393px', top: '150px', bottom: '3000px' }} className={`${singleroomStyle.booking_sticky}`}>
+            <div className={singleroomStyle.room_idea}>
+              <div className={`${singleroomStyle.bed}`}>
+                <span className={`${singleroomStyle.bed_icon} material-icons-sharp`}>
+                  bed
+                </span>
+                <p>{singleRoom?.count}
+                  <span> Guests</span>
+                </p>
               </div>
-              <div className={`${singleroomStyle.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
-                <label htmlFor="Check out">Check out</label>
-                <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon placeholder='Select date' />
+              <div className={`${singleroomStyle.measure}`}>
+                <span className={`${singleroomStyle.measure_icon} material-icons-sharp`}>
+                  crop_square
+                </span>
+                <p>{singleRoom?.feet}
+                  <span> Ft²</span>
+                </p>
               </div>
             </div>
-            <div className={`${singleroomStyle.guest_count} grid`}>
-              <div className={`${singleroomStyle.adult_count} adult_count_dropdown lg:col-6`}>
-                <h5>Person</h5>
-                <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
+            <div className={`${singleroomStyle.booking}`}>
+              <div className={`${singleroomStyle.booking_price}`}>
+                <h1>TK {singleRoom?.price}</h1>
+                <span>/night</span>
               </div>
-              <div className={`${singleroomStyle.children_count} children_count_dropdown lg:col-6`}>
-                <h5>Children</h5>
-                <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
+              <button className={`${singleroomStyle.reservation_btn} `}>Reservation</button>
+            </div>
+            <div className={singleroomStyle.booking_info}>
+              <div className="calender">
+                <div className={`${singleroomStyle.check_in} calendarFieldCustomBg field col-12 md:col-4`}>
+                  <label htmlFor="Check in">Check in</label>
+                  <Calendar id="checkin" value={checkin} onChange={(e) => setCheckin(e.value)} showIcon placeholder='Select date' />
+                </div>
+                <div className={`${singleroomStyle.check_out} calendarFieldCustomBg  field col-12 md:col-4`} >
+                  <label htmlFor="Check out">Check out</label>
+                  <Calendar id="checkout" className='width: 100%;' value={checkout} onChange={(e) => setCheckout(e.value)} showIcon placeholder='Select date' />
+                </div>
+              </div>
+              <div className={`${singleroomStyle.guest_count} grid`}>
+                <div className={`${singleroomStyle.adult_count} adult_count_dropdown lg:col-6`}>
+                  <h5>Person</h5>
+                  <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
+                </div>
+                <div className={`${singleroomStyle.children_count} children_count_dropdown lg:col-6`}>
+                  <h5>Children</h5>
+                  <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div >
-      <div className={`${singleroomStyle.skr_text} grid`}>
-        <div className={`${singleroomStyle.skr_sort_des} lg:col-8`}>
-          <h2>Sagor konna resort is waiting for you!</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias fuga laborum aut quibusdam odit facilis soluta eaque eveniet consequuntur reiciendis necessitatibus sint atque aliquam officia  </p>
-        </div>
-      </div>
-      <div className={`${singleroomStyle.skr_map} grid`}>
-        <div className={`${singleroomStyle.skr_map_iframe} lg:col-8`}>
-          <h2>Location</h2>
-          <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Sagorkonna%20Resort%20Ltd,Kuakata%20Parjatan%20Area,%20Kolapara,%20Patuakhali,%20Bangladesh.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
-        </div>
-      </div>
-      <h2 className={singleroomStyle.skr_amenity_txt}>Amenity</h2>
-      <div className={`${singleroomStyle.skr_amenity} grid`}>
-        <div className={`${singleroomStyle.skr_amenity_Item} lg:col-8`}>
-          {singleRoom?.airCondition && (
-            <div className={`${singleroomStyle.skr_amenity_air_condition} `}>
-              <span className={`${singleroomStyle.air_condition_icon} material-icons-sharp`}>
-                {singleRoom?.airCondition}
-              </span>
-              <h2>Air-conditioned</h2>
-            </div>
-          )
-          }
-          {singleRoom?.breakfast && (
-            <div className={`${singleroomStyle.skr_amenity_breakfast} `}>
-              <span className={`${singleroomStyle.breakfast_icon} material-icons-sharp `}>
-                {singleRoom?.breakfast}
-              </span>
-              <h2>Free Breakfast</h2>
-            </div>
-          )
-          }
-          <div className={`${singleroomStyle.skr_amenity_under_protection} `}>
-            <span className={`${singleroomStyle.video_icon} material-icons-sharp`}>
-              videocam
-            </span>
-            <h2>Under protection</h2>
-          </div>
-          <div className={`${singleroomStyle.skr_amenity_wifi} `}>
-            <span className={`${singleroomStyle.wifi_icon} material-icons-sharp`}>
-              wifi
-            </span>
-            <h2>Free Wifi</h2>
-          </div>
-          <div className={`${singleroomStyle.skr_amenity_tv} `}>
-            <span className={`${singleroomStyle.tv_icon} material-icons-sharp`}>
-              tv
-            </span>
-            <h2>TV</h2>
-          </div>
-        </div>
-      </div>
-      <AroundHotel className="col lg:col-8" />
-      <Reviews />
       <div className={`${singleroomStyle.similar_room_container}`} >
         <div className={`${singleroomStyle.similar_room}`}>
           <h3>Similar Rooms</h3>

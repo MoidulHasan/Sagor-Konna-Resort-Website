@@ -12,7 +12,7 @@ const Reviews = () => {
   // FORM
   // const [value1, setValue1] = useState('');
   return (
-    <div className={`${reviewStyles.review_container} lg:col-8`}>
+    <div className={`${reviewStyles.review_container}  `}>
       <h2>Reviews</h2>
       <div className={`${reviewStyles.review}  `}>
         <div className={`${reviewStyles.review_profile_flex}  `}>
