@@ -11,3 +11,5 @@ const useRoomData = () => {
 
   return { skrRooms };
 };
+
+export default useRoomData;

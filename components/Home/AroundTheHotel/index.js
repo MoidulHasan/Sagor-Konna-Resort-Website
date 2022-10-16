@@ -2,16 +2,11 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import aroundTheHotelStyles from './AroundTheHotel.module.css';
 
-import sagorKonnaService1 from '../../../public/images/services/service1bar.jpg';
-
-import sagorKonnaService2 from '../../../public/images/services/service2pool.jpg';
-
-import sagorKonnaService3 from '../../../public/images/services/service3restaurant.jpg';
 import Image from 'next/image';
+import Services from './Services';
 
 const AroundTheHotel = () => {
   const animationAroundRef = useRef(null);
-  const serviceCardRef = useRef(null);
 
   //   for the view point animation
 
@@ -21,7 +16,8 @@ const AroundTheHotel = () => {
       animationAroundRef.current.classList.add('skrAnimationScrollActiveEl');
       return;
     }
-    animationAroundRef.current.classList.remove('skrAnimationScrollActiveEl');
+    animationAroundRef?.current &&
+      animationAroundRef.current.classList.remove('skrAnimationScrollActiveEl');
   };
 
   useEffect(() => {
@@ -76,84 +72,7 @@ const AroundTheHotel = () => {
               </div>
             </div>
           </div>
-          <div className='col-12 lg:col-4'>
-            <div ref={serviceCardRef} className=''>
-              <div className={aroundTheHotelStyles.skrAthCard}>
-                <div className={aroundTheHotelStyles.skrCoverFrame}>
-                  <Image
-                    src={sagorKonnaService1}
-                    alt='sagor konna resort'
-                    className={aroundTheHotelStyles.skrCoverFrameImg}
-                    layout='fill'
-                  />
-                </div>
-                <div class={aroundTheHotelStyles.skrCardDescription}>
-                  <h4 class='skrMb10'>Restaurant Lounge</h4>
-                  <p>
-                    Sagor Konna Resort has an in-house restaurant with all the
-                    sea food available!
-                  </p>
-                  <div>
-                    <Link href='/about'>
-                      <a className='skrButton'> Read More</a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 lg:col-4'>
-            <div ref={serviceCardRef} className=''>
-              <div className={aroundTheHotelStyles.skrAthCard}>
-                <div className={aroundTheHotelStyles.skrCoverFrame}>
-                  <Image
-                    src={sagorKonnaService2}
-                    alt='sagor konna resort'
-                    className={aroundTheHotelStyles.skrCoverFrameImg}
-                    layout='fill'
-                  />
-                </div>
-                <div class={aroundTheHotelStyles.skrCardDescription}>
-                  <h4 class='skrMb10'>Swimming Pools</h4>
-                  <p>
-                    A wonderful swimming pool inside the hotel compound with sea
-                    view!
-                  </p>
-                  <div>
-                    <Link href='/about'>
-                      <a className='skrButton'> Read More</a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 lg:col-4'>
-            <div ref={serviceCardRef} className=''>
-              <div className={aroundTheHotelStyles.skrAthCard}>
-                <div className={aroundTheHotelStyles.skrCoverFrame}>
-                  <Image
-                    src={sagorKonnaService3}
-                    alt='sagor konna resort'
-                    className={aroundTheHotelStyles.skrCoverFrameImg}
-                    layout='fill'
-                  />
-                </div>
-                <div class={aroundTheHotelStyles.skrCardDescription}>
-                  <h4 class='skrMb10'>Restaurant</h4>
-                  <p>
-                    Official Restaurant of Sagor Konna Resort with all the sea
-                    foods available.
-                  </p>
-                  <div>
-                    <Link href='/about'>
-                      <a className='skrButton'> Read More</a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Services />
         </div>
       </div>
     </div>

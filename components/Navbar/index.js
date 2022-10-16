@@ -74,7 +74,7 @@ const Navbar = () => {
           <Image
             src={skrLogo}
             alt='logo of NRB'
-            height='65px'
+            height='70px'
             width='75px'
             className='logoNRB'
           />
