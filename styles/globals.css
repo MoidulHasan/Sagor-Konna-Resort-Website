@@ -621,7 +621,7 @@ blockquote::after {
 
 /* button  */
 
-.skrButton{
+.skrButton, .skrButton:focus {
   outline: inherit;
   -webkit-box-shadow: 0 0 0 10px #ffffff, 0 2px 48px 0 rgb(0 0 0 / 4%);
   box-shadow: 0 0 0 10px #ffffff, 0 2px 48px 0 rgb(0 0 0 / 4%);
@@ -649,6 +649,21 @@ blockquote::after {
 .skrButton:hover{
   color: #fff;
   filter: brightness(120%);
+}
+
+
+
+.skrButtonHref > span{
+  width: 100% !important;
+  overflow: visible  !important;
+}
+
+.skrButtonHref .playButtonImg{
+  margin-right: 12px !important;
+}
+
+.skrButton .skrZoom{
+  transform: scale(1.4) translateY(-1px) !important;
 }
 
 

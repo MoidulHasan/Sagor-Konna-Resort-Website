@@ -1,0 +1,36 @@
+.videoCOomponentContainer{
+    padding-bottom: 100px;
+}
+
+.skrAboutCard{
+    -webkit-box-shadow: 0 2px 48px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 4%);
+    border: solid 10px #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.skrAboutText{
+    padding: 60px;
+    width: 100%;
+}
+
+
+
+@keyframes wave {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255,255,255,.2);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .skrAboutText{
+        padding: 20px;
+    }
+    
+  }

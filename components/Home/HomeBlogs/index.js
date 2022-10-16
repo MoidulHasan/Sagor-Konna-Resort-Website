@@ -21,7 +21,8 @@ const HomeBlogs = () => {
       blogTextRef.current.classList.add('skrAnimationScrollActiveEl');
       return;
     }
-    blogTextRef.current.classList.remove('skrAnimationScrollActiveEl');
+    blogTextRef?.current &&
+      blogTextRef?.current.classList.remove('skrAnimationScrollActiveEl');
   };
 
   useEffect(() => {
