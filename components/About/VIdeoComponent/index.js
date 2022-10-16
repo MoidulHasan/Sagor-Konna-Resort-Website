@@ -15,12 +15,14 @@ const VIdeoComponent = () => {
                 className={`${videoStyles.skrAboutText} flex align-item-center justify-content-center`}
               >
                 <div className='skrVideoTitleFrame text-left'>
-                  <h2 className='skrHeading '>Start YOur Amazing Stay!</h2>
+                  <h2 className='skrHeading '>Start Your Amazing Stay!</h2>
                   <p className='skrParagraph '>
-                    Consectetur adipisicing elit. Nihil, illum voluptate eveniet
-                    ex fugit ea delectus, sed voluptatem. Laborum accusantium
-                    libero commodi id officiis itaque esse adipisci,
-                    necessitatibus asperiores, illo odio.
+                    Sagor Konna Resort is a Deluxe Hotel spectacularly designed
+                    and added with traditional hospitality of courteous,
+                    attractive and personalized service and is conveniently
+                    located closest to the Beach, Where one can enjoy the Sea,
+                    the Sunset and the waves of the Sea lying on the bed of our
+                    Hotel.
                   </p>
                   <a
                     href='https://www.youtube.com/watch?v=wsq-r8lMMsk'

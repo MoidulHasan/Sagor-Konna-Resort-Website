@@ -34,17 +34,17 @@ const TeamMembers = () => {
     },
   ];
   return (
-    <div className='skr-p-0-80'>
+    <div className='skr-p-0-60'>
       <div className='p-container'>
         <div className='grid'>
           <div className='col-12'>
             <div className='text-center skrTitleFrame'>
               <h2 className='skrHeading'>Our Awesome Team</h2>
               <p className='skrParagraph'>
-                Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex
-                fugit ea delectus, sed voluptatem. Laborum accusantium libero
-                commodi id officiis itaque esse adipisci, necessitatibus
-                asperiores, illo odio.
+                We are very happu to announce you that Sagor Konna Resort is
+                managed very well by the professionals. The management here have
+                more than 30 years of experience and good reputations around the
+                globe. We are happy to serve you anytime of the years.
               </p>
             </div>
           </div>
