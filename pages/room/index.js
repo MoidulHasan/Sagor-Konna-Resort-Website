@@ -11,7 +11,7 @@ export async function getStaticProps() {
   // const roomdata = await import('./api/roomData.json');
   // return { props: { roomdata: roomdata.default } };
   const res = await fetch('http://localhost:3000/api/roomData', {
-    accept: 'application/json'
+    accept: 'application/json',
   });
   // console.log((res));
   const data = await res.json();
@@ -19,4 +19,3 @@ export async function getStaticProps() {
     props: { data: data },
   };
 }
-

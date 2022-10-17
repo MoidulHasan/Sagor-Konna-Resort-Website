@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import hotelSummaryStyles from './HotelSummarySection.module.css';
 import CountUp from 'react-countup';
 
-const HotelSummarySection = () => {
+const HotelSummarySection = ({ summaryData }) => {
   const roomDetailRef = useRef(null);
 
   const callBackFunc = (entries) => {
@@ -83,6 +83,7 @@ const HotelSummarySection = () => {
                       start={10000}
                       end={44586}
                       enableScrollSpy
+                      separator=','
                     />
                   </div>
                   <h5>Guests</h5>
