@@ -30,23 +30,23 @@ const Navbar = () => {
   };
 
   const menuList = [
-    {
-      title: 'Restaurant',
-      path: '/',
-      cName: 'nav-links',
-      subMenu: [
-        {
-          title: 'Dine In',
-          path: '/dineIn',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'Room Service',
-          path: '/roomService',
-          cName: 'dropdown-link',
-        },
-      ],
-    },
+    // {
+    //   title: 'Restaurant',
+    //   path: '/',
+    //   cName: 'nav-links',
+    //   subMenu: [
+    //     {
+    //       title: 'Dine In',
+    //       path: '/dineIn',
+    //       cName: 'dropdown-link',
+    //     },
+    //     {
+    //       title: 'Room Service',
+    //       path: '/roomService',
+    //       cName: 'dropdown-link',
+    //     },
+    //   ],
+    // },
     {
       title: 'Gallery',
       path: '/gallery',
@@ -104,6 +104,14 @@ const Navbar = () => {
               <a className='nav-links' onClick={closeMobileMenu}>
                 {' '}
                 Rooms
+              </a>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link href='/restaurant'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Restaurant
               </a>
             </Link>
           </li>
