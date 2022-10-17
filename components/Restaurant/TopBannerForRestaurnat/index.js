@@ -1,16 +1,26 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useRef } from 'react';
 import topBannerRestaurantStyles from './TopBannerForRestaurnat.module.css';
 
 import restaurantTop from '../../../public/images/services/service3restaurant.jpg';
 import Image from 'next/image';
+import useInterception from '../../../hooks/useInterception';
 
 const TopBannerForRestaurnat = () => {
+  const restaurantTitleRef = useRef(null);
+  const restaurantDetailRef = useRef(null);
+
+  useInterception(restaurantTitleRef);
+  useInterception(restaurantDetailRef);
+
   return (
     <div>
       <div className={topBannerRestaurantStyles.welcomeContainer}>
         <div className='p-container'>
-          <div className='skrTitleFrame'>
+          <div
+            ref={restaurantTitleRef}
+            className='skrTitleFrame skrAnimationScroll'
+          >
             <h1 className='skrHeading'>Welcome to Sagor Konna Restaurant</h1>
             <p className='skrParagraph'>
               Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex
@@ -22,7 +32,10 @@ const TopBannerForRestaurnat = () => {
         </div>
       </div>
       <div className='skr-p-0-100'>
-        <div className='p-container'>
+        <div
+          ref={restaurantDetailRef}
+          className='p-container skrAnimationScroll'
+        >
           <div className={topBannerRestaurantStyles.skrAboutCard}>
             <div className='grid'>
               <div className='col-12 lg:col-6'>
