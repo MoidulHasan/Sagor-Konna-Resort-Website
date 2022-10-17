@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import TopBannerForRestaurnat from '../../components/Restaurant/TopBannerForRestaurnat';
 import restaurantStyles from './Restaurant.module.css';
 
 const Restaurant = () => {
@@ -15,7 +16,7 @@ const Restaurant = () => {
         {/* material icon of google  */}
       </Head>
       <main>
-        <h2>Hello</h2>
+        <TopBannerForRestaurnat />
       </main>
     </div>
   );
