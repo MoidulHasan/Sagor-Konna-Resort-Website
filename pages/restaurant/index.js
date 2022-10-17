@@ -3,6 +3,7 @@ import React from 'react';
 import RestaurantGallery from '../../components/Restaurant/RestaurantGallery';
 import RestaurantMenu from '../../components/Restaurant/RestaurantMenu';
 import RestaurantSummary from '../../components/Restaurant/RestaurantSummary';
+import RestaurantTeam from '../../components/Restaurant/RestaurantTeam';
 import TopBannerForRestaurnat from '../../components/Restaurant/TopBannerForRestaurnat';
 import restaurantStyles from './Restaurant.module.css';
 
@@ -24,6 +25,7 @@ const Restaurant = ({ menuLists }) => {
         <RestaurantMenu menuLists={menuLists} />
         <RestaurantGallery />
         <RestaurantSummary />
+        <RestaurantTeam />
       </main>
     </div>
   );
