@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import { Calendar } from 'primereact/calendar';
 import { addLocale } from 'primereact/api';
@@ -145,8 +146,8 @@ const SingleroomDetails = ({ singleRoom }) => {
           <AroundHotel />
           <Reviews />
         </div>
-        <div className={`${singleroomStyle.booking_details}`} >
-          <div className={`${singleroomStyle.booking_sticky}`}>
+        <div className={`${singleroomStyle.booking_details} cell small-6 right`} data-sticky-container>
+          <div className={`${singleroomStyle.booking_sticky} sticky`}>
             <div className={singleroomStyle.room_idea}>
               <div className={`${singleroomStyle.bed}`}>
                 <span className={`${singleroomStyle.bed_icon} material-icons-sharp`}>
@@ -184,29 +185,43 @@ const SingleroomDetails = ({ singleRoom }) => {
                 </div>
               </div>
               <div className={`${singleroomStyle.guest_count} grid`}>
-                <div className={`${singleroomStyle.adult_count} adult_count_dropdown lg:col-6`}>
+                <div className={`${singleroomStyle.adult_count}  lg:col-6`}>
                   <h5>Person</h5>
                   <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={person} options={items} onChange={countPerson} virtualScrollerOptions={{ itemSize: 38 }} placeholder={person} />
                 </div>
-                <div className={`${singleroomStyle.children_count} children_count_dropdown lg:col-6`}>
+                <div className={`${singleroomStyle.children_count}   lg:col-6`}>
                   <h5>Children</h5>
                   <Dropdown className={`${singleroomStyle.guest_count_drop}`} value={children} options={items} onChange={countChildren} virtualScrollerOptions={{ itemSize: 38 }} placeholder={children} />
                 </div>
               </div>
+              <div className={`${singleroomStyle.search_room}`}>
+                <div className={`${singleroomStyle.search_room}`}>
+                  <Link href="#">
+                    <button>
+                      <span class="material-icons-sharp">
+                        search
+                      </span>
+                      Search room
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div >
-      <div className={`${singleroomStyle.similar_room_container}`} >
+      <div className={`${singleroomStyle.similar_room_container}`} data-sticky data-anchor="foo">
         <div className={`${singleroomStyle.similar_room}`}>
           <h3>Similar Rooms</h3>
           <p>Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem. Laborum accusantium libero commodi id officiis itaque esse adipisci, necessitatibus asperiores, illo odio.</p>
         </div>
         <div className={`${singleroomStyle.similar_room_btn}`}>
-          <button >All rooms</button>
+          <Link href="#"><button >All rooms</button></Link>
         </div>
         <RoomCard data={singleRoom?.similarRoom} />
       </div>
+
     </div >
   )
 }

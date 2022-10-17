@@ -105,6 +105,9 @@
     border: none;
     cursor: pointer;
 }
+.review_submit_btn button:hover{
+    background: #5470cc;
+}
     /* p- inputtext  */
     /* MEDIA  */
     @media only screen and (max-width:1024px){
