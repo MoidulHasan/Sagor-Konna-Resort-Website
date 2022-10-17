@@ -11,6 +11,51 @@ import serviceImg6 from '../public/images/services/service6.jpg';
 export const ContextApi = createContext();
 
 const ContextProvider = ({ children }) => {
+  // const hotelSummary = [
+  //   {
+  //     id: 1,
+  //     viewNumber: 4,
+  //     title: 'View',
+  //   },
+  //   {
+  //     id: 2,
+  //     viewNumber: 30,
+  //     title: 'Rooms',
+  //   },
+  //   {
+  //     id: 3,
+  //     viewNumber: 6,
+  //     title: 'Beaches',
+  //   },
+  //   {
+  //     id: 4,
+  //     viewNumber: 44586,
+  //     title: 'Guests',
+  //   },
+  // ];
+
+  // const restaurantSummary = [
+  //   {
+  //     id: 1,
+  //     viewNumber: '400+',
+  //     title: 'Guest Daily',
+  //   },
+  //   {
+  //     id: 2,
+  //     viewNumber: 3,
+  //     title: 'Professional Chefs',
+  //   },
+  //   {
+  //     id: 3,
+  //     viewNumber: '600+',
+  //     title: 'Orders Daily',
+  //   },
+  //   {
+  //     id: 4,
+  //     viewNumber: 1,
+  //     title: 'Comfortable Halls',
+  //   },
+  // ];
   const services = [
     {
       id: 1,
@@ -61,6 +106,8 @@ const ContextProvider = ({ children }) => {
   const data = {
     skrRooms,
     services,
+    // hotelSummary,
+    // restaurantSummary,
   };
   return <ContextApi.Provider value={data}>{children}</ContextApi.Provider>;
 };
