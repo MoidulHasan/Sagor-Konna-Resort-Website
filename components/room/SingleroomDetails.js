@@ -81,7 +81,6 @@ const SingleroomDetails = ({ singleRoom }) => {
   const items = Array.from({ length: 10 }).map((_, i) => ({ label: `${i}`, value: i }));
   const [person, setPerson] = useState(2);
   const [children, setChildren] = useState(1);
-
   const countPerson = (e) => {
     setPerson(e.value);
   }
@@ -90,8 +89,8 @@ const SingleroomDetails = ({ singleRoom }) => {
   }
   return (
     <div className={singleroomStyle.singleroom_container}>
-      <div className={`${singleroomStyle.singleroom_booking_container}  grid`}>
-        <div className={`${singleroomStyle.singleroom_booking_sub_container} col lg:col-8`}>
+      <div className={`${singleroomStyle.singleroom_booking_container}`}>
+        <div className={`${singleroomStyle.singleroom_booking_sub_container} `}>
           <div className={`${singleroomStyle.singleroom_galleria_container} galleriThumbnail `}>
             <Galleria className={`${singleroomStyle.singleroom_galleria}`} value={images} responsiveOptions={responsiveOptions} numVisible={5} circular
               item={itemTemplate} thumbnail={thumbnailTemplate} />
@@ -146,8 +145,8 @@ const SingleroomDetails = ({ singleRoom }) => {
           <AroundHotel />
           <Reviews />
         </div>
-        <div className={`${singleroomStyle.booking_details} col lg:col-4`}>
-          <div style={{ position: 'fixed', width: '393px', top: '150px', bottom: '3000px' }} className={`${singleroomStyle.booking_sticky}`}>
+        <div className={`${singleroomStyle.booking_details}`}>
+          <div className={`${singleroomStyle.booking_sticky}`}>
             <div className={singleroomStyle.room_idea}>
               <div className={`${singleroomStyle.bed}`}>
                 <span className={`${singleroomStyle.bed_icon} material-icons-sharp`}>
