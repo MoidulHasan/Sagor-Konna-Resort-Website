@@ -1,8 +1,12 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 import resMenuStyles from '../RestaurantMenu.module.css';
 
-const MenuCard = ({ menu }) => {
+const MenuCard = ({ menu, component }) => {
+  const routeForMenu = useRouter();
+  const routerPathName = routeForMenu.pathname;
+
   return (
     <div className='skeMenuCard'>
       <div class='skrCoverFrame skMenuCoverFrame'>
@@ -12,13 +16,15 @@ const MenuCard = ({ menu }) => {
           className='blogImage'
           layout='fill'
         />
+        {component === 'special' && <div class='skrBadge'>Popular</div>}
       </div>
       <div class='skrDescriptionFrame'>
         <h3 className='skrMb20'>{menu?.title}</h3>
         <div className='skrTextLight skrMb20'>{menu?.description}</div>
         <div className='skrCardBottom flex justify-content-between align-items-center'>
           <div className='skrPrice'>
-            ৳{menu?.price}
+            {component === 'special' && <sup>{menu?.price + 400} </sup>}৳
+            {menu?.price}
             <span> /person</span>
           </div>
         </div>
