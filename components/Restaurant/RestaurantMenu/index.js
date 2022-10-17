@@ -93,7 +93,7 @@ const RestaurantMenu = ({ menuLists }) => {
                 pagination={{ type: 'fraction' }}
                 //   scrollbar={{ draggable: true }}
               >
-                {menuLists?.map((menu) => (
+                {menuLists.slice(0, 6)?.map((menu) => (
                   <SwiperSlide key={menu.id}>
                     <MenuCard key={menu.id} menu={menu} />
                   </SwiperSlide>
