@@ -145,7 +145,7 @@ const SingleroomDetails = ({ singleRoom }) => {
           <AroundHotel />
           <Reviews />
         </div>
-        <div className={`${singleroomStyle.booking_details}`}>
+        <div className={`${singleroomStyle.booking_details}`} >
           <div className={`${singleroomStyle.booking_sticky}`}>
             <div className={singleroomStyle.room_idea}>
               <div className={`${singleroomStyle.bed}`}>

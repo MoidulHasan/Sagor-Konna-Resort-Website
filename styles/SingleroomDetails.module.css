@@ -42,14 +42,11 @@
 }
 .booking_details{
     width: 40%;
-    position: relative;
     background: rgb(192, 185, 185);   
  }
-.booking_sticky{
-    position: sticky;
-    position: -webkit-sticky;
+/* .booking_sticky{
     top: 0;
-}
+} */
 
 .booking{
 display: flex;
