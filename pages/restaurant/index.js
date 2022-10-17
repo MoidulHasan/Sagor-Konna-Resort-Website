@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
+import CustomerTestimonials from '../../components/Home/CustomerTestimonials';
+import HomeBlogs from '../../components/Home/HomeBlogs';
 import RestaurantGallery from '../../components/Restaurant/RestaurantGallery';
 import RestaurantMenu from '../../components/Restaurant/RestaurantMenu';
 import RestaurantSummary from '../../components/Restaurant/RestaurantSummary';
 import RestaurantTeam from '../../components/Restaurant/RestaurantTeam';
+import RestaurantVideoComponent from '../../components/Restaurant/RestaurantVideoComponent';
 import TopBannerForRestaurnat from '../../components/Restaurant/TopBannerForRestaurnat';
 import restaurantStyles from './Restaurant.module.css';
 
@@ -26,6 +29,9 @@ const Restaurant = ({ menuLists }) => {
         <RestaurantGallery />
         <RestaurantSummary />
         <RestaurantTeam />
+        <RestaurantVideoComponent />
+        <CustomerTestimonials />
+        <HomeBlogs />
       </main>
     </div>
   );
