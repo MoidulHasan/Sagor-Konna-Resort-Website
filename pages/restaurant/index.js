@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import RestaurantMenu from '../../components/Restaurant/RestaurantMenu';
 import TopBannerForRestaurnat from '../../components/Restaurant/TopBannerForRestaurnat';
 import restaurantStyles from './Restaurant.module.css';
 
@@ -17,6 +18,7 @@ const Restaurant = () => {
       </Head>
       <main>
         <TopBannerForRestaurnat />
+        <RestaurantMenu />
       </main>
     </div>
   );
