@@ -2,6 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import topBannerRestaurantStyles from './TopBannerForRestaurnat.module.css';
 
+import restaurantTop from '../../../public/images/services/service3restaurant.jpg';
+import Image from 'next/image';
+
 const TopBannerForRestaurnat = () => {
   return (
     <div>
@@ -18,7 +21,7 @@ const TopBannerForRestaurnat = () => {
           </div>
         </div>
       </div>
-      <div className='p-0-100'>
+      <div className='skr-p-0-100'>
         <div className='p-container'>
           <div className={topBannerRestaurantStyles.skrAboutCard}>
             <div className='grid'>
@@ -40,6 +43,15 @@ const TopBannerForRestaurnat = () => {
                       </Link>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className='col-12 lg:col-6'>
+                <div className={topBannerRestaurantStyles.skrAboutPhoto}>
+                  <Image
+                    src={restaurantTop}
+                    alt='Restaurant Image'
+                    className={topBannerRestaurantStyles.skrPhoto}
+                  />
                 </div>
               </div>
             </div>
