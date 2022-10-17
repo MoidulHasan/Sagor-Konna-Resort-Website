@@ -38,8 +38,8 @@ const TopBannerForRestaurnat = () => {
                       adipisci, necessitatibus asperiores, illo odio.
                     </p>
                     <div>
-                      <Link href='/about'>
-                        <a className='skrButton'>Services</a>
+                      <Link href='/restaurant/menu'>
+                        <a className='skrButton'>Menu</a>
                       </Link>
                     </div>
                   </div>
