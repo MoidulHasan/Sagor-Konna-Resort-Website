@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { useCallback, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import resGalleryStyles from './RestaurantGallery.module.css';
-import skGalleryStyles from '../../Home/SKGallery/SKGallery.module.css';
 
 // swiper
 // import Swiper core and required modules

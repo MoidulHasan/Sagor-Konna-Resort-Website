@@ -1092,7 +1092,9 @@ testimonial
 }
 
 
-.skrBlogCard{
+/* blog card and menu card global css  */
+
+.skrBlogCard, .skeMenuCard{
   -webkit-box-shadow: 0 2px 48px 0 rgb(0 0 0 / 4%);
 box-shadow: 0 2px 48px 0 rgb(0 0 0 / 4%);
 background-color: #FFFFFF;
@@ -1106,9 +1108,12 @@ margin-bottom: 20px;
 .skrCoverFrame{
   width: 100%;
   border-radius: 5px;
-  /* padding-bottom: 65%; */
   position: relative;
   overflow: hidden;
+}
+.skMenuCoverFrame{
+    padding-bottom: 65%;
+
 }
 
 .skrCoverFrame > span{
@@ -1118,7 +1123,7 @@ margin-bottom: 20px;
   overflow: hidden;
 }
 
-.skrCoverFrame .blogImage{
+.skrCoverFrame .blogImage, .skrCoverFrame .menuImg{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1166,6 +1171,17 @@ margin-bottom: 20px;
   background-color: #F2FFFF;
   padding: 5px;
   border-radius: 20px;
+}
+
+.skrDescriptionFrame h3, .skrDescriptionFrame h4, .skrDescriptionFrame h5, .skrDescriptionFrame h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 
 .skrFeature{
@@ -1221,6 +1237,22 @@ margin-bottom: 20px;
   color: #64688C;
 }
 
+.skrCardBottom{
+
+}
+
+.skrCardBottom span{
+  font-weight: 400;
+    font-size: 15px;
+    color: #64688C;
+}
+
+.skrCardBottom .skrPrice{
+  font-size: 20px;
+  font-weight: 600;
+  color: #64BC5F;
+}
+
 @media screen and (min-width: 960px) {
 
   .skrCoverFrame > span{
@@ -1229,6 +1261,20 @@ margin-bottom: 20px;
   /* .skrCoverFrame .blogImage{
     height: 240px !important;
   } */
+}
+
+
+.skrBadge{
+  border-radius: 3px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 4;
+    -webkit-box-shadow: 0 0 0 5px rgb(255 255 255 / 15%);
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 15%);
+    background-color: #EBA744;
+    padding: 1px 10px;
 }
 
 

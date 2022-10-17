@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import React from 'react';
 import RestaurantGallery from '../../components/Restaurant/RestaurantGallery';
+import RestaurantMenu from '../../components/Restaurant/RestaurantMenu';
 import RestaurantSummary from '../../components/Restaurant/RestaurantSummary';
 import TopBannerForRestaurnat from '../../components/Restaurant/TopBannerForRestaurnat';
 import restaurantStyles from './Restaurant.module.css';
 
-const Restaurant = () => {
+const Restaurant = ({ menuLists }) => {
+  // console.log(menuLists);
   return (
     <div>
       <Head>
@@ -19,6 +21,7 @@ const Restaurant = () => {
       </Head>
       <main>
         <TopBannerForRestaurnat />
+        <RestaurantMenu menuLists={menuLists} />
         <RestaurantGallery />
         <RestaurantSummary />
       </main>
@@ -27,3 +30,14 @@ const Restaurant = () => {
 };
 
 export default Restaurant;
+
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/api/menuListData', {
+    accept: 'application/json',
+  });
+  // console.log(res);
+  const menuLists = await res.json();
+  return {
+    props: { menuLists: menuLists },
+  };
+}
