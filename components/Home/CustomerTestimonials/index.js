@@ -36,7 +36,10 @@ const CustomerTestimonials = () => {
       animationFeedBackRef.current.classList.add('skrAnimationScrollActiveEl');
       return;
     }
-    animationFeedBackRef.current.classList.remove('skrAnimationScrollActiveEl');
+    animationFeedBackRef.current &&
+      animationFeedBackRef.current.classList.remove(
+        'skrAnimationScrollActiveEl'
+      );
   };
 
   useEffect(() => {
@@ -89,8 +92,8 @@ const CustomerTestimonials = () => {
           <div class='col-12 lg:col-12'>
             {/* swiper slider  */}
             <Swiper
-              // watchSlidesProgress={true}
-              // freeMode={true}
+              watchSlidesProgress={true}
+              freeMode={true}
               loop={true}
               spaceBetween={30}
               centeredSlides={true}

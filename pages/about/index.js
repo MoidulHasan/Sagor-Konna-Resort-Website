@@ -1,5 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
+import DirectorSpeech from '../../components/About/DirectorSpeech';
+import ServiceOffered from '../../components/About/ServiceOffered';
+import TeamMembers from '../../components/About/TeamMembers';
+import VIdeoComponent from '../../components/About/VIdeoComponent';
+import AroundTheHotel from '../../components/Home/AroundTheHotel';
+import CustomerTestimonials from '../../components/Home/CustomerTestimonials';
+import HomeBlogs from '../../components/Home/HomeBlogs';
 import aboutStyles from './about.module.css';
 
 const About = () => {
@@ -35,6 +42,20 @@ const About = () => {
                 the Sea lying on the bed of our Hotel.
               </p>
             </div>
+            {/* director speech  */}
+            <DirectorSpeech />
+            {/* service components  */}
+            <ServiceOffered />
+            {/* video component  */}
+            <VIdeoComponent />
+            {/* Management  */}
+            <TeamMembers />
+            {/* services  */}
+            <AroundTheHotel />
+            {/* testimonials  */}
+            <CustomerTestimonials />
+            {/* blogs  */}
+            <HomeBlogs />
           </div>
         </div>
       </main>
