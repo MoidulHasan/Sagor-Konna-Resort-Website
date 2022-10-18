@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleBlogHeader from '../../../components/SingleBlog/SingleBlogHeader';
 
 export const getStaticPaths = async () => {
   const res = await fetch('http://localhost:3000/api/blogData');
@@ -31,7 +32,7 @@ export const getStaticProps = async (context) => {
 const BlogId = ({ singleBlog }) => {
   return (
     <div>
-      <h2>Hello {singleBlog.id}</h2>
+      <SingleBlogHeader blog={singleBlog} />
     </div>
   );
 };
