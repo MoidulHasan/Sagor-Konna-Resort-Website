@@ -1253,6 +1253,13 @@ margin-bottom: 20px;
   color: #64BC5F;
 }
 
+.skrPrice sup {
+  font-weight: 400;
+  color: #64688C;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
 @media screen and (min-width: 960px) {
 
   .skrCoverFrame > span{
