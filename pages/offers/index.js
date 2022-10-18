@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomerTestimonials from '../../components/Home/CustomerTestimonials';
 import OfferList from '../../components/Offers/OfferList';
 import OfferTopBanner from '../../components/Offers/OfferTopBanner';
 import SagorKonnaCommon from '../../components/Offers/SagorKonnaCommon';
@@ -10,6 +11,7 @@ const Offers = ({ offer }) => {
       <OfferTopBanner />
       <OfferList offer={offer} />
       <SagorKonnaCommon />
+      <CustomerTestimonials />
     </div>
   );
 };
