@@ -1,8 +1,6 @@
-
 const Membership = () => {
     return (
-        <div>Membership</div>
+        <div>Membedfdfsdrship</div>
     )
 }
-
 export default Membership
