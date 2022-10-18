@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import time from '../../../../public/images/blogs/time.svg';
 
-const singleBlog = ({ singleBlog }) => {
+const singleBlog = ({ singleBlog, component }) => {
   return (
     <div class='skrBlogCard'>
       <div class='skrCoverFrame'>
@@ -28,6 +28,9 @@ const singleBlog = ({ singleBlog }) => {
                 width={100}
                 height={100}
               />
+              {component === 'popularBlog' && (
+                <div className='skrBadge mt-3 mr-3 text-base'>Popular</div>
+              )}
             </div>
             <span>{singleBlog?.authorName}</span>
           </div>
@@ -38,7 +41,7 @@ const singleBlog = ({ singleBlog }) => {
             <span>12.08.21 23:13</span>
           </div>
         </div>
-        <Link href='/blog'>
+        <Link href={`/blog/${singleBlog?.id}`}>
           <a className='linkKajkam'>
             <h4 class='skrMb20'>{singleBlog?.title}</h4>
           </a>
