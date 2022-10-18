@@ -25,21 +25,24 @@ export const getStaticProps = async (context) => {
   const id = context.params.blogId;
   const res = await fetch(`http://localhost:3000/api/blogData`);
   const data = await res.json();
+  const blogs = data;
   const singleBlog = data.find((singleData) => singleData.id.toString() === id);
   return {
     props: {
       singleBlog,
+      blogs,
     },
   };
 };
 
-const BlogId = ({ singleBlog }) => {
+const BlogId = ({ singleBlog, blogs }) => {
+  // console.log(blogs);
   return (
     <div>
       <SingleBlogHeader blog={singleBlog} />
       <SingleBlogDetail blog={singleBlog} />
       <SingleBlogComments />
-      {/* <PopularBlogs /> */}
+      <PopularBlogs blogs={blogs} />
     </div>
   );
 };
