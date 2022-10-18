@@ -123,7 +123,7 @@ const Navbar = () => {
             />
           ))}
           <li className='nav-item'>
-            <Link href='/Offers' className='nav-links'>
+            <Link href='/offers' className='nav-links'>
               <a className='nav-links' onClick={closeMobileMenu}>
                 {' '}
                 Offers

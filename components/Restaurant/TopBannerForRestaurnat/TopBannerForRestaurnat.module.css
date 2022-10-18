@@ -22,12 +22,12 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-
     /* padding-bottom: 70%; */
 }
 
 .skrAboutPhoto > span {
-    width: 100% !important
+    width: 100% !important;
+    /* height: 100% !important; */
 }
 
 .skrPhoto{
@@ -44,7 +44,7 @@
 
 @media (min-width: 992px) {
     .skrAboutPhoto{
-        height: 413px;
+        height: 500px;
     }
 }
 
