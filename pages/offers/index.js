@@ -1,11 +1,28 @@
 import React from 'react';
+import OfferList from '../../components/Offers/OfferList';
+import OfferTopBanner from '../../components/Offers/OfferTopBanner';
+import SagorKonnaCommon from '../../components/Offers/SagorKonnaCommon';
 
-const Offers = () => {
+const Offers = ({ offer }) => {
+  console.log(offer);
   return (
     <div>
-      <h2>Offer For YOu</h2>
+      <OfferTopBanner />
+      <OfferList offer={offer} />
+      <SagorKonnaCommon />
     </div>
   );
 };
 
 export default Offers;
+
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/api/offer');
+  const offer = await res.json();
+
+  return {
+    props: {
+      offer,
+    },
+  };
+}
