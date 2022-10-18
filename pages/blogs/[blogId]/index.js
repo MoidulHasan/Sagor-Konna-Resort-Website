@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleBlogComments from '../../../components/SingleBlog/SingleBlogComments';
 import SingleBlogDetail from '../../../components/SingleBlog/SingleBlogDetail';
 import SingleBlogHeader from '../../../components/SingleBlog/SingleBlogHeader';
 
@@ -35,6 +36,7 @@ const BlogId = ({ singleBlog }) => {
     <div>
       <SingleBlogHeader blog={singleBlog} />
       <SingleBlogDetail blog={singleBlog} />
+      <SingleBlogComments />
     </div>
   );
 };

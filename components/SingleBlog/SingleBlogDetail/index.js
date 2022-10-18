@@ -22,7 +22,7 @@ const SingleBlogDetail = ({ blog }) => {
               layout='responsive'
               className={singleBlogStyles.blogImage}
             />
-            <div className={`${singleBlogStyles.blogFeatures} skrMb30`}>
+            <div className={`${singleBlogStyles.blogFeatures} skrMb30 skrMt30`}>
               <div
                 className={`${singleBlogStyles.blogFeature} flex align-items-center`}
               >
