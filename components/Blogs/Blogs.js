@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Blog = () => {
+const Blog = ({ blog }) => {
     return (
-        <div>Blog</div>
+        <div>
+            {blog.map((b) => (
+                <p>{b.title}</p>
+            ))}
+        </div>
     )
 }
 
