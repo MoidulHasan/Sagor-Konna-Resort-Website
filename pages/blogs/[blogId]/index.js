@@ -3,6 +3,8 @@ import SingleBlogComments from '../../../components/SingleBlog/SingleBlogComment
 import SingleBlogDetail from '../../../components/SingleBlog/SingleBlogDetail';
 import SingleBlogHeader from '../../../components/SingleBlog/SingleBlogHeader';
 
+import PopularBlogs from '../../../components/Blogs/PopularBlogs';
+
 export const getStaticPaths = async () => {
   const res = await fetch('http://localhost:3000/api/blogData');
   const data = await res.json();
@@ -37,6 +39,7 @@ const BlogId = ({ singleBlog }) => {
       <SingleBlogHeader blog={singleBlog} />
       <SingleBlogDetail blog={singleBlog} />
       <SingleBlogComments />
+      {/* <PopularBlogs /> */}
     </div>
   );
 };
