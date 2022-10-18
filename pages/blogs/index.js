@@ -2,7 +2,7 @@ import BlogHeader from '../../components/Blogs/BlogHeader';
 import BlogList from '../../components/Blogs/BlogsList';
 import PopularBlogs from '../../components/Blogs/PopularBlogs';
 const Blogs = ({ blogs }) => {
-  console.log(blogs);
+  // console.log(blogs);
   return (
     <div>
       <BlogHeader />

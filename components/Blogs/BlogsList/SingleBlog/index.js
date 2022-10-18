@@ -41,7 +41,7 @@ const singleBlog = ({ singleBlog, component }) => {
             <span>12.08.21 23:13</span>
           </div>
         </div>
-        <Link href={`/blog/${singleBlog?.id}`}>
+        <Link href={`/blogs/${singleBlog?.id}`}>
           <a className='linkKajkam'>
             <h4 class='skrMb20'>{singleBlog?.title}</h4>
           </a>
