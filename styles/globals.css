@@ -212,6 +212,14 @@ body {
 .skrMb20{
   margin-bottom: 20px;
 }
+
+.skrMb30{
+  margin-bottom: 30px;
+}
+
+.skrMb40{
+  margin-bottom: 40px;
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

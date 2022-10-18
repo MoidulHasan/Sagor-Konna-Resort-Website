@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleBlogDetail from '../../../components/SingleBlog/SingleBlogDetail';
 import SingleBlogHeader from '../../../components/SingleBlog/SingleBlogHeader';
 
 export const getStaticPaths = async () => {
@@ -33,6 +34,7 @@ const BlogId = ({ singleBlog }) => {
   return (
     <div>
       <SingleBlogHeader blog={singleBlog} />
+      <SingleBlogDetail blog={singleBlog} />
     </div>
   );
 };
