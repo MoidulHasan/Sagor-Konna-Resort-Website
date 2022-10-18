@@ -5,7 +5,7 @@ const AroundHotel = () => {
             <div className={aroundhotel.title}>
                 <h2>Around The Hotel</h2>
             </div>
-            <div className='grid'>
+            <div className={`${aroundhotel.aroundhotel_card_container}`}>
                 <div className={aroundhotel.aroundhotel_container}>
                     <div className={aroundhotel.aroundhotel_card}>
                         <div className={aroundhotel.aroundhotel_bg_img_container}>
