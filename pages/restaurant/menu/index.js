@@ -14,6 +14,8 @@ const Menu = ({ menuLists }) => {
   );
 };
 
+//index page for menu contain only menus
+
 export default Menu;
 
 export async function getStaticProps() {
