@@ -1,7 +1,9 @@
+import Memberships from "../../components/Memberships/Membership"
+
 const Membership = () => {
     return (
         <div>
-            <Membership />
+            <Memberships />
         </div>
     )
 }
