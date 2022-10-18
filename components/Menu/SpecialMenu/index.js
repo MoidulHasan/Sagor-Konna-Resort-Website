@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { useCallback, useRef } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // swiper
@@ -13,11 +12,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import useInterception from '../../../hooks/useInterception';
+import Link from 'next/link';
+import MenuCard from '../../Restaurant/RestaurantMenu/MenuCard';
 
-import resMenuStyles from './RestaurantMenu.module.css';
-import MenuCard from './MenuCard';
+import menuSpecialStyle from './SpecialMenu.module.css';
+import { useRouter } from 'next/router';
 
-const RestaurantMenu = ({ menuLists }) => {
+const SpecialMenu = ({ menuLists }) => {
   const sliderRef = useRef(null);
 
   const sliderSettings = {
@@ -53,7 +54,6 @@ const RestaurantMenu = ({ menuLists }) => {
   const swiperRef = useRef(null);
 
   useInterception(menuTitleRef);
-  //   useInterception(swiperRef);
 
   return (
     <div className='skr-p-0-80'>
@@ -64,7 +64,7 @@ const RestaurantMenu = ({ menuLists }) => {
               ref={menuTitleRef}
               className='text-center skrTitleFrame skrAnimationScroll'
             >
-              <h2 className='skrHeading'>Our Popular Menu</h2>
+              <h2 className='skrHeading'>Special Offers</h2>
               <p className='skrParagraph'>
                 Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex
                 fugit ea delectus, sed voluptatem. Laborum accusantium libero
@@ -95,22 +95,22 @@ const RestaurantMenu = ({ menuLists }) => {
               >
                 {menuLists.slice(0, 6)?.map((menu) => (
                   <SwiperSlide key={menu.id}>
-                    <MenuCard key={menu.id} menu={menu} />
+                    <MenuCard key={menu.id} menu={menu} component='special' />
                   </SwiperSlide>
                 ))}
 
                 <div className='flex justify-content-end'>
                   <div
-                    className={`${resMenuStyles.navigators}  flex justify-content-center align-items-center mt-4`}
+                    className={`${menuSpecialStyle.navigators}  flex justify-content-center align-items-center mt-4`}
                   >
                     <div
-                      className={`${resMenuStyles.prevArrow} mr-3`}
+                      className={`${menuSpecialStyle.prevArrow} mr-3`}
                       onClick={handlePrev}
                     >
                       <span class='material-icons-sharp'>arrow_back</span>
                     </div>
                     <div
-                      className={`${resMenuStyles.nextArrow}`}
+                      className={`${menuSpecialStyle.nextArrow}`}
                       onClick={handleNext}
                     >
                       <span class='material-icons-sharp'>arrow_forward</span>
@@ -126,4 +126,4 @@ const RestaurantMenu = ({ menuLists }) => {
   );
 };
 
-export default RestaurantMenu;
+export default SpecialMenu;
