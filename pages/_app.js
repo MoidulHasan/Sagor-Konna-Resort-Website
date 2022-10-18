@@ -8,14 +8,15 @@ import Layout from '../components/layout';
 // for fancy ui
 import '@fancyapps/ui/dist/fancybox.css';
 import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui';
+import ContextProvider from '../contexts/ContextProvider';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ContextProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </ContextProvider>
   );
 }
 

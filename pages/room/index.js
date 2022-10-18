@@ -10,13 +10,12 @@ export default room;
 export async function getStaticProps() {
   // const roomdata = await import('./api/roomData.json');
   // return { props: { roomdata: roomdata.default } };
-  const res = await fetch('http://localhost:3000/api/roomData', {
-    accept: 'application/json'
+  const res = await fetch('https://sagor-konna.herokuapp.com/api/room', {
+    accept: 'application/json',
   });
-  // console.log((res));
   const data = await res.json();
+  console.log(data.data.Room_number)
   return {
-    props: { data: data },
+    props: { data },
   };
 }
-

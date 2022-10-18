@@ -12,7 +12,7 @@ const Reviews = () => {
   // FORM
   // const [value1, setValue1] = useState('');
   return (
-    <div className={`${reviewStyles.review_container} lg:col-8`}>
+    <div className={`${reviewStyles.review_container}  `}>
       <h2>Reviews</h2>
       <div className={`${reviewStyles.review}  `}>
         <div className={`${reviewStyles.review_profile_flex}  `}>
@@ -85,12 +85,11 @@ const Reviews = () => {
             <div className={`${reviewStyles.review_input}`}>
               <InputText
                 type='text'
-                className={`${reviewStyles.review_input_name}block lg:col-6`}
+                className={`${reviewStyles.review_input_name}`}
                 placeholder='Name'
               />
               <InputText
                 type='email'
-                className='block lg:col-6'
                 placeholder='Email'
               />
             </div>

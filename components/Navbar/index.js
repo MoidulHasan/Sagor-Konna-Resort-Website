@@ -30,23 +30,23 @@ const Navbar = () => {
   };
 
   const menuList = [
-    {
-      title: 'Restaurant',
-      path: '/',
-      cName: 'nav-links',
-      subMenu: [
-        {
-          title: 'Dine In',
-          path: '/dineIn',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'Room Service',
-          path: '/roomService',
-          cName: 'dropdown-link',
-        },
-      ],
-    },
+    // {
+    //   title: 'Restaurant',
+    //   path: '/',
+    //   cName: 'nav-links',
+    //   subMenu: [
+    //     {
+    //       title: 'Dine In',
+    //       path: '/dineIn',
+    //       cName: 'dropdown-link',
+    //     },
+    //     {
+    //       title: 'Room Service',
+    //       path: '/roomService',
+    //       cName: 'dropdown-link',
+    //     },
+    //   ],
+    // },
     {
       title: 'Gallery',
       path: '/gallery',
@@ -74,7 +74,7 @@ const Navbar = () => {
           <Image
             src={skrLogo}
             alt='logo of NRB'
-            height='65px'
+            height='70px'
             width='75px'
             className='logoNRB'
           />
@@ -107,6 +107,14 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link href='/restaurant'>
+              <a className='nav-links' onClick={closeMobileMenu}>
+                {' '}
+                Restaurant
+              </a>
+            </Link>
+          </li>
           {menuList.map((menu) => (
             <MenuList
               key={menu.title}
@@ -115,7 +123,7 @@ const Navbar = () => {
             />
           ))}
           <li className='nav-item'>
-            <Link href='/Offers' className='nav-links'>
+            <Link href='/offers' className='nav-links'>
               <a className='nav-links' onClick={closeMobileMenu}>
                 {' '}
                 Offers
