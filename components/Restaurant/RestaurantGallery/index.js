@@ -89,8 +89,8 @@ const RestaurantGallery = () => {
                 loop={true}
                 pagination={{ type: 'fraction' }}
                 //   scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
               >
                 <SwiperSlide>
                   <div

@@ -17,7 +17,7 @@ const Services = () => {
 
   const router = useRouter();
   const routerPath = router.pathname;
-  console.log(router.pathname);
+  // console.log(router.pathname);
 
   const { services } = useDataContext();
 

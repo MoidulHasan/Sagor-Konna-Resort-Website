@@ -8,7 +8,7 @@ const MenuListToShow = ({ menuLists }) => {
 
   useInterception(menuTitleRef);
 
-  console.log(menuLists);
+  // console.log(menuLists);
 
   return (
     <div className={menuListStyles.MenuListContainer}>

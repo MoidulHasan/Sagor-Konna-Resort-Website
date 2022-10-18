@@ -4,7 +4,7 @@ import MenuListToShow from '../../../components/Menu/MenuListToShow';
 import SpecialMenu from '../../../components/Menu/SpecialMenu';
 
 const Menu = ({ menuLists }) => {
-  console.log(menuLists);
+  // console.log(menuLists);
   return (
     <div className='mt-6'>
       <MenuListToShow menuLists={menuLists} />
