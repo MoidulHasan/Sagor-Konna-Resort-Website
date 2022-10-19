@@ -2,7 +2,7 @@ import Memberships from "../../components/Memberships/Membership"
 
 const Membership = () => {
     return (
-        <div>
+        <div className="p-container">
             <Memberships />
         </div>
     )

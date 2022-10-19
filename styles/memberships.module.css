@@ -1,0 +1,127 @@
+/* .membership_container{
+    background: #000;
+    width: 100%;
+} */ 
+.membership_header {      
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.membership_header_txt{
+    position: relative;
+    width: 800px;
+    padding: 20px;
+}
+.membership_header::before{
+    width: 100%;
+    height: 250px;
+    content: "";
+    top: 5px;
+    background-image: url('/images//membership/imageedit_3_5737641980.jpg');
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 94%, 46% 100%, 0 94%, 0% 43%, 0 0);
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.membership_header h3{
+    position: relative;
+    color: #ffffff;
+}
+
+.membership_header p{
+    position: relative;
+    color: #ffffff;
+
+}
+.membership_header button{
+    position: relative;
+    display: block;
+    background: #3B61DD;
+    padding: 8px 15px;
+    border: none;
+    outline: 5px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    color:#ffffff;
+}
+.membership_header button:hover{
+   background: #5470cc;
+}
+ .membership_process{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+.membership_guide{
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.membership_guide span{
+    margin-bottom: 12px;
+    color: #3B61DD;
+    border: 3px solid #ffffff;  
+    outline: 2px solid rgba(59, 97, 221, .5);
+    padding: 4px;
+    border-radius: 10%;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+.membership_guide_text{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.membership_guide_text h4{
+    font-size: 15px;
+    margin-bottom: -10px;
+}
+.membership_guide_text p{
+    font-size: 12px;
+}
+.membership_steps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.membership_ifacilities{
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.membership_ifacilities span{
+    margin-bottom: 12px;
+    color: #3B61DD;
+    border: 3px solid #ffffff;  
+    outline: 2px solid rgba(59, 97, 221, .5);
+    padding: 4px;
+    border-radius: 50%;
+}
+.membership_registerBtn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.membership_registerBtn button{
+    position: relative;
+    display: block;
+    background: #3B61DD;
+    padding: 12px 15px;
+    border: none;
+    outline: 8px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    color:#ffffff;
+}
+.membership_registerBtn button:hover{
+   background: #5470cc;
+}
