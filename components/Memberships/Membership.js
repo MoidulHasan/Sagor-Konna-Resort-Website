@@ -1,6 +1,7 @@
-
 import Link from 'next/link'
 import membershipStyle from '../../styles/memberships.module.css'
+import Image from 'next/image';
+import videoFrameImg from '../../public/images/videoFrame.jpg';
 const Memberships = () => {
     return (
         <div className={`${membershipStyle.membership_container}`}>
@@ -44,40 +45,50 @@ const Memberships = () => {
                     </div>
                 </div>
             </div>
-
-            <h3 style={{ textAlign: 'center', padding: '50px 0' }}>Why be a Member of Sagor Konna?</h3>
-            <div className={`${membershipStyle.membership_steps}`}>
-                <div className={`${membershipStyle.membership_ifacilities}`}>
-                    <span class="material-icons-sharp">
-                        payments
-                    </span>
-                    <h4>Earn an additional income</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
-                </div>
-                <div className={`${membershipStyle.membership_ifacilities}`}>
-                    <span class="material-icons-sharp">
-                        diversity_3
-                    </span>
-                    <h4>Open your network</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
-                </div>
-                <div className={`${membershipStyle.membership_ifacilities}`}>
-                    <span class="material-icons-sharp">
-                        translate
-                    </span>
-                    <h4>Practice your language</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
+            <div className={membershipStyle.skrVideoFrame}>
+                <Image
+                    src={videoFrameImg}
+                    alt='Video Frame Cover'
+                    className={membershipStyle.skrVideoFrameCoverImg}
+                />
+                <a
+                    data-fancybox=''
+                    href='https://www.youtube.com/watch?v=wsq-r8lMMsk'
+                    class={`${membershipStyle.skrPlayButton} flex align-items-center justify-content-center`}
+                >
+                    <i class='fas fa-play'></i>
+                </a>
+            </div>
+            <div className={`${membershipStyle.steps_container}`}>
+                <h3 style={{ textAlign: 'center', padding: '50px 0' }}>Why be a Member of Sagor Konna?</h3>
+                <div className={`${membershipStyle.membership_steps}`}>
+                    <div className={`${membershipStyle.membership_ifacilities}`}>
+                        <span class="material-icons-sharp">
+                            payments
+                        </span>
+                        <h4>Earn an additional income</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
+                    </div>
+                    <div className={`${membershipStyle.membership_ifacilities}`}>
+                        <span class="material-icons-sharp">
+                            diversity_3
+                        </span>
+                        <h4>Open your network</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
+                    </div>
+                    <div className={`${membershipStyle.membership_ifacilities}`}>
+                        <span class="material-icons-sharp">
+                            translate
+                        </span>
+                        <h4>Practice your language</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
+                    </div>
                 </div>
             </div>
             <div className={`${membershipStyle.membership_registerBtn}`}>
                 <Link href="#">
                     <button>Register Now</button>
                 </Link>
-            </div>
-            <div>
-                <video autoPlay style={{ width: '500px', height: '500px' }} control>
-                    <source src="/images//membership/membership.mp4" />
-                </video>
             </div>
         </div>
     )
