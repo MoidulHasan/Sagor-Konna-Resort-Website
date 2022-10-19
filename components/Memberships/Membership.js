@@ -45,19 +45,21 @@ const Memberships = () => {
                     </div>
                 </div>
             </div>
-            <div className={membershipStyle.skrVideoFrame}>
-                <Image
-                    src={videoFrameImg}
-                    alt='Video Frame Cover'
-                    className={membershipStyle.skrVideoFrameCoverImg}
-                />
-                <a
-                    data-fancybox=''
-                    href='https://www.youtube.com/watch?v=wsq-r8lMMsk'
-                    class={`${membershipStyle.skrPlayButton} flex align-items-center justify-content-center`}
-                >
-                    <i class='fas fa-play'></i>
-                </a>
+            <div className={`${membershipStyle.membership_video_container}`}>
+                <div className={membershipStyle.membership_VideoFrame}>
+                    <Image
+                        src={videoFrameImg}
+                        alt='Video Frame Cover'
+                        className={membershipStyle.membership_VideoFrameCoverImg}
+                    />
+                    <a
+                        data-fancybox=''
+                        href='https://www.youtube.com/watch?v=wsq-r8lMMsk'
+                        class={`${membershipStyle.membership_PlayButton} flex align-items-center justify-content-center`}
+                    >
+                        <i class='fas fa-play'></i>
+                    </a>
+                </div>
             </div>
             <div className={`${membershipStyle.steps_container}`}>
                 <h3 style={{ textAlign: 'center', padding: '50px 0' }}>Why be a Member of Sagor Konna?</h3>
@@ -84,11 +86,11 @@ const Memberships = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt.</p>
                     </div>
                 </div>
-            </div>
-            <div className={`${membershipStyle.membership_registerBtn}`}>
-                <Link href="#">
-                    <button>Register Now</button>
-                </Link>
+                <div className={`${membershipStyle.membership_registerBtn}`}>
+                    <Link href="#">
+                        <button>Register Now</button>
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -85,12 +85,22 @@
 .membership_guide_text p{
     font-size: 12px;
 }
-.skrVideoFrame{
+.membership_video_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: -150px;
+}
+.membership_VideoFrame{
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.skrVideoFrame .skrVideoFrameCoverImg{
+.membership_VideoFrame .membership_VideoFrameCoverImg{
     position: absolute;
     top: 0;
     left: 0;
@@ -102,7 +112,7 @@
     object-position: center;
     border-radius: 5px;
 }
-.skrPlayButton{
+.membership_PlayButton{
     color: #FFFFFF;
     padding-left: 4px;
     position: absolute;
@@ -113,14 +123,16 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: #EBA744;
+    background-color: #3B61DD;
     -webkit-animation: wave 1s ease-in-out infinite;
     animation: wave 1s ease-in-out infinite;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
   }
   .steps_container{
-    background: #F5F7FC;
+    background: #ffffff;
+    padding-top: 200px;
+    padding-bottom: 50px;
   }
 .membership_steps{
     display: flex;
