@@ -18,7 +18,7 @@ const SingleBlogDetail = ({ blog }) => {
               src={blog?.img}
               alt='Sagor Konna Blog Image'
               width='100%'
-              height='100%'
+              height='65%'
               layout='responsive'
               className={singleBlogStyles.blogImage}
             />
@@ -55,34 +55,19 @@ const SingleBlogDetail = ({ blog }) => {
             </div>
             <div className={singleBlogStyles.blogPost}>
               <p class={`${singleBlogStyles.featureTexts} skrMb40`}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi soluta minima nemo, earum et minus iste amet molestias
-                sequi eum dolore laudantium iusto, quia praesentium eius, est?
-                Eligendi unde, ab cumque iure fugit, veritatis dolor fugiat ad
-                ex! Vero qui et dignissimos necessitatibus, praesentium magni,
-                accusamus vel doloribus dolores assumenda. Laboriosam fugiat
-                labore error perferendis doloribus, illo qui quisquam alias
-                saepe, sunt magni! Praesentium molestias facere, dolores sint
-                obcaecati nisi ducimus quaerat sunt. Ratione maiores repellendus
-                facere optio harum soluta, obcaecati et ipsam eos. Doloribus,
-                fugiat.
+                {blog?.blogPost1}
               </p>
               <blockquote className={`${singleBlogStyles.blockquote} skrMb40`}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate eveniet modi voluptatem ut nemo, porro debitis,
-                recusandae saepe, aspernatur obcaecati cum excepturi similique
-                sed ex praesentium distinctio quas assumenda et.
+                While visiting Kuakata Sea Beach, we stayed at Sagor Konna
+                Resort. Sagor Konna Resort and Restaurant is the best one to
+                stay in Kuakata to me. They provides a very good service with
+                top-noch security system and the food quality of their
+                restaurant is amazing. I personally recommend Sagor Konna Resort
+                to stay in Kuakata.
               </blockquote>
-              <p className={singleBlogStyles.featureTexts}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate amet natus dicta ipsum, aut autem sunt, tenetur
-                sapiente et repudiandae id expedita recusandae vitae doloribus
-                necessitatibus, accusamus sequi debitis reiciendis vel corporis
-                cum fuga dolorem voluptatem. Dolores maxime, architecto quia?
-              </p>
+              <p className={singleBlogStyles.featureTexts}>{blog?.blogPost2}</p>
               <p className={`${singleBlogStyles.featureTexts} skrMb40`}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia provident, distinctio ea!
+                {blog?.blogPost3}
               </p>
               <div className='grid'>
                 <div className='col-12 lg:col-6'>
@@ -107,19 +92,11 @@ const SingleBlogDetail = ({ blog }) => {
                 </div>
               </div>
               <p className={`${singleBlogStyles.featureTexts} skrMb30`}>
-                Consectetur adipisicing elit. Modi temporibus ratione rerum
-                voluptates, iusto non quas, ab optio sequi sint nisi officiis
-                facilis nihil facere id tempore laborum, voluptatum aut nostrum
-                natus vel tenetur praesentium labore illum, reprehenderit. Omnis
-                sunt autem, odit vero. Facilis accusamus totam quidem,
-                repudiandae. Modi saepe, expedita itaque laborum dolore
-                accusantium?
+                {blog?.blogPost4}
               </p>
 
               <p className={`${singleBlogStyles.featureTexts} skrMb10`}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                quisquam nam consectetur voluptate fuga facere ad quis magni
-                laboriosam blanditiis!
+                {blog?.blogPost5}
               </p>
             </div>
           </div>

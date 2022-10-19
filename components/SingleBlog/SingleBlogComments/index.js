@@ -27,7 +27,7 @@ const SingleBlogComments = () => {
                         <Image src={reviewImg1} alt='Profile Image' />
                       </div>
                       <div className={commentStyles.extraDate}>
-                        <h5>Emma Newman</h5>
+                        <h5>Niloy Siddiqui</h5>
                         <span>14.07.2021</span>
                       </div>
                     </div>
@@ -50,11 +50,11 @@ const SingleBlogComments = () => {
                     </ul>
                   </div>
                   <blockquote>
-                    Dequi folores dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt illo, delectus totam! Delectus illo magnam
-                    voluptatem a tempora id vitae dolor, quis natus iusto
-                    molestiae ab nam error vero possimus ullam facilis porro
-                    veritatis.
+                    Great service even though the Resort is still being
+                    renovated, rooms are spacious, comfortable and clean.
+                    Quality of service is sure to advance alongside the
+                    construction and completion of the Resort and surrounding
+                    areas.
                   </blockquote>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const SingleBlogComments = () => {
                         <Image src={reviewImg2} alt='Profile Image' />
                       </div>
                       <div className={commentStyles.extraDate}>
-                        <h5>Hasan Ahmed</h5>
+                        <h5>Tariq Aziz</h5>
                         <span>14.09.2022</span>
                       </div>
                     </div>
@@ -93,11 +93,11 @@ const SingleBlogComments = () => {
                     </ul>
                   </div>
                   <blockquote>
-                    Dequi folores dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt illo, delectus totam! Delectus illo magnam
-                    voluptatem a tempora id vitae dolor, quis natus iusto
-                    molestiae ab nam error vero possimus ullam facilis porro
-                    veritatis.
+                    Great service even though the Resort is still being
+                    renovated, rooms are spacious, comfortable and clean.
+                    Quality of service is sure to advance alongside the
+                    construction and completion of the Resort and surrounding
+                    areas.
                   </blockquote>
                 </div>
               </div>
