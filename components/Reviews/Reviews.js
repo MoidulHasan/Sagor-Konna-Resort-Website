@@ -8,7 +8,7 @@ const Reviews = () => {
   let day = dateObj.getUTCDate();
   let year = dateObj.getUTCFullYear();
   let newdate = year + '/' + month + '/' + day;
-  console.log(newdate);
+  // console.log(newdate);
   // FORM
   // const [value1, setValue1] = useState('');
   return (
@@ -88,10 +88,7 @@ const Reviews = () => {
                 className={`${reviewStyles.review_input_name}`}
                 placeholder='Name'
               />
-              <InputText
-                type='email'
-                placeholder='Email'
-              />
+              <InputText type='email' placeholder='Email' />
             </div>
             {/* <InputTextarea value={value1} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} /> */}
             <InputTextarea

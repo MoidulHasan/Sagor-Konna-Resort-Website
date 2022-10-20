@@ -23,6 +23,7 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async (context) => {
   const id = context.params.blogId;
+
   const res = await fetch(`http://localhost:3000/api/blogData`);
   const data = await res.json();
   const blogs = data;
