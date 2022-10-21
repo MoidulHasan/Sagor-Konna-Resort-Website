@@ -96,9 +96,11 @@
     position: relative;
     overflow: hidden;
     width: 70%;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
 }
 .membership_VideoFrame .membership_VideoFrameCoverImg{
     position: absolute;
@@ -110,7 +112,6 @@
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    border-radius: 5px;
 }
 .membership_PlayButton{
     color: #FFFFFF;
@@ -130,6 +131,7 @@
     transition: 0.4s ease-in-out;
   }
   .steps_container{
+    border-radius: 6px;
     background: #ffffff;
     padding-top: 200px;
     padding-bottom: 50px;
@@ -173,4 +175,30 @@
 }
 .membership_registerBtn button:hover{
    background: #5470cc;
+}
+
+/* FAQ  */
+.collapsible .toggle{
+    background: rgb(19, 204, 19);
+    border: unset;
+    cursor: pointer;
+    font: unset;
+    padding: .3rem;
+    border-radius: 5px;
+    margin-bottom: .5rem;;  
+}
+.collapsible .content{
+    border: 1px solid #5470cc;
+    padding: .5rem;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.5s;
+}
+.show{
+    background: #000;
+}
+.collapsible .content.show{
+    height: 200px;
 }

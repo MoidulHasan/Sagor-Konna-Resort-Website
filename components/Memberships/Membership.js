@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import Link from 'next/link'
 import membershipStyle from '../../styles/memberships.module.css'
 import Image from 'next/image';
 import videoFrameImg from '../../public/images/videoFrame.jpg';
 const Memberships = () => {
+    const [isActive, setIsActive] = useState(false);
     return (
         <div className={`${membershipStyle.membership_container}`}>
             <div className={`${membershipStyle.membership_header}`}>
@@ -92,8 +94,16 @@ const Memberships = () => {
                     </Link>
                 </div>
             </div>
+            <div className={`${membershipStyle.collapsible}`}>
+                {/* <div className={`${membershipStyle.membership_faq}`} onClick={() => setIsActive(!isActive)}> */}
+                <div className={`${membershipStyle.toggle}`} onClick={() => setIsActive(!isActive)}>
+                    <h3>How will I open a account</h3>
+                </div>
+                <div className={`${isActive} ? [${membershipStyle.content}, ${membershipStyle.show}.join(' ')] ${membershipStyle.content}`}>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, beatae?</p>
+                </div>
+            </div>
         </div>
     )
 }
-
 export default Memberships
