@@ -5,7 +5,7 @@ import Image from "next/image";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import videoFrameImg from "../../public/images/videoFrame.jpg";
-import { Button } from 'primereact/button';
+import { Button } from "primereact/button";
 const Memberships = () => {
     const parentRef = useRef();
     const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,7 @@ const Memberships = () => {
                     </div>
                 </div>
                 <div className={`${membershipStyle.membership_guide}`}>
-                    <span class="material-icons-sharp">diversity_3</span>
+                    <span class="material-icons-sharp">settings_suggest</span>
                     <div className={`${membershipStyle.membership_guide_text}`}>
                         <h4>Add Your services</h4>
                         <p>
@@ -51,7 +51,7 @@ const Memberships = () => {
                     </div>
                 </div>
                 <div className={`${membershipStyle.membership_guide}`}>
-                    <span class="material-icons-sharp">diversity_3</span>
+                    <span class="material-icons-sharp">bookmark_border</span>
                     <div className={`${membershipStyle.membership_guide_text}`}>
                         <h4>Get Booking</h4>
                         <p>
@@ -329,7 +329,10 @@ const Memberships = () => {
                         </span>
                         <InputText type="email" placeholder="Email address" />
                         {/* <button className={`${membershipStyle.membership_subscribe_btn}`}>subscribe</button> */}
-                        <Button label="Search" />
+                        <Button
+                            className={`${membershipStyle.membership_subscribe_btn}`}
+                            label="Subscribe"
+                        />
                     </div>
                     <div className={`${membershipStyle.membership_lock_text}`}>
                         <i className="pi pi-lock"></i>
