@@ -5,6 +5,7 @@ import Image from "next/image";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import videoFrameImg from "../../public/images/videoFrame.jpg";
+import { Button } from 'primereact/button';
 const Memberships = () => {
     const parentRef = useRef();
     const [isOpen, setIsOpen] = useState(false);
@@ -313,6 +314,27 @@ const Memberships = () => {
                         </div>
                         <button type="submit">Send</button>
                     </form>
+                </div>
+            </div>
+            <div className={`${membershipStyle.membership_subscribe_container}`}>
+                <div className={`${membershipStyle.membership_getUpdate}`}>
+                    <h3>Get Updates & More</h3>
+                    <h5>Thoughtful thoughts to your inbox</h5>
+                </div>
+                <div className={`${membershipStyle.membership_subscribe}`}>
+                    <h2>Enter email address</h2>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-envelope"></i>
+                        </span>
+                        <InputText type="email" placeholder="Email address" />
+                        {/* <button className={`${membershipStyle.membership_subscribe_btn}`}>subscribe</button> */}
+                        <Button label="Search" />
+                    </div>
+                    <div className={`${membershipStyle.membership_lock_text}`}>
+                        <i className="pi pi-lock"></i>
+                        <h3>Don't worry information is safe with us</h3>
+                    </div>
                 </div>
             </div>
         </div>

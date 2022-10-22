@@ -276,7 +276,26 @@ width: 40%;
     display: block;
     outline: 5px solid #ffffff;
 }
+.membership_subscribe_container{
+    background-image: url('/images/membership/bottomBackground.jpg');
+}
+.membership_getUpdate h3{
+    color: #b4b2b2 !important;
+    font-weight: normal;
+    font-size: 15px;
+}
+.membership_getUpdate h5{
+    color: #ffffff !important;
+    font-weight: normal;
+    font-size: 25px;
+}
+.membership_subscribe h2{
+    color: #ffffff !important;
+    font-weight: normal;
+    font-size: 15px;
+}
 /* MEDIA  */
+/* FAQ  */
 @media screen and (max-width:991px){
     .membership_faq {
          flex-direction: column;
