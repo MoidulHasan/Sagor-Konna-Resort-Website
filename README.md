@@ -1,9 +1,5 @@
 ## Sagor Konna Website
 
---
-
-# [NRB GLOBAL](https://kajkaminitiative.com/)
-
 ---
 
 ## Project Description
